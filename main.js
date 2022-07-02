@@ -22,10 +22,21 @@ function readUsername() {
     shake(loginSection);
   } else {
     username = readVal;
-    document.getElementById("select-section").style.display = "block";
+    let selectSection = document.getElementById("select-section");
+    selectSection.style.display = "block";
     document.getElementById("login-section").style.display = "none";
+    fadeIn(selectSection);
   }
 }
+
+// display error msg on notif area
+// in login section
+function loginError(message) {
+  let notifArea = document.getElementById("notif-area");
+  notifArea.innerHTML = "Enter your name";
+}
+
+// ANIMATIONS JS
 
 // shake object on error
 // pass the object to shake as argument
@@ -38,9 +49,7 @@ function shake(object) {
   }, 400);
 }
 
-// display error msg on notif area
-// in login section
-function loginError(message) {
-  let notifArea = document.getElementById("notif-area");
-  notifArea.innerHTML = "Enter your name";
+// fade in
+function fadeIn(object) {
+  object.classList.add("fade-in");
 }
