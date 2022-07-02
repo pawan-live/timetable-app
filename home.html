@@ -38,10 +38,10 @@
           src="./images/login-snap-bitmoji.png"
           alt="bitmoji-friends"
         /> -->
-        <button class="btn login-btn">
+        <button class="btn login-btn" style="display: none">
           Login with Snapchat<i class="icon fa-brands fa-snapchat"></i>
         </button>
-        <div class="separator"></div>
+        <div class="separator" style="display: none"></div>
         <!-- <p class="text">Just logi</p> -->
         <input type="text" placeholder="Enter your name" id="username-field" />
 
@@ -51,9 +51,12 @@
       </div>
     </section>
 
+    <!-- select class section -->
+    <section class="selection" id="select-section"></section>
+
     <!-- main section -->
     <!-- hidden to avoid loading first -->
-    <section id="main" hidden>Main Section</section>
+    <section id="main" hidden></section>
 
     <script src="functions.js"></script>
     <script src="main.js"></script>
