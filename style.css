@@ -40,10 +40,17 @@
   font-family: "Patua One", cursive;
   font-size: 3.5em;
   color: rebeccapurple;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
+}
+
+.login .notif-area {
+  font-size: 1.3rem;
+  color: orangered;
+  margin-bottom: 10px;
 }
 
 .btn.login-btn {
+  margin-top: 12px;
   background-color: yellow;
 }
 
@@ -77,6 +84,8 @@
 }
 
 .login .separator {
+  align-self: center;
+  width: 90%;
   height: 0.5px;
   background-color: rgb(88, 88, 88);
   display: flex;

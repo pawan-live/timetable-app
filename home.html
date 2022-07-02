@@ -32,6 +32,7 @@
     <section class="login" id="login-section">
       <div class="wrapper">
         <h2 class="logo-title">Timetable</h2>
+        <div class="notif-area" id="notif-area"></div>
         <!-- <img
           id="login-bitmoji-img"
           src="./images/login-snap-bitmoji.png"
@@ -42,8 +43,9 @@
         </button>
         <div class="separator"></div>
         <!-- <p class="text">Just logi</p> -->
-        <input type="text" placeholder="Enter your name" />
-        <button class="btn continue-btn">
+        <input type="text" placeholder="Enter your name" id="username-field" />
+
+        <button class="btn continue-btn" id="continue-btn">
           Continue<i class="icon fa-solid fa-arrow-right"></i>
         </button>
       </div>
@@ -53,7 +55,8 @@
     <!-- hidden to avoid loading first -->
     <section id="main" hidden>Main Section</section>
 
+    <script src="functions.js"></script>
     <script src="main.js"></script>
-    <script src="cookies.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>
