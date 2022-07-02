@@ -8,10 +8,6 @@ body {
   overflow: hidden;
 }
 
-/* .section {
-  
-} */
-
 .btn {
   font-size: 1.2rem;
   padding: 7px 18px 7px 20px;
@@ -21,9 +17,6 @@ body {
   background-color: white;
   cursor: pointer;
 }
-
-/* .btn:hover {
-} */
 
 /* login section */
 
@@ -120,12 +113,45 @@ body {
   text-align: center;
 }
 
-/* selection section */
-#select-section {
+/* details section */
+
+#details-section {
   display: none;
+  height: 100vh;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
 }
 
-.square {
-  height: 100vh;
-  background-color: aqua;
+.details .wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.details .group {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.details label {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.details select {
+  font-size: 1.2em;
+  border-radius: 8px;
+  padding: 0 5px;
+}
+
+.details .btn.continue-btn {
+  margin-top: 20px;
+}
+
+.details .icon {
+  margin-left: 10px;
 }
