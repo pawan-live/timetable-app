@@ -9,8 +9,8 @@
 } */
 
 .btn {
-  font-size: 1.3rem;
-  padding: 0.4rem 1.1rem 0.3rem 1.2rem;
+  font-size: 1.2rem;
+  padding: 7px 18px 7px 20px;
   border: 1px solid black;
   border-radius: 150px;
   color: rgb(38, 38, 38);
@@ -19,3 +19,75 @@
 
 /* .btn:hover {
 } */
+
+/* login section */
+
+#login-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.login .logo-title {
+  font-family: "Patua One", cursive;
+  font-size: 3.5em;
+  color: rebeccapurple;
+  margin-bottom: 25px;
+}
+
+.btn.login-btn {
+  background-color: yellow;
+}
+
+.btn.continue-btn {
+  background-color: lightskyblue;
+  /* font-size: 1.2rem; */
+}
+
+.btn.continue-btn.disabled {
+  background-color: rgb(204, 216, 224);
+  color: rgb(126, 126, 126);
+}
+
+.login .icon {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.login .separator {
+  height: 0.5px;
+  background-color: rgb(88, 88, 88);
+  display: flex;
+  margin: 30px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .separator::before {
+  content: "or";
+  background-color: white;
+  color: rgb(88, 88, 88);
+  padding: 0 5px;
+  font-size: 1.2rem;
+}
+
+.login .text {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.login input {
+  font-size: 1.2rem;
+  padding: 7px 18px 7px 20px;
+  margin-bottom: 12px;
+  border-radius: 150px;
+  border: 1px solid black;
+  text-align: center;
+}
