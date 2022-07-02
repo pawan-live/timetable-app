@@ -5,7 +5,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .btn {
@@ -16,6 +16,10 @@ body {
   color: rgb(38, 38, 38);
   background-color: white;
   cursor: pointer;
+}
+
+.text {
+  font-size: 1.3em;
 }
 
 /* login section */
@@ -171,4 +175,18 @@ body {
 
 #back-btn .icon {
   margin-right: 5px;
+}
+
+/* MAIN SECTION */
+
+#main-section {
+  display: none;
+}
+
+#logout-btn {
+  text-decoration: underline;
+}
+
+#logout-btn .icon {
+  margin-left: 5px;
 }

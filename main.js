@@ -1,5 +1,6 @@
 // Variables //
 var username;
+const options = []; //array to hold options
 
 // DOM constants //
 const continueBtn = document.getElementById("continue-btn");
@@ -10,12 +11,7 @@ const backBtn = document.getElementById("back-btn");
 
 continueBtn.addEventListener("click", readUsername);
 detailsBtn.addEventListener("click", readDetails);
-backBtn.addEventListener("click", function () {
-  let loginSection = document.getElementById("login-section");
-  document.getElementById("login-section").style.display = "flex";
-  document.getElementById("details-section").style.display = "none";
-  fadeIn(loginSection);
-});
+backBtn.addEventListener("click", backToLogin);
 
 // FUNCTIONS //
 
@@ -42,7 +38,6 @@ function readUsername() {
 function readDetails() {
   let detailsSection = document.getElementById("details-section");
 
-  const options = []; //array to hold options
   options[0] = document.getElementById("select-fac").value;
   options[1] = document.getElementById("select-year").value;
   options[2] = document.getElementById("select-grp").value;
@@ -52,8 +47,33 @@ function readDetails() {
       shake(detailsSection);
       detailsError("Select options for all");
       break;
+    } else if (options[i] != 0) {
+      continue;
     }
   }
+  setDetails(options);
+
+  // move to next screen
+  let mainSection = document.getElementById("main-section");
+  mainSection.style.display = "flex";
+  document.getElementById("details-section").style.display = "none";
+  fadeIn(mainSection);
+}
+
+// set details to cookies
+function setDetails(options) {
+  setCookie("username", username, 90);
+  setCookie("faculty", options[0], 90);
+  setCookie("year", options[1], 90);
+  setCookie("group", options[2], 90);
+}
+
+// set a cookie
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+  let expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
 // display error msg on notif area
@@ -66,6 +86,14 @@ function loginError(message) {
 function detailsError(message) {
   let detailsNotifArea = document.getElementById("details-notif-area");
   detailsNotifArea.innerHTML = message;
+}
+
+// go back to login section
+function backToLogin() {
+  let loginSection = document.getElementById("login-section");
+  document.getElementById("login-section").style.display = "flex";
+  document.getElementById("details-section").style.display = "none";
+  fadeIn(loginSection);
 }
 
 // ANIMATIONS JS
