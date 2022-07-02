@@ -4,11 +4,18 @@ var username;
 // DOM constants //
 const continueBtn = document.getElementById("continue-btn");
 const detailsBtn = document.getElementById("details-continue-btn");
+const backBtn = document.getElementById("back-btn");
 
 // SEQUENCE //
 
 continueBtn.addEventListener("click", readUsername);
 detailsBtn.addEventListener("click", readDetails);
+backBtn.addEventListener("click", function () {
+  let loginSection = document.getElementById("login-section");
+  document.getElementById("login-section").style.display = "flex";
+  document.getElementById("details-section").style.display = "none";
+  fadeIn(loginSection);
+});
 
 // FUNCTIONS //
 
@@ -43,7 +50,7 @@ function readDetails() {
   for (i = 0; i < options.length; i++) {
     if (options[i] == 0) {
       shake(detailsSection);
-      console.log("done");
+      detailsError("Select options for all");
       break;
     }
   }
@@ -52,8 +59,13 @@ function readDetails() {
 // display error msg on notif area
 // in login section
 function loginError(message) {
-  let notifArea = document.getElementById("notif-area");
-  notifArea.innerHTML = "Enter your name";
+  let loginNotifArea = document.getElementById("login-notif-area");
+  loginNotifArea.innerHTML = message;
+}
+// in login section
+function detailsError(message) {
+  let detailsNotifArea = document.getElementById("details-notif-area");
+  detailsNotifArea.innerHTML = message;
 }
 
 // ANIMATIONS JS

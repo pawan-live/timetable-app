@@ -40,7 +40,7 @@ body {
   margin-bottom: 12px;
 }
 
-.login .notif-area {
+.notif-area {
   font-size: 1.3rem;
   color: orangered;
   margin-bottom: 10px;
@@ -129,6 +129,11 @@ body {
   text-align: center;
 }
 
+.details h2 {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
 .details .group {
   display: flex;
   text-align: left;
@@ -154,4 +159,16 @@ body {
 
 .details .icon {
   margin-left: 10px;
+}
+
+#back-btn {
+  font-size: 1.3rem;
+  text-decoration: underline;
+  margin-top: 15px;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+#back-btn .icon {
+  margin-right: 5px;
 }
