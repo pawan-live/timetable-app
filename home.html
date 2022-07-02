@@ -25,6 +25,8 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="animations.css" />
+
     <title>My Timetable</title>
   </head>
   <body>
@@ -32,18 +34,58 @@
     <section class="login" id="login-section">
       <div class="wrapper">
         <h2 class="logo-title">Timetable</h2>
-        <img
+        <div class="notif-area" id="notif-area"></div>
+        <!-- <img
           id="login-bitmoji-img"
           src="./images/login-snap-bitmoji.png"
           alt="bitmoji-friends"
-        />
-        <button class="btn login-btn">
+        /> -->
+        <button class="btn login-btn" style="display: none">
           Login with Snapchat<i class="icon fa-brands fa-snapchat"></i>
         </button>
-        <div class="separator"></div>
+        <div class="separator" style="display: none"></div>
         <!-- <p class="text">Just logi</p> -->
-        <input type="text" placeholder="Enter your name" />
-        <button class="btn continue-btn">
+        <input type="text" placeholder="Enter your name" id="username-field" />
+
+        <button class="btn continue-btn" id="continue-btn">
+          Continue<i class="icon fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- select class section -->
+    <section class="details" id="details-section">
+      <div class="wrapper">
+        <h2>Please select below</h2>
+        <!-- faculty -->
+        <div class="group">
+          <label for="select-fac">Faculty: </label>
+          <select id="select-fac">
+            <option value="0">Select</option>
+            <option value="1">Computing</option>
+            <option value="2">Business</option>
+          </select>
+        </div>
+        <!-- year of study -->
+        <div class="group">
+          <label for="select-year">Year of study: </label>
+          <select id="select-year">
+            <option value="0">Select</option>
+            <option value="1">Year 2</option>
+            <option value="2">Year 3</option>
+          </select>
+        </div>
+        <!-- sub group -->
+        <div class="group">
+          <label for="select-grp">Subgroup: </label>
+          <select id="select-grp">
+            <option value="0">Select</option>
+            <option value="4.1">4.1</option>
+            <option value="4.2">4.2</option>
+            <option value="7.1">7.1</option>
+          </select>
+        </div>
+        <button class="btn continue-btn" id="details-continue-btn">
           Continue<i class="icon fa-solid fa-arrow-right"></i>
         </button>
       </div>
@@ -51,9 +93,10 @@
 
     <!-- main section -->
     <!-- hidden to avoid loading first -->
-    <section id="main" hidden>Main Section</section>
+    <section id="main" hidden></section>
 
+    <script src="functions.js"></script>
     <script src="main.js"></script>
-    <script src="cookies.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>

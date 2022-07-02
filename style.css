@@ -4,9 +4,9 @@
   padding: 0;
 }
 
-/* .section {
-  
-} */
+body {
+  overflow: hidden;
+}
 
 .btn {
   font-size: 1.2rem;
@@ -17,9 +17,6 @@
   background-color: white;
   cursor: pointer;
 }
-
-/* .btn:hover {
-} */
 
 /* login section */
 
@@ -40,10 +37,17 @@
   font-family: "Patua One", cursive;
   font-size: 3.5em;
   color: rebeccapurple;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
+}
+
+.login .notif-area {
+  font-size: 1.3rem;
+  color: orangered;
+  margin-bottom: 10px;
 }
 
 .btn.login-btn {
+  margin-top: 12px;
   background-color: yellow;
 }
 
@@ -77,6 +81,8 @@
 }
 
 .login .separator {
+  align-self: center;
+  width: 90%;
   height: 0.5px;
   background-color: rgb(88, 88, 88);
   display: flex;
@@ -105,4 +111,47 @@
   border-radius: 150px;
   border: 1px solid black;
   text-align: center;
+}
+
+/* details section */
+
+#details-section {
+  display: none;
+  height: 100vh;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.details .wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.details .group {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.details label {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.details select {
+  font-size: 1.2em;
+  border-radius: 8px;
+  padding: 0 5px;
+}
+
+.details .btn.continue-btn {
+  margin-top: 20px;
+}
+
+.details .icon {
+  margin-left: 10px;
 }
