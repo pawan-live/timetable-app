@@ -115,3 +115,13 @@
   border: 1px solid black;
   text-align: center;
 }
+
+/* selection section */
+#select-section {
+  display: none;
+}
+
+.square {
+  height: 100vh;
+  background-color: aqua;
+}

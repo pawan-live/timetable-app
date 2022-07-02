@@ -17,7 +17,8 @@ function readUsername() {
     loginError("Enter your name");
   } else {
     username = readVal;
-    console.log(username);
+    document.getElementById("select-section").style.display = "block";
+    document.getElementById("login-section").style.display = "none";
   }
 }
 
