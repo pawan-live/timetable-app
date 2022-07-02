@@ -15,6 +15,7 @@
   border-radius: 150px;
   color: rgb(38, 38, 38);
   background-color: white;
+  cursor: pointer;
 }
 
 /* .btn:hover {
@@ -46,14 +47,28 @@
   background-color: yellow;
 }
 
+.btn.login-btn:hover {
+  background-color: rgb(244, 244, 0);
+}
+
 .btn.continue-btn {
   background-color: lightskyblue;
   /* font-size: 1.2rem; */
 }
 
+.btn.continue-btn:hover {
+  background-color: rgb(128, 195, 236);
+}
+
 .btn.continue-btn.disabled {
   background-color: rgb(204, 216, 224);
   color: rgb(126, 126, 126);
+}
+
+#login-bitmoji-img {
+  width: 220px;
+  align-self: center;
+  margin-bottom: -5px;
 }
 
 .login .icon {
@@ -86,7 +101,7 @@
 .login input {
   font-size: 1.2rem;
   padding: 7px 18px 7px 20px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   border-radius: 150px;
   border: 1px solid black;
   text-align: center;
