@@ -1,0 +1,17 @@
+#login-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-title {
+  font-family: "Patua One", cursive;
+  font-size: 3.5em;
+  color: rebeccapurple;
+  margin-bottom: 25px;
+}
+
+.btn.login-btn {
+  background-color: yellow;
+}

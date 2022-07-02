@@ -1,0 +1,21 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* .section {
+  
+} */
+
+.btn {
+  font-size: 1.3rem;
+  padding: 0.4rem 1.1rem 0.3rem 1.2rem;
+  border: 1px solid black;
+  border-radius: 150px;
+  color: rgb(38, 38, 38);
+  background-color: white;
+}
+
+/* .btn:hover {
+} */
