@@ -100,6 +100,7 @@
     <section class="main" id="main-section">
       <div class="wrapper">
         <div class="card greeting" id="card-greeting">
+          <!-- greeting row div -->
           <div class="row">
             <div class="greeting-text">
               <p class="text">Hi <span id="greeting-username">John</span>,</p>
@@ -111,6 +112,16 @@
                 src="https://api.lorem.space/image/face?w=150&h=150"
                 alt=""
               />
+            </div>
+          </div>
+          <!-- time and weather div -->
+          <div class="row" id="greeting-time-row">
+            <p class="text">
+              <span id="greeting-time">12:00</span
+              ><span id="greeting-time-suffix">AM</span>
+            </p>
+            <div class="weather-icon" id="weather-icon">
+              <i class="icon fa-solid fa-cloud-sun-rain"></i>
             </div>
           </div>
         </div>
