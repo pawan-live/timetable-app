@@ -223,3 +223,45 @@ body {
 .main .text {
   margin: 0;
 }
+
+/* CARDS */
+
+/* main card style */
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  padding: 12px 12px 12px 18px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.318);
+  margin-bottom: 10px;
+}
+
+/* greeting card top */
+.card.greeting {
+  background: linear-gradient(to right, #00f260, #0575e6);
+  height: 150px;
+}
+
+.card .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card .greeting-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card .greeting-text .text {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+#main-pfp {
+  height: 58px;
+  border-radius: 150px;
+  border: 4px solid white;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.318);
+}
