@@ -2,11 +2,20 @@
 var username;
 const options = []; //array to hold options
 
+window.addEventListener("load", (event) => {
+  if (getCookie("username")) {
+    transition("splash-section", "main-section");
+  } else {
+    transition("splash-section", "login-section");
+  }
+});
+
 // DOM constants //
 let continueBtn = document.getElementById("continue-btn");
 let detailsBtn = document.getElementById("details-continue-btn");
 let detailsBackBtn = document.getElementById("details-back-btn");
 let mainBackBtn = document.getElementById("main-back-btn");
+let logOutBtn = document.getElementById("logout-btn");
 
 // SEQUENCE //
 
@@ -21,6 +30,12 @@ detailsBackBtn.addEventListener("click", function () {
 // back btn in main section
 mainBackBtn.addEventListener("click", function () {
   transition("main-section", "details-section");
+});
+
+// logout button
+logOutBtn.addEventListener("click", function () {
+  logOut();
+  transition("main-section", "login-section");
 });
 
 //////////// FUNCTIONS ////////////
@@ -60,12 +75,6 @@ function readDetails() {
 
     // transition to next page
     transition("details-section", "main-section");
-
-    // move to next screen
-    // let mainSection = document.getElementById("main-section");
-    // mainSection.style.display = "flex";
-    // document.getElementById("details-section").style.display = "none";
-    // fadeIn(mainSection);
   }
 
   // to check if options are 0
@@ -91,6 +100,13 @@ function transition(page1, page2) {
   fadeIn(object2);
 }
 
+function logOut() {
+  delCookie("username");
+  delCookie("faculty");
+  delCookie("year");
+  delCookie("group");
+}
+
 // set details to cookies
 function setDetails(options) {
   setCookie("username", username, 90);
@@ -105,6 +121,11 @@ function setCookie(cname, cvalue, exdays) {
   d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
   let expires = "expires=" + d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+// delete cookie
+function delCookie(cname) {
+  document.cookie = cname + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 }
 
 // get a cookie by name

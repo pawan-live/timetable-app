@@ -22,6 +22,20 @@ body {
   font-size: 1.3em;
 }
 
+/* splash screen */
+.splash {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #74ebd5, #acb6e5);
+}
+
+.splash .text {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
 /* login section */
 
 #login-section {
@@ -203,16 +217,6 @@ body {
   text-align: center;
 }
 
-/* TEST RULES */
-#login-section,
-#details-section {
-  display: none;
-}
-
-#main-section {
-  display: flex;
-}
-
 .main .controls {
   display: flex;
   flex-direction: row;
@@ -283,4 +287,11 @@ body {
 #greeting-time-row {
   align-items: center;
   margin-bottom: -10px;
+}
+
+/* TEST RULES */
+#login-section,
+#details-section,
+#main-section {
+  display: none;
 }
