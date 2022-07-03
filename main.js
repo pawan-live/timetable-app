@@ -3,17 +3,27 @@ var username;
 const options = []; //array to hold options
 
 // DOM constants //
-const continueBtn = document.getElementById("continue-btn");
-const detailsBtn = document.getElementById("details-continue-btn");
-const backBtn = document.getElementById("back-btn");
+let continueBtn = document.getElementById("continue-btn");
+let detailsBtn = document.getElementById("details-continue-btn");
+let detailsBackBtn = document.getElementById("details-back-btn");
+let mainBackBtn = document.getElementById("main-back-btn");
 
 // SEQUENCE //
 
 continueBtn.addEventListener("click", readUsername);
 detailsBtn.addEventListener("click", readDetails);
-backBtn.addEventListener("click", backToLogin);
 
-// FUNCTIONS //
+// back buttons
+//back btn in details section
+detailsBackBtn.addEventListener("click", function () {
+  transition("details-section", "login-section");
+});
+// back btn in main section
+mainBackBtn.addEventListener("click", function () {
+  transition("main-section", "details-section");
+});
+
+//////////// FUNCTIONS ////////////
 
 // read username on click continueBtn
 function readUsername() {
@@ -27,14 +37,13 @@ function readUsername() {
     shake(loginSection);
   } else {
     username = readVal;
-    let detailsSection = document.getElementById("details-section");
-    detailsSection.style.display = "flex";
-    document.getElementById("login-section").style.display = "none";
-    fadeIn(detailsSection);
+
+    // transition to next page
+    transition("login-section", "details-section");
   }
 }
 
-// read details
+// read details and (save them to cookies) -> at last
 function readDetails() {
   let detailsSection = document.getElementById("details-section");
 
@@ -42,22 +51,44 @@ function readDetails() {
   options[1] = document.getElementById("select-year").value;
   options[2] = document.getElementById("select-grp").value;
 
-  for (i = 0; i < options.length; i++) {
-    if (options[i] == 0) {
-      shake(detailsSection);
-      detailsError("Select options for all");
-      break;
-    } else if (options[i] != 0) {
-      continue;
+  if (checkVals() == 1) {
+    shake(detailsSection);
+    detailsError("Select options for all");
+  } else {
+    // save details to cookies
+    setDetails(options);
+
+    // transition to next page
+    transition("details-section", "main-section");
+
+    // move to next screen
+    // let mainSection = document.getElementById("main-section");
+    // mainSection.style.display = "flex";
+    // document.getElementById("details-section").style.display = "none";
+    // fadeIn(mainSection);
+  }
+
+  // to check if options are 0
+  function checkVals() {
+    for (i = 0; i < options.length; i++) {
+      if (options[i] == 0) {
+        return 1;
+      } else {
+        continue;
+      }
     }
   }
-  setDetails(options);
+}
 
-  // move to next screen
-  let mainSection = document.getElementById("main-section");
-  mainSection.style.display = "flex";
-  document.getElementById("details-section").style.display = "none";
-  fadeIn(mainSection);
+// transition
+// page1 = current page id
+// page2 = next page id
+function transition(page1, page2) {
+  let object1 = document.getElementById(page1);
+  let object2 = document.getElementById(page2);
+  object2.style.display = "flex";
+  object1.style.display = "none";
+  fadeIn(object2);
 }
 
 // set details to cookies

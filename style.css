@@ -165,7 +165,7 @@ body {
   margin-left: 10px;
 }
 
-#back-btn {
+.text.back-btn {
   font-size: 1.3rem;
   text-decoration: underline;
   margin-top: 15px;
@@ -173,7 +173,7 @@ body {
   cursor: pointer;
 }
 
-#back-btn .icon {
+.text.back-btn .icon {
   margin-right: 5px;
 }
 
@@ -181,6 +181,9 @@ body {
 
 #main-section {
   display: none;
+  height: 100vh;
+  /* display: flex; */
+  justify-content: center;
 }
 
 #logout-btn {
@@ -189,4 +192,34 @@ body {
 
 #logout-btn .icon {
   margin-left: 5px;
+}
+
+.main .wrapper {
+  width: 100%;
+  max-width: 650px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* TEST RULES */
+#login-section,
+#details-section {
+  display: none;
+}
+
+#main-section {
+  display: flex;
+}
+
+.main .controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .text {
+  margin: 0;
 }
