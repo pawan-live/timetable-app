@@ -1,16 +1,44 @@
 // Variables //
 var username;
+const options = []; //array to hold options
+
+window.addEventListener("load", (event) => {
+  if (getCookie("username")) {
+    transition("splash-section", "main-section");
+  } else {
+    transition("splash-section", "login-section");
+  }
+});
 
 // DOM constants //
-const continueBtn = document.getElementById("continue-btn");
-const detailsBtn = document.getElementById("details-continue-btn");
+let continueBtn = document.getElementById("continue-btn");
+let detailsBtn = document.getElementById("details-continue-btn");
+let detailsBackBtn = document.getElementById("details-back-btn");
+let mainBackBtn = document.getElementById("main-back-btn");
+let logOutBtn = document.getElementById("logout-btn");
 
 // SEQUENCE //
 
 continueBtn.addEventListener("click", readUsername);
 detailsBtn.addEventListener("click", readDetails);
 
-// FUNCTIONS //
+// back buttons
+//back btn in details section
+detailsBackBtn.addEventListener("click", function () {
+  transition("details-section", "login-section");
+});
+// back btn in main section
+mainBackBtn.addEventListener("click", function () {
+  transition("main-section", "details-section");
+});
+
+// logout button
+logOutBtn.addEventListener("click", function () {
+  logOut();
+  transition("main-section", "login-section");
+});
+
+//////////// FUNCTIONS ////////////
 
 // read username on click continueBtn
 function readUsername() {
@@ -24,36 +52,117 @@ function readUsername() {
     shake(loginSection);
   } else {
     username = readVal;
-    let detailsSection = document.getElementById("details-section");
-    detailsSection.style.display = "flex";
-    document.getElementById("login-section").style.display = "none";
-    fadeIn(detailsSection);
+
+    // transition to next page
+    transition("login-section", "details-section");
   }
 }
 
-// read details
+// read details and (save them to cookies) -> at last
 function readDetails() {
   let detailsSection = document.getElementById("details-section");
 
-  const options = []; //array to hold options
   options[0] = document.getElementById("select-fac").value;
   options[1] = document.getElementById("select-year").value;
   options[2] = document.getElementById("select-grp").value;
 
-  for (i = 0; i < options.length; i++) {
-    if (options[i] == 0) {
-      shake(detailsSection);
-      console.log("done");
-      break;
+  if (checkVals() == 1) {
+    shake(detailsSection);
+    detailsError("Select options for all");
+  } else {
+    // save details to cookies
+    setDetails(options);
+
+    // transition to next page
+    transition("details-section", "main-section");
+  }
+
+  // to check if options are 0
+  function checkVals() {
+    for (i = 0; i < options.length; i++) {
+      if (options[i] == 0) {
+        return 1;
+      } else {
+        continue;
+      }
     }
   }
+}
+
+// transition
+// page1 = current page id
+// page2 = next page id
+function transition(page1, page2) {
+  let object1 = document.getElementById(page1);
+  let object2 = document.getElementById(page2);
+  object2.style.display = "flex";
+  object1.style.display = "none";
+  fadeIn(object2);
+}
+
+function logOut() {
+  delCookie("username");
+  delCookie("faculty");
+  delCookie("year");
+  delCookie("group");
+}
+
+// set details to cookies
+function setDetails(options) {
+  setCookie("username", username, 90);
+  setCookie("faculty", options[0], 90);
+  setCookie("year", options[1], 90);
+  setCookie("group", options[2], 90);
+}
+
+// set a cookie
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+  let expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+// delete cookie
+function delCookie(cname) {
+  document.cookie = cname + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+}
+
+// get a cookie by name
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(";");
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == " ") {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
 }
 
 // display error msg on notif area
 // in login section
 function loginError(message) {
-  let notifArea = document.getElementById("notif-area");
-  notifArea.innerHTML = "Enter your name";
+  let loginNotifArea = document.getElementById("login-notif-area");
+  loginNotifArea.innerHTML = message;
+}
+// in login section
+function detailsError(message) {
+  let detailsNotifArea = document.getElementById("details-notif-area");
+  detailsNotifArea.innerHTML = message;
+}
+
+// go back to login section
+function backToLogin() {
+  let loginSection = document.getElementById("login-section");
+  document.getElementById("login-section").style.display = "flex";
+  document.getElementById("details-section").style.display = "none";
+  fadeIn(loginSection);
 }
 
 // ANIMATIONS JS

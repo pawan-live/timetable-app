@@ -30,11 +30,18 @@
     <title>My Timetable</title>
   </head>
   <body>
+    <!-- splash screen -->
+    <section class="splash" id="splash-section">
+      <div class="wrapper">
+        <p class="text">Loading</p>
+      </div>
+    </section>
+
     <!-- login section -->
     <section class="login" id="login-section">
       <div class="wrapper">
         <h2 class="logo-title">Timetable</h2>
-        <div class="notif-area" id="notif-area"></div>
+        <div class="notif-area" id="login-notif-area"></div>
         <!-- <img
           id="login-bitmoji-img"
           src="./images/login-snap-bitmoji.png"
@@ -57,6 +64,7 @@
     <section class="details" id="details-section">
       <div class="wrapper">
         <h2>Please select below</h2>
+        <div class="notif-area" id="details-notif-area"></div>
         <!-- faculty -->
         <div class="group">
           <label for="select-fac">Faculty: </label>
@@ -88,13 +96,82 @@
         <button class="btn continue-btn" id="details-continue-btn">
           Continue<i class="icon fa-solid fa-arrow-right"></i>
         </button>
+        <p class="text back-btn" id="details-back-btn">
+          <i class="icon fa-solid fa-arrow-left"></i>Back
+        </p>
       </div>
     </section>
 
     <!-- main section -->
     <!-- hidden to avoid loading first -->
-    <section id="main" hidden></section>
+    <section class="main" id="main-section">
+      <div class="wrapper">
+        <div class="card greeting" id="card-greeting">
+          <!-- greeting row div -->
+          <div class="row">
+            <div class="greeting-text">
+              <p class="text">Hi <span id="greeting-username">John</span>,</p>
+              <p class="text"><span id="greeting-wish">Good morning</span>!</p>
+            </div>
+            <div class="pfp">
+              <img
+                id="main-pfp"
+                src="https://api.lorem.space/image/face?w=150&h=150"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- time and weather div -->
+          <div class="row" id="greeting-time-row">
+            <p class="text">
+              <span id="greeting-time">12:00</span
+              ><span id="greeting-time-suffix">AM</span>
+            </p>
+            <div class="weather-icon" id="weather-icon">
+              <i class="icon fa-solid fa-cloud-sun-rain"></i>
+            </div>
+          </div>
+        </div>
 
+        <div class="controls">
+          <p class="text back-btn" id="main-back-btn">
+            <i class="icon fa-solid fa-arrow-left"></i>Back
+          </p>
+          <p class="text" id="logout-btn">
+            Logout <i class="icon fa-solid fa-right-from-bracket"></i>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- firebase integration -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyB6O87eW4lOHE92aiDYncpuY-s1RMNYZVg",
+        authDomain: "timetable-app-881bd.firebaseapp.com",
+        databaseURL:
+          "https://timetable-app-881bd-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "timetable-app-881bd",
+        storageBucket: "timetable-app-881bd.appspot.com",
+        messagingSenderId: "579880184460",
+        appId: "1:579880184460:web:099e017479ab2518dee9a9",
+        measurementId: "G-B85EKJTZJ7",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+
+    <!-- JS files -->
     <script src="functions.js"></script>
     <script src="main.js"></script>
     <script src="login.js"></script>

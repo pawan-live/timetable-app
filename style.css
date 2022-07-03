@@ -5,7 +5,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .btn {
@@ -16,6 +16,24 @@ body {
   color: rgb(38, 38, 38);
   background-color: white;
   cursor: pointer;
+}
+
+.text {
+  font-size: 1.3em;
+}
+
+/* splash screen */
+.splash {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #74ebd5, #acb6e5);
+}
+
+.splash .text {
+  font-size: 1.8rem;
+  color: #ffffff;
 }
 
 /* login section */
@@ -40,7 +58,7 @@ body {
   margin-bottom: 12px;
 }
 
-.login .notif-area {
+.notif-area {
   font-size: 1.3rem;
   color: orangered;
   margin-bottom: 10px;
@@ -129,6 +147,11 @@ body {
   text-align: center;
 }
 
+.details h2 {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
 .details .group {
   display: flex;
   text-align: left;
@@ -154,4 +177,121 @@ body {
 
 .details .icon {
   margin-left: 10px;
+}
+
+.text.back-btn {
+  font-size: 1.3rem;
+  text-decoration: underline;
+  margin-top: 15px;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.text.back-btn .icon {
+  margin-right: 5px;
+}
+
+/* MAIN SECTION */
+
+#main-section {
+  display: none;
+  height: 100vh;
+  /* display: flex; */
+  justify-content: center;
+}
+
+#logout-btn {
+  text-decoration: underline;
+}
+
+#logout-btn .icon {
+  margin-left: 5px;
+}
+
+.main .wrapper {
+  width: 100%;
+  max-width: 650px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main .controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .text {
+  margin: 0;
+}
+
+/* CARDS */
+
+/* main card style */
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  padding: 12px 12px 12px 18px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.318);
+  margin-bottom: 10px;
+}
+
+/* greeting card top */
+.card.greeting {
+  background: linear-gradient(to right, #00f260, #0575e6);
+  height: 150px;
+  justify-content: space-between;
+}
+
+.card .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card .greeting-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card .greeting-text .text {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.card.greeting .icon {
+  font-size: 2.1rem;
+  /* color: white; */
+  color: lightcyan;
+  margin-right: 8px;
+}
+
+#main-pfp {
+  height: 58px;
+  border-radius: 150px;
+  border: 4px solid white;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.318);
+}
+
+#greeting-time {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: black;
+}
+
+#greeting-time-row {
+  align-items: center;
+  margin-bottom: -10px;
+}
+
+/* TEST RULES */
+#login-section,
+#details-section,
+#main-section {
+  display: none;
 }
