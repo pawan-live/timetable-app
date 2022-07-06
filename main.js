@@ -158,12 +158,12 @@ function detailsError(message) {
 }
 
 // go back to login section
-function backToLogin() {
-  let loginSection = document.getElementById("login-section");
-  document.getElementById("login-section").style.display = "flex";
-  document.getElementById("details-section").style.display = "none";
-  fadeIn(loginSection);
-}
+// function backToLogin() {
+//   let loginSection = document.getElementById("login-section");
+//   document.getElementById("login-section").style.display = "flex";
+//   document.getElementById("details-section").style.display = "none";
+//   fadeIn(loginSection);
+// }
 
 // ANIMATIONS JS
 

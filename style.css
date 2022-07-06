@@ -202,6 +202,7 @@ body {
 
 #logout-btn {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 #logout-btn .icon {
@@ -210,7 +211,7 @@ body {
 
 .main .wrapper {
   width: 100%;
-  max-width: 650px;
+  max-width: 450px;
   padding: 10px 10px;
   display: flex;
   flex-direction: column;
