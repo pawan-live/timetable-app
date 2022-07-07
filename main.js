@@ -78,7 +78,8 @@ mainBackBtn.addEventListener("click", function () {
 // logout button
 logOutBtn.addEventListener("click", function () {
   logOut();
-  transition("main-section", "login-section");
+  location.reload();
+  // transition("main-section", "login-section");
 });
 
 //////////// FUNCTIONS ////////////
@@ -115,7 +116,7 @@ function readDetails() {
   } else {
     // save details to cookies
     setDetails(options);
-
+    displayUserData();
     // transition to next page
     transition("details-section", "main-section");
   }
