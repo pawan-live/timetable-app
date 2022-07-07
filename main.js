@@ -4,8 +4,9 @@ const options = []; //array to hold options
 
 window.addEventListener("load", (event) => {
   if (getCookie("username")) {
-    transition("splash-section", "main-section");
     username = getCookie("username");
+    displayUserData();
+    transition("splash-section", "main-section");
   } else {
     transition("splash-section", "login-section");
     document.getElementById("username-field").focus();
@@ -119,6 +120,8 @@ function readDetails() {
     transition("details-section", "main-section");
   }
 
+  // load values from db and display
+
   // to check if options are 0
   function checkVals() {
     for (i = 0; i < options.length; i++) {
@@ -129,15 +132,13 @@ function readDetails() {
       }
     }
   }
-
-  // load values from db and display
-  displayUserData();
 }
 
 // function to fetch data from database
 
 // function to write metadata
 function displayUserData() {
+  console.log("called");
   // username = getCookie("username");
   // get time
   var myDate = new Date();
