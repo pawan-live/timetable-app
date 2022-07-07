@@ -152,6 +152,36 @@ function displayUserData() {
   // display time
   document.getElementById("greeting-wish").innerText = greet;
   document.getElementById("greeting-username").innerText = username;
+  displayCards();
+}
+
+function displayCards() {
+  let num = table.day.monday.length;
+  let html_content = "";
+
+  for (i = 0; i < num; i++) {
+    html_content +=
+      '<div class="card timecard" id="card' +
+      (i + 1) +
+      '">' +
+      '<div class="row">' +
+      '<p class="title">' +
+      table.day.monday[i].module +
+      "</p>" +
+      '<p class="type">' +
+      table.day.monday[i].type +
+      "</p>" +
+      "</div>" +
+      '<div class="row">' +
+      '<p class="time">' +
+      table.day.monday[i].start +
+      " - " +
+      table.day.monday[i].end +
+      "</p>" +
+      "</div>" +
+      "</div>";
+  }
+  document.getElementById("cards-container").innerHTML = html_content;
 }
 
 // transition

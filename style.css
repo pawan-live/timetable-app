@@ -237,8 +237,8 @@ body {
   flex-direction: column;
   border-radius: 14px;
   padding: 12px 12px 12px 18px;
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.318);
-  margin-bottom: 10px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.232);
+  margin-bottom: 15px;
 }
 
 /* greeting card top */
@@ -288,6 +288,38 @@ body {
 #greeting-time-row {
   align-items: center;
   margin-bottom: -10px;
+}
+
+/* time cards */
+.timecard {
+  padding-top: 8px;
+  background: linear-gradient(to right, #adccef, #e7f0fd);
+}
+
+.card .row {
+  align-items: center;
+}
+
+.card .title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card .type {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 150px;
+  padding: 0 12px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .time {
+  font-size: 1.3rem;
+}
+
+.card#card1 {
+  background: linear-gradient(to right, #a38ed2, #f9c1eb);
 }
 
 /* TEST RULES */
