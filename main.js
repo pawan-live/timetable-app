@@ -5,6 +5,7 @@ const options = []; //array to hold options
 window.addEventListener("load", (event) => {
   if (getCookie("username")) {
     transition("splash-section", "main-section");
+    username = getCookie("username");
   } else {
     transition("splash-section", "login-section");
     document.getElementById("username-field").focus();
@@ -61,7 +62,7 @@ select_year.addEventListener("change", function () {
 // SEQUENCE //
 
 continueBtn.addEventListener("click", readUsername);
-detailsBtn.addEventListener("click", readDetails(displayUserData()));
+detailsBtn.addEventListener("click", readDetails);
 
 // back buttons
 //back btn in details section
@@ -100,7 +101,7 @@ function readUsername() {
 }
 
 // read details and (save them to cookies) -> at last
-function readDetails(callback) {
+function readDetails() {
   let detailsSection = document.getElementById("details-section");
 
   options[0] = document.getElementById("select-fac").value;
@@ -130,14 +131,14 @@ function readDetails(callback) {
   }
 
   // load values from db and display
-  callback;
+  displayUserData();
 }
 
 // function to fetch data from database
 
 // function to write metadata
 function displayUserData() {
-  username = getCookie("username");
+  // username = getCookie("username");
   // get time
   var myDate = new Date();
   var hrs = myDate.getHours();
