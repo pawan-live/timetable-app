@@ -1,3 +1,14 @@
+var userData = {
+  username: "",
+  faculty: "",
+  option1: "",
+  year: "",
+};
+
+var metaData = {
+  weather: "sunny",
+};
+
 var data = {
   faculty: {
     IT: {
