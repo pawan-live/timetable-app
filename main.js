@@ -13,6 +13,13 @@ window.addEventListener("load", (event) => {
   }
 });
 
+var keys = [];
+fetch("./data.json")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => (keys = data));
+
 // DOM constants //
 let continueBtn = document.getElementById("continue-btn");
 let detailsBtn = document.getElementById("details-continue-btn");
@@ -20,45 +27,6 @@ let detailsBackBtn = document.getElementById("details-back-btn");
 let mainBackBtn = document.getElementById("main-back-btn");
 let logOutBtn = document.getElementById("logout-btn");
 let username_field = document.getElementById("username-field");
-
-// details section >> fetch optins from databse and display within html
-let select_fac = document.getElementById("select-fac");
-let select_year = document.getElementById("select-year");
-let select_1 = document.getElementById("select-1");
-
-select_fac.addEventListener("change", function () {
-  // let value = select_fac.value;
-  if (select_fac.value == "Computing") {
-    fetch_result = ["Year 1", "Year 2"];
-  } else if (select_fac.value == "Business") {
-    fetch_result = ["Year 2", "Year 3"];
-  }
-  // run database query here and fetch results
-  // let fetch_result = ["year 1", "year 2", "year3"]; // result = query results (json object tree)
-  // use a promise. If success >> do the below code
-  let html_content = '<option value="0">Select</option>';
-  fetch_result.forEach((element) => {
-    html_content += '<option value="' + element + '">' + element + "</option>";
-  });
-
-  select_year.innerHTML = html_content;
-  select_year.disabled = false;
-});
-
-select_year.addEventListener("change", function () {
-  // dummy data to emulate real data obtained from database
-  let fetch_result_1 = ["Specialization"];
-  let fetch_result_2 = ["Select", "IT", "CSNE", "SE", "CS"];
-
-  document.getElementById("select-1-label").innerText = fetch_result_1;
-
-  let html_content;
-  fetch_result_2.forEach((element) => {
-    html_content += '<option value="' + element + '">' + element + "</option>";
-  });
-  select_1.innerHTML = html_content;
-  select_1.disabled = false;
-});
 
 // SEQUENCE //
 
@@ -82,6 +50,57 @@ logOutBtn.addEventListener("click", function () {
   // transition("main-section", "login-section");
 });
 
+// details section >> fetch optins from databse and display within html
+let select_fac = document.getElementById("select-fac");
+let select_year = document.getElementById("select-year");
+let select_1 = document.getElementById("select-1");
+
+select_fac.addEventListener("change", function () {
+  let selected = select_fac.value;
+
+  if (selected == "Select") {
+    select_year.value = 0;
+    select_1.value = "0";
+    select_year.disabled = true;
+    select_1.disabled = true;
+  } else {
+    let resultArr = Object.keys(keys.fac[selected]); // data from JSON
+    let html_content = '<option value="0">Select</option>';
+    resultArr.forEach((element) => {
+      html_content +=
+        '<option value="' + element + '">' + element + "</option>";
+    });
+
+    select_year.innerHTML = html_content;
+    select_year.disabled = false;
+  }
+});
+
+select_year.addEventListener("change", function () {
+  let faculty = select_fac.value;
+  let selected = select_year.value;
+
+  // if selected 'select'
+  if (selected == "0") {
+    select_1.disabled = true;
+    // select_1.value = "";
+  } else {
+    let resultArr = Object.keys(keys.fac[faculty][selected]);
+    if (resultArr == "") {
+      select_1.disabled = true;
+      select_1.value = "0";
+    } else {
+      let html_content = '<option value="0">Select</option>';
+      resultArr.forEach((element) => {
+        html_content +=
+          '<option value="' + element + '">' + element + "</option>";
+      });
+      select_1.innerHTML = html_content;
+      select_1.disabled = false;
+    }
+  }
+});
+
 //////////// FUNCTIONS ////////////
 
 // read username on click continueBtn
@@ -99,6 +118,19 @@ function readUsername() {
 
     // transition to next page
     transition("login-section", "details-section");
+    // get faculty list from JSON object and add to the dropdown list
+    getFacList();
+  }
+
+  // get faculty list from JSON obj
+  function getFacList() {
+    let html_content = '<option value="Select">Select</option>';
+    let array = Object.keys(keys.fac);
+    array.forEach((element) => {
+      html_content +=
+        '<option value="' + element + '">' + element + "</option>";
+    });
+    select_fac.innerHTML = html_content;
   }
 }
 
