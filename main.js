@@ -2,6 +2,8 @@
 var username;
 const options = []; //array to hold options
 
+var faculty, year, semester, spec; // read values
+
 window.addEventListener("load", (event) => {
   if (getCookie("username")) {
     username = getCookie("username");
@@ -12,6 +14,10 @@ window.addEventListener("load", (event) => {
     document.getElementById("username-field").focus();
   }
 });
+
+// data structure
+// keys.fac.FOC.Y2.S1.SE.table.tuesday[2]
+// keys.fac.<faculty>.<year>.<sem>.<spec>.table.<dayToday>
 
 var keys = [];
 fetch("./data.json")
@@ -54,17 +60,33 @@ logOutBtn.addEventListener("click", function () {
 let select_fac = document.getElementById("select-fac");
 let select_year = document.getElementById("select-year");
 let select_1 = document.getElementById("select-1");
+let select_2 = document.getElementById("select-2");
+let select_3 = document.getElementById("select-3");
 
+/**
+ * SELECTION DROPDOWN MENUS
+ * This works by fetching data from the JSON object on data.json file
+ * the data is fetched in the order >>
+ * faculty > year > semester > specialization > subgroup
+ * and updates accordingly
+ */
+
+// faculty selection
 select_fac.addEventListener("change", function () {
   let selected = select_fac.value;
+  faculty = selected; // assign to global
 
   if (selected == "Select") {
     select_year.value = 0;
-    select_1.value = "0";
     select_year.disabled = true;
     select_1.disabled = true;
+    select_1.value = "0";
+    select_2.disabled = true;
+    select_2.value = "0";
+    select_3.disabled = true;
+    select_3.value = "0";
   } else {
-    let resultArr = Object.keys(keys.fac[selected]); // data from JSON
+    let resultArr = Object.keys(keys.fac[faculty]); // data from JSON
     let html_content = '<option value="0">Select</option>';
     resultArr.forEach((element) => {
       html_content +=
@@ -76,19 +98,29 @@ select_fac.addEventListener("change", function () {
   }
 });
 
+// year selection
 select_year.addEventListener("change", function () {
-  let faculty = select_fac.value;
+  // let faculty = select_fac.value;
   let selected = select_year.value;
+  year = selected;
 
   // if selected 'select'
   if (selected == "0") {
     select_1.disabled = true;
-    // select_1.value = "";
+    select_1.value = "0";
+    select_2.disabled = true;
+    select_2.value = "0";
+    select_3.disabled = true;
+    select_3.value = "0";
   } else {
-    let resultArr = Object.keys(keys.fac[faculty][selected]);
+    let resultArr = Object.keys(keys.fac[faculty][year]);
     if (resultArr == "") {
       select_1.disabled = true;
       select_1.value = "0";
+      select_2.disabled = true;
+      select_2.value = "0";
+      select_3.disabled = true;
+      select_3.value = "0";
     } else {
       let html_content = '<option value="0">Select</option>';
       resultArr.forEach((element) => {
@@ -98,6 +130,74 @@ select_year.addEventListener("change", function () {
       select_1.innerHTML = html_content;
       select_1.disabled = false;
     }
+  }
+});
+
+// semester selection
+select_1.addEventListener("change", function () {
+  // let faculty = select_fac.value;
+  let selected = select_1.value;
+  semester = selected; // assign to global
+
+  // if selected 'select'
+  if (selected == "0") {
+    select_2.disabled = true;
+    select_2.value = "0";
+    select_3.disabled = true;
+    select_3.value = "0";
+  } else {
+    let resultArr = Object.keys(keys.fac[faculty][year][semester]);
+    if (resultArr == "") {
+      select_2.disabled = true;
+      select_2.value = "0";
+      select_3.disabled = true;
+      select_3.value = "0";
+    } else {
+      let html_content = '<option value="0">Select</option>';
+      resultArr.forEach((element) => {
+        html_content +=
+          '<option value="' + element + '">' + element + "</option>";
+      });
+      select_2.innerHTML = html_content;
+      select_2.disabled = false;
+    }
+  }
+});
+
+// specialization selection
+select_2.addEventListener("change", function () {
+  // let faculty = select_fac.value;
+  let selected = select_2.value;
+  spec = selected; // assign to global
+
+  // if selected 'select'
+  if (selected == "0") {
+    select_3.disabled = true;
+    select_3.value = "0";
+  } else {
+    let resultArr = Object.keys(keys.fac[faculty][year][semester][spec]);
+    if (resultArr == "") {
+      select_3.disabled = true;
+      select_3.value = "0";
+    } else {
+      let html_content = '<option value="0">Select</option>';
+      resultArr.forEach((element) => {
+        html_content +=
+          '<option value="' + element + '">' + element + "</option>";
+      });
+      select_3.innerHTML = html_content;
+      select_3.disabled = false;
+    }
+  }
+});
+
+// group selection
+select_3.addEventListener("change", function () {
+  // let faculty = select_fac.value;
+  let selected = select_3.value;
+
+  if (selected != "0") {
+    semester = selected; // assign to global
   }
 });
 
@@ -185,37 +285,49 @@ function displayUserData() {
   // display time
   document.getElementById("greeting-wish").innerText = greet;
   document.getElementById("greeting-username").innerText = username;
-  displayCards();
+  // displayCards();
 }
 
-function displayCards() {
-  let num = table.day.monday.length;
-  let html_content = "";
+// function displayCards() {
+//   const weekday = [
+//     "Sunday",
+//     "Monday",
+//     "Tuesday",
+//     "Wednesday",
+//     "Thursday",
+//     "Friday",
+//     "Saturday",
+//   ];
 
-  for (i = 0; i < num; i++) {
-    html_content +=
-      '<div class="card timecard" id="card' +
-      (i + 1) +
-      '">' +
-      '<div class="row">' +
-      '<p class="title">' +
-      table.day.monday[i].module +
-      "</p>" +
-      '<p class="type">' +
-      table.day.monday[i].type +
-      "</p>" +
-      "</div>" +
-      '<div class="row">' +
-      '<p class="time">' +
-      table.day.monday[i].start +
-      " - " +
-      table.day.monday[i].end +
-      "</p>" +
-      "</div>" +
-      "</div>";
-  }
-  document.getElementById("cards-container").innerHTML = html_content;
-}
+//   const d = new Date();
+//   let dayToday = weekday[d.getDay()];
+//   // let num = table.day[dayToday].length;
+//   let html_content = "";
+
+//   for (i = 0; i < num; i++) {
+//     html_content +=
+//       '<div class="card timecard" id="card' +
+//       (i + 1) +
+//       '">' +
+//       '<div class="row">' +
+//       '<p class="title">' +
+//       table.day.monday[i].module +
+//       "</p>" +
+//       '<p class="type">' +
+//       table.day.monday[i].type +
+//       "</p>" +
+//       "</div>" +
+//       '<div class="row">' +
+//       '<p class="time">' +
+//       table.day.monday[i].start +
+//       " - " +
+//       table.day.monday[i].end +
+//       "</p>" +
+//       "</div>" +
+//       "</div>";
+//   }
+//   document.getElementById("cards-container").innerHTML = html_content;
+// }
 
 // transition
 // page1 = current page id
