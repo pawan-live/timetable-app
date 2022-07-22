@@ -39,7 +39,7 @@
                   {
                     "mod": "DMS",
                     "code": "IT2040",
-                    "start": "8:30",
+                    "start": "9:30",
                     "end": "10:30",
                     "type": "lecture",
                     "loc": "F502 IPU Hall"
@@ -156,7 +156,9 @@
                     "type": "practical",
                     "loc": "N3A Lab"
                   }
-                ]
+                ],
+                "saturday": [],
+                "sunday": []
               }
             }
           },

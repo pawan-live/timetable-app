@@ -280,7 +280,7 @@ body {
 }
 
 #greeting-time {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 500;
   color: black;
 }
@@ -303,6 +303,13 @@ body {
 .card .title {
   font-size: 2rem;
   font-weight: 600;
+}
+
+#module-code {
+  font-weight: 100;
+  /* font-style: italic; */
+  color: rgb(77, 77, 77);
+  font-size: 1.5rem;
 }
 
 .card .type {

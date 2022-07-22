@@ -2,12 +2,33 @@
 var username;
 const options = []; //array to hold options
 
-var faculty, year, semester, spec; // read values
+var faculty, year, semester, spec, sub; // read values
+
+const weekday = [
+  "sunday",
+  "monday",
+  "tuesday",
+  "wednesday",
+  "thursday",
+  "friday",
+  "saturday",
+];
+
+const d = new Date();
+// let dayToday = weekday[d.getDay()];
+let dayToday = "friday";
 
 window.addEventListener("load", (event) => {
   if (getCookie("username")) {
     username = getCookie("username");
+    faculty = getCookie("faculty");
+    year = getCookie("year");
+    semester = getCookie("semester");
+    spec = getCookie("spec");
+    sub = getCookie("sub");
+
     displayUserData();
+    displayTable();
     transition("splash-section", "main-section");
   } else {
     transition("splash-section", "login-section");
@@ -65,10 +86,11 @@ let select_3 = document.getElementById("select-3");
 
 /**
  * SELECTION DROPDOWN MENUS
- * This works by fetching data from the JSON object on data.json file
+ *
+ * This works by fetching data from the JSON object in data.json file
  * the data is fetched in the order >>
  * faculty > year > semester > specialization > subgroup
- * and updates accordingly
+ * and updates accordingly on change event
  */
 
 // faculty selection
@@ -197,7 +219,7 @@ select_3.addEventListener("change", function () {
   let selected = select_3.value;
 
   if (selected != "0") {
-    semester = selected; // assign to global
+    sub = selected; // assign to global
   }
 });
 
@@ -241,6 +263,8 @@ function readDetails() {
   options[0] = document.getElementById("select-fac").value;
   options[1] = document.getElementById("select-year").value;
   options[2] = document.getElementById("select-1").value;
+  options[3] = document.getElementById("select-2").value;
+  options[4] = document.getElementById("select-3").value;
 
   if (checkVals() == 1) {
     shake(detailsSection);
@@ -249,6 +273,7 @@ function readDetails() {
     // save details to cookies
     setDetails(options);
     displayUserData();
+    displayTable();
     // transition to next page
     transition("details-section", "main-section");
   }
@@ -271,7 +296,6 @@ function readDetails() {
 
 // function to write metadata
 function displayUserData() {
-  console.log("called");
   // username = getCookie("username");
   // get time
   var myDate = new Date();
@@ -285,49 +309,52 @@ function displayUserData() {
   // display time
   document.getElementById("greeting-wish").innerText = greet;
   document.getElementById("greeting-username").innerText = username;
-  // displayCards();
 }
 
-// function displayCards() {
-//   const weekday = [
-//     "Sunday",
-//     "Monday",
-//     "Tuesday",
-//     "Wednesday",
-//     "Thursday",
-//     "Friday",
-//     "Saturday",
-//   ];
+function displayTable() {
+  let table = keys.fac[faculty][year][semester][spec][sub].table;
 
-//   const d = new Date();
-//   let dayToday = weekday[d.getDay()];
-//   // let num = table.day[dayToday].length;
-//   let html_content = "";
+  let num = table[dayToday].length;
+  let html_content = "";
 
-//   for (i = 0; i < num; i++) {
-//     html_content +=
-//       '<div class="card timecard" id="card' +
-//       (i + 1) +
-//       '">' +
-//       '<div class="row">' +
-//       '<p class="title">' +
-//       table.day.monday[i].module +
-//       "</p>" +
-//       '<p class="type">' +
-//       table.day.monday[i].type +
-//       "</p>" +
-//       "</div>" +
-//       '<div class="row">' +
-//       '<p class="time">' +
-//       table.day.monday[i].start +
-//       " - " +
-//       table.day.monday[i].end +
-//       "</p>" +
-//       "</div>" +
-//       "</div>";
-//   }
-//   document.getElementById("cards-container").innerHTML = html_content;
-// }
+  if (num) {
+    for (i = 0; i < num; i++) {
+      html_content +=
+        '<div class="card timecard" id="card' +
+        (i + 1) +
+        '">' +
+        '<div class="row">' +
+        '<p class="title">' +
+        table[dayToday][i].mod +
+        " <span id='module-code'>" +
+        table[dayToday][i].code +
+        "</span></p>" +
+        '<p class="type">' +
+        table[dayToday][i].type +
+        "</p>" +
+        "</div>" +
+        '<div class="row">' +
+        '<p class="time">' +
+        table[dayToday][i].start +
+        " - " +
+        table[dayToday][i].end +
+        "</p>" +
+        "</div>" +
+        "</div>";
+    }
+  } else {
+    // code here
+    html_content += "No lectures for today :-)";
+  }
+
+  document.getElementById("cards-container").innerHTML = html_content;
+}
+
+function displayTime() {
+  let currentTime = document.getElementById("greeting-time");
+  let now = new Date().toLocaleTimeString();
+  currentTime.innerHTML = now;
+}
 
 // transition
 // page1 = current page id
@@ -344,7 +371,9 @@ function logOut() {
   delCookie("username");
   delCookie("faculty");
   delCookie("year");
-  delCookie("group");
+  delCookie("semester");
+  delCookie("spec");
+  delCookie("sub");
 }
 
 // set details to cookies
@@ -352,7 +381,9 @@ function setDetails(options) {
   setCookie("username", username, 90);
   setCookie("faculty", options[0], 90);
   setCookie("year", options[1], 90);
-  setCookie("group", options[2], 90);
+  setCookie("semester", options[2], 90);
+  setCookie("spec", options[3], 90);
+  setCookie("sub", options[4], 90);
 }
 
 // set a cookie
@@ -419,3 +450,6 @@ function fadeIn(object) {
     }
   }, 400);
 }
+
+// run the displayTime() function in 1 sec intervals
+let intervalHandle = setInterval(displayTime, 1000);
