@@ -329,6 +329,20 @@ body {
   background: linear-gradient(to right, #a38ed2, #f9c1eb);
 }
 
+.no-lecs-msg {
+  margin: 30px 0;
+  align-items: center;
+}
+
+.no-lecs-msg p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+#no-lecs-img {
+  width: 100%;
+}
+
 /* TEST RULES */
 #login-section,
 #details-section,

@@ -15,8 +15,8 @@ const weekday = [
 ];
 
 const d = new Date();
-// let dayToday = weekday[d.getDay()];
-let dayToday = "friday";
+let dayToday = weekday[d.getDay()];
+// let dayToday = "wednesday"; //custom date for testing
 
 window.addEventListener("load", (event) => {
   if (getCookie("username")) {
@@ -344,7 +344,15 @@ function displayTable() {
     }
   } else {
     // code here
-    html_content += "No lectures for today :-)";
+    html_content += `
+    <div class="no-lecs-msg">
+          <p>Nice! No lectures for today! 😃</p>
+          <img
+            id="no-lecs-img"
+            src="./images/no-lecs-svg.svg"
+            alt="playing cat"
+          />
+        </div>`;
   }
 
   document.getElementById("cards-container").innerHTML = html_content;
