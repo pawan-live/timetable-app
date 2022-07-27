@@ -296,11 +296,16 @@ body {
   background: linear-gradient(to right, #adccef, #e7f0fd);
 }
 
+.timecard.ongoing {
+  background: linear-gradient(to right, #a8ff78, #78ffd6);
+}
+
 .card .row {
   align-items: center;
 }
 
 .card .title {
+  text-align: left;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -313,7 +318,8 @@ body {
 }
 
 .card .type {
-  font-size: 1.1rem;
+  max-width: 30%;
+  /* font-size: 70%; */
   text-transform: uppercase;
   background-color: white;
   border-radius: 150px;
@@ -325,7 +331,7 @@ body {
   font-size: 1.3rem;
 }
 
-.card#card1 {
+.card.now {
   background: linear-gradient(to right, #a38ed2, #f9c1eb);
 }
 

@@ -110,10 +110,31 @@ function displayTable() {
   let num = table[dayToday].length;
   let html_content = "";
 
+  // get now date
+  var now = new Date();
+  var nowDateTime = now.toISOString();
+  var nowDate = nowDateTime.split("T")[0];
+
   if (num) {
     for (i = 0; i < num; i++) {
+      let cardColorClass;
+      let targetStart = new Date(
+        nowDate + " " + table[dayToday][i].start + ":00"
+      );
+      let targetEnd = new Date(nowDate + " " + table[dayToday][i].end + ":00");
+      console.log(targetStart, targetEnd);
+
+      if (targetStart < now && targetEnd > now) {
+        cardColorClass = "ongoing";
+      } else if (targetStart > now && targetEnd > now) {
+        // display default color
+        cardColorClass = "";
+      }
+
       html_content +=
-        '<div class="card timecard" id="card' +
+        '<div class="card timecard ' +
+        cardColorClass +
+        '" id="card' +
         (i + 1) +
         '">' +
         '<div class="row">' +

@@ -23,7 +23,7 @@
                     "code": "IT2060",
                     "start": "8:30",
                     "end": "10:30",
-                    "type": "practical online",
+                    "type": "practical (💻)",
                     "loc": "B401 PC Lab"
                   },
                   {
@@ -31,7 +31,7 @@
                     "code": "IT2020",
                     "start": "10:30",
                     "end": "12.30",
-                    "type": "lecture online",
+                    "type": "lecture (💻)",
                     "loc": "A308"
                   },
                   {
@@ -39,7 +39,7 @@
                     "code": "IT2050",
                     "start": "15:30",
                     "end": "17:30",
-                    "type": "practical online",
+                    "type": "practical (💻)",
                     "loc": "N3A Lab"
                   }
                 ],
@@ -49,7 +49,7 @@
                     "code": "IT2030",
                     "start": "9:30",
                     "end": "12:30",
-                    "type": "lecture + tutorial",
+                    "type": "lec + tut",
                     "loc": "A506"
                   },
                   {
@@ -65,7 +65,7 @@
                     "code": "IT2040",
                     "start": "15:30",
                     "end": "17:30",
-                    "type": "practical online",
+                    "type": "practical",
                     "loc": "410A & 410B Lab"
                   }
                 ],
@@ -75,7 +75,7 @@
                     "code": "IT2020",
                     "start": "8:30",
                     "end": "10:30",
-                    "type": "practical online",
+                    "type": "practical (💻)",
                     "loc": "B401 PC Lab"
                   },
                   {
@@ -83,7 +83,7 @@
                     "code": "IT2060",
                     "start": "12:30",
                     "end": "13:30",
-                    "type": "tutorial online",
+                    "type": "tutorial (💻)",
                     "loc": "New 3C"
                   },
                   {
@@ -91,7 +91,7 @@
                     "code": "IT2060",
                     "start": "15:30",
                     "end": "17:30",
-                    "type": "lecture online",
+                    "type": "lecture (💻)",
                     "loc": "B502"
                   }
                 ],
@@ -109,7 +109,7 @@
                     "code": "IT2050",
                     "start": "10:30",
                     "end": "13:30",
-                    "type": "lecture + tutorial",
+                    "type": "lec + tut",
                     "loc": "Auditorium"
                   },
                   {
@@ -144,7 +144,7 @@
                     "code": "IT2060",
                     "start": "8:30",
                     "end": "10:30",
-                    "type": "practical online",
+                    "type": "practical (💻)",
                     "loc": "B401 PC Lab"
                   },
                   {
@@ -152,7 +152,7 @@
                     "code": "IT2020",
                     "start": "10:30",
                     "end": "12.30",
-                    "type": "lecture online",
+                    "type": "lecture (💻)",
                     "loc": "A308"
                   },
                   {
@@ -160,7 +160,7 @@
                     "code": "IT2050",
                     "start": "15:30",
                     "end": "17:30",
-                    "type": "practical online",
+                    "type": "practical (💻)",
                     "loc": "N3A Lab"
                   }
                 ],
@@ -170,7 +170,7 @@
                     "code": "IT2030",
                     "start": "9:30",
                     "end": "12:30",
-                    "type": "lecture + tutorial",
+                    "type": "lec + tut",
                     "loc": "A506"
                   },
                   {
@@ -180,14 +180,6 @@
                     "end": "13:30",
                     "type": "tutorial",
                     "loc": "F502 IPU Hall"
-                  },
-                  {
-                    "mod": "DMS",
-                    "code": "IT2050",
-                    "start": "15:30",
-                    "end": "17:30",
-                    "type": "practical online",
-                    "loc": "N3A Lab"
                   }
                 ],
                 "thursday": [
@@ -196,7 +188,7 @@
                     "code": "IT2020",
                     "start": "8:30",
                     "end": "10:30",
-                    "type": "practical online",
+                    "type": "practical (💻)",
                     "loc": "B401 PC Lab"
                   },
                   {
@@ -204,7 +196,7 @@
                     "code": "IT2060",
                     "start": "12:30",
                     "end": "13:30",
-                    "type": "tutorial online",
+                    "type": "tutorial (💻)",
                     "loc": "New 3C"
                   },
                   {
@@ -212,7 +204,7 @@
                     "code": "IT2060",
                     "start": "15:30",
                     "end": "17:30",
-                    "type": "lecture online",
+                    "type": "lecture (💻)",
                     "loc": "B502"
                   }
                 ],
@@ -230,7 +222,7 @@
                     "code": "IT2050",
                     "start": "10:30",
                     "end": "13:30",
-                    "type": "lecture + tutorial",
+                    "type": "lec + tut",
                     "loc": "Auditorium"
                   },
                   {
