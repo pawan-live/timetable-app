@@ -4,6 +4,135 @@
       "Y2": {
         "S1": {
           "SE/IT": {
+            "03_01": {
+              "key": "foc_y2_s1_se_0301",
+              "table": {
+                "monday": [
+                  {
+                    "mod": "OOP",
+                    "code": "IT2030",
+                    "start": "08:30",
+                    "end": "10:30",
+                    "type": "lec + tut",
+                    "loc": "F502 IPU Hall"
+                  },
+                  {
+                    "mod": "SE",
+                    "code": "IT2020",
+                    "start": "11:30",
+                    "end": "12.30",
+                    "type": "tutorial",
+                    "loc": "A308"
+                  },
+                  {
+                    "mod": "DMS",
+                    "code": "IT2040",
+                    "start": "12:30",
+                    "end": "13:30",
+                    "type": "tutorial",
+                    "loc": "13H-C"
+                  },
+                  {
+                    "mod": "DMS",
+                    "code": "IT2040",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "lecture",
+                    "loc": "N3E"
+                  }
+                ],
+                "tuesday": [
+                  {
+                    "mod": "SE",
+                    "code": "IT2020",
+                    "start": "8:30",
+                    "end": "10:30",
+                    "type": "practical (💻)",
+                    "loc": "602 + 603 Lab"
+                  },
+                  {
+                    "mod": "OSSA",
+                    "code": "IT2060",
+                    "start": "11:30",
+                    "end": "13.30",
+                    "type": "practical (💻)",
+                    "loc": "N3A"
+                  },
+                  {
+                    "mod": "CN",
+                    "code": "IT2050",
+                    "start": "14:30",
+                    "end": "16:30",
+                    "type": "practical (💻)",
+                    "loc": "N3A Lab"
+                  }
+                ],
+                "wednesday": [
+                  {
+                    "mod": "DMS",
+                    "code": "IT2040",
+                    "start": "9:30",
+                    "end": "11:30",
+                    "type": "practical",
+                    "loc": "B401 PC Lab"
+                  },
+                  {
+                    "mod": "CN",
+                    "code": "IT2050",
+                    "start": "12:30",
+                    "end": "13:30",
+                    "type": "tutorial",
+                    "loc": "B501"
+                  }
+                ],
+                "thursday": [
+                  {
+                    "mod": "OSSA",
+                    "code": "IT2060",
+                    "start": "08:30",
+                    "end": "10:30",
+                    "type": "lecture (💻)",
+                    "loc": "F502 IPU Hall"
+                  },
+                  {
+                    "mod": "OSSA",
+                    "code": "IT2060",
+                    "start": "11:30",
+                    "end": "12:30",
+                    "type": "tutorial (💻)",
+                    "loc": "13H - B"
+                  },
+                  {
+                    "mod": "SE",
+                    "code": "IT2020",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "lecture (💻)",
+                    "loc": "VA 4"
+                  }
+                ],
+                "friday": [
+                  {
+                    "mod": "CN",
+                    "code": "IT2050",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "lecture",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "OOP",
+                    "code": "IT2030",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "practical",
+                    "loc": "602 +603 Lab"
+                  }
+                ],
+                "saturday": [],
+                "sunday": []
+              }
+            },
             "05_01": {
               "key": "foc_y2_s1_se_0501",
               "table": {
