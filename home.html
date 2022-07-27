@@ -153,6 +153,28 @@
 
         <div class="cards" id="cards-container"></div>
 
+        <div class="controls mb-3">
+          <button type="button" class="text btn-P" onclick="displayPrevious()">
+            Previous day
+          </button>
+          <button
+            type="button"
+            style="color: blue !important"
+            class="text btn-P"
+            onclick="displayToday()"
+          >
+            Today day
+          </button>
+          <button
+            type="button"
+            class="text"
+            id="btn-next"
+            onclick="displayNext()"
+          >
+            Next Day
+          </button>
+        </div>
+
         <div class="controls">
           <p class="text back-btn" id="main-back-btn">
             <i class="icon fa-solid fa-arrow-left"></i>Back
