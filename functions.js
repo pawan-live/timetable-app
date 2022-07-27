@@ -98,7 +98,7 @@ function displayUserData() {
   // display pfp
   document.querySelector(
     ".pfp"
-  ).innerHTML = `<img id="main-pfp" src="https://avatars.dicebear.com/api/big-ears-neutral/${randomSeed}.svg" alt="" />`;
+  ).innerHTML = `<img id="main-pfp" src="https://avatars.dicebear.com/api/bottts/${randomSeed}.svg" alt="" />`;
 
   displayTable();
 }
@@ -116,6 +116,7 @@ function displayTable() {
   var nowDate = nowDateTime.split("T")[0];
 
   if (num) {
+    html_content = `<p id = 'lec-today-text'>Lectures today 👇</p>`;
     for (i = 0; i < num; i++) {
       let cardColorClass;
       let targetStart = new Date(

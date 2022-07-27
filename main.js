@@ -16,9 +16,7 @@ const weekday = [
 ];
 
 const d = new Date();
-// debugger;
 let dayToday = weekday[d.getDay()];
-// let dayToday = "wednesday"; //custom date for testing
 
 window.addEventListener("load", (event) => {
   if (getCookie("username")) {

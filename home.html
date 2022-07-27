@@ -27,31 +27,33 @@
     <link rel="stylesheet" href="login.css" />
     <link rel="stylesheet" href="animations.css" />
 
-    <title>My Timetable</title>
+    <title>Timetable</title>
   </head>
   <body>
     <!-- splash screen -->
     <section class="splash" id="splash-section">
       <div class="wrapper">
-        <p class="text">Loading</p>
+        <p class="text">Loading...</p>
+        <br /><br />
+        <p>
+          Seeing a problem? <br />
+          Please submit an issue
+
+          <a href="https://github.com/pawan-live/timetable-app/issues">here</a>
+        </p>
       </div>
     </section>
 
     <!-- login section -->
     <section class="login" id="login-section">
       <div class="wrapper">
-        <h2 class="logo-title">Timetable</h2>
+        <h2 class="logo-title">Timetable 📚</h2>
         <div class="notif-area" id="login-notif-area"></div>
-        <!-- <img
-          id="login-bitmoji-img"
-          src="./images/login-snap-bitmoji.png"
-          alt="bitmoji-friends"
-        /> -->
+
         <button class="btn login-btn" style="display: none">
           Login with Snapchat<i class="icon fa-brands fa-snapchat"></i>
         </button>
         <div class="separator" style="display: none"></div>
-        <!-- <p class="text">Just logi</p> -->
         <input type="text" placeholder="Enter your name" id="username-field" />
 
         <button class="btn continue-btn" id="continue-btn">
@@ -64,6 +66,7 @@
     <section class="details" id="details-section">
       <div class="wrapper">
         <h2>Please select below</h2>
+        <p>You only need to do this once 😁</p>
         <div class="notif-area" id="details-notif-area"></div>
         <!-- faculty -->
         <div class="group">
@@ -156,6 +159,23 @@
           </p>
           <p class="text" id="logout-btn">
             Logout <i class="icon fa-solid fa-right-from-bracket"></i>
+          </p>
+        </div>
+        <br />
+        <div class="footer-credits">
+          <p id="credits">
+            A community project 💚 by <br />
+            <a href="https://github.com/pawan-live">pawanlive</a> &
+            <a href="https://github.com/nethvish">nethvish</a>
+          </p>
+          <p>
+            <a href="https://github.com/pawan-live/timetable-app/issues"
+              >Submit an issue 💌</a
+            >
+            &nbsp;
+            <a href="https://github.com/pawan-live/timetable-app"
+              >Github repo 💻</a
+            >
           </p>
         </div>
       </div>

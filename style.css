@@ -1,5 +1,6 @@
 * {
   font-family: "Poppins", sans-serif;
+  color: #1f2198;
   margin: 0;
   padding: 0;
 }
@@ -20,6 +21,7 @@ body {
 
 .text {
   font-size: 1.3em;
+  color: #1f2198;
 }
 
 /* splash screen */
@@ -28,6 +30,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background: linear-gradient(to bottom right, #74ebd5, #acb6e5);
 }
 
@@ -52,9 +55,10 @@ body {
 }
 
 .login .logo-title {
-  font-family: "Patua One", cursive;
-  font-size: 3.5em;
-  color: rebeccapurple;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8em;
+  /* font-weight: 900; */
+  letter-spacing: -2px;
   margin-bottom: 12px;
 }
 
@@ -229,6 +233,11 @@ body {
   margin: 0;
 }
 
+#lec-today-text {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
 /* CARDS */
 
 /* main card style */
@@ -243,7 +252,18 @@ body {
 
 /* greeting card top */
 .card.greeting {
-  background: linear-gradient(to right, #00f260, #0575e6);
+  background-image: linear-gradient(
+      to bottom,
+      #a3d6ef,
+      #7fccf3,
+      #1ca7cea2,
+      #3db6d8af,
+      #3db6d8df,
+      #3db6d8df
+    ),
+    url("./images/greeting-backg.png");
+  background-size: cover;
+  color: #f1f12d;
   height: 150px;
   justify-content: space-between;
 }
@@ -267,22 +287,23 @@ body {
 
 .card.greeting .icon {
   font-size: 2.1rem;
-  /* color: white; */
   color: lightcyan;
   margin-right: 8px;
 }
 
 #main-pfp {
-  height: 58px;
+  height: 48px;
   border-radius: 150px;
-  border: 4px solid white;
+  border: 3px solid white;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.318);
+  background-color: rgb(193, 168, 237);
+  padding: 5px;
+  cursor: pointer;
 }
 
 #greeting-time {
   font-size: 3rem;
   font-weight: 500;
-  color: black;
 }
 
 #greeting-time-row {
@@ -291,14 +312,6 @@ body {
 }
 
 /* time cards */
-.timecard {
-  padding-top: 8px;
-  background: linear-gradient(to right, #adccef, #e7f0fd);
-}
-
-.timecard.ongoing {
-  background: linear-gradient(to right, #a8ff78, #78ffd6);
-}
 
 .card .row {
   align-items: center;
@@ -315,6 +328,22 @@ body {
   /* font-style: italic; */
   color: rgb(77, 77, 77);
   font-size: 1.5rem;
+}
+
+.timecard {
+  padding-top: 8px;
+  /* background: linear-gradient(to right, #c4deff, #cce1ff); */
+  background-color: #96def8;
+}
+
+.timecard.ongoing {
+  background: #787ff6;
+  color: white;
+  background: linear-gradient(to bottom right, #afb3ff, #9297f6);
+}
+
+.timecard.ongoing > p {
+  color: white;
 }
 
 .card .type {
@@ -347,6 +376,26 @@ body {
 
 #no-lecs-img {
   width: 100%;
+}
+
+/* footer */
+
+#credits {
+  margin-bottom: 10px;
+}
+
+#credits:hover {
+  font-weight: 600;
+}
+
+.footer-credits a {
+  border-radius: 5px;
+}
+
+.footer-credits a:hover {
+  background-color: rgb(110, 242, 180);
+  padding: 0 5px;
+  transition: 0.3s ease-in-out;
 }
 
 /* TEST RULES */
