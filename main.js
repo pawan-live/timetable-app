@@ -17,6 +17,7 @@ const weekday = [
 
 const d = new Date();
 let currentDay = d.getDay();
+let dateToday = d.getDate();
 let dayToday = weekday[currentDay];
 
 window.addEventListener("load", (event) => {
