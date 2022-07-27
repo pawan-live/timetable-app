@@ -505,6 +505,127 @@
                 "sunday": []
               }
             },
+            "06_01": {
+              "key": "foc_y2_s1_se_0601",
+              "table": {
+                "monday": [
+                  {
+                    "mod": "DMS",
+                    "code": "IT2040",
+                    "start": "09:30",
+                    "end": "10:30",
+                    "type": "lecture",
+                    "loc": "N3D"
+                  },
+                  {
+                    "mod": "DMS",
+                    "code": "IT2040",
+                    "start": "10:30",
+                    "end": "12:30",
+                    "type": "practical",
+                    "loc": "601 - Pclab (New)"
+                  },
+                  {
+                    "mod": "DMS",
+                    "code": "IT2030",
+                    "start": "15:30",
+                    "end": "16:30",
+                    "type": "practical",
+                    "loc": "601 - Pclab (New)"
+                  }
+                ],
+                "tuesday": [
+                  {
+                    "mod": "OSSA",
+                    "code": "IT2060",
+                    "start": "09:30",
+                    "end": "10:30",
+                    "type": "tutorial (💻)",
+                    "loc": "B501 PC Lab"
+                  },
+                  {
+                    "mod": "SE",
+                    "code": "IT2020",
+                    "start": "11:30",
+                    "end": "12.30",
+                    "type": "practical (💻)",
+                    "loc": "13L - C"
+                  },
+                  {
+                    "mod": "OSSA",
+                    "code": "IT2060",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "Lecture (💻)",
+                    "loc": "N3D"
+                  }
+                ],
+                "wednesday": [
+                  {
+                    "mod": "OOp",
+                    "code": "IT2030",
+                    "start": "10:30",
+                    "end": "12:30",
+                    "type": "Lecture",
+                    "loc": "N3E"
+                  },
+                  {
+                    "mod": "SE",
+                    "code": "IT2020",
+                    "start": "16:30",
+                    "end": "15:30",
+                    "type": "tutorial",
+                    "loc": "A308"
+                  }
+                ],
+                "thursday": [
+                  {
+                    "mod": "CN",
+                    "code": "IT2050",
+                    "start": "08:30",
+                    "end": "09:30",
+                    "type": "practical (💻)",
+                    "loc": "VA 14"
+                  },
+                  {
+                    "mod": "OSSA",
+                    "code": "IT2060",
+                    "start": "11:30",
+                    "end": "12:30",
+                    "type": "practical (💻)",
+                    "loc": "VA 1"
+                  },
+                  {
+                    "mod": "SE",
+                    "code": "IT2020",
+                    "start": "15:30",
+                    "end": "16:30",
+                    "type": "lecture (💻)",
+                    "loc": "F502 IPU Hall"
+                  }
+                ],
+                "friday": [
+                  {
+                    "mod": "CN",
+                    "code": "IT2050",
+                    "start": "11:30",
+                    "end": "12:30",
+                    "type": "lec + tut",
+                    "loc": "Auditorium"
+                  },
+                  {
+                    "mod": "DMS",
+                    "code": "IT2040",
+                    "start": "16:30",
+                    "end": "17:30",
+                    "type": "tutorial",
+                    "loc": "13H-B"
+                  }
+                ],
+                "saturday": [],
+                "sunday": []
+              }
+            },
             "07_01": {
               "key": "foc_y2_s1_se_0701",
               "table": {
