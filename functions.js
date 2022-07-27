@@ -124,7 +124,6 @@ function displayTable() {
         nowDate + "T" + table[dayToday][i].start + ":00"
       );
       var targetEnd = new Date(nowDate + "T" + table[dayToday][i].end + ":00");
-      console.log(targetStart, targetEnd);
 
       if (targetStart <= now && targetEnd > now) {
         cardColorClass = "ongoing";
