@@ -252,6 +252,7 @@ body {
 
 /* greeting card top */
 .card.greeting {
+  /* to add gradient overlay over the background image of the greeting card */
   background-image: linear-gradient(
       to bottom,
       #a3d6ef,
@@ -336,7 +337,7 @@ body {
   background-color: #96def8;
 }
 
-.timecard.ongoing {
+.ongoing {
   background: #787ff6;
   color: white;
   background: linear-gradient(to bottom right, #afb3ff, #9297f6);

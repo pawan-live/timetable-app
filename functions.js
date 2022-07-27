@@ -111,6 +111,7 @@ function displayTable() {
   let html_content = "";
 
   // get now date
+
   var now = new Date();
   var nowDateTime = now.toISOString();
   var nowDate = nowDateTime.split("T")[0];
@@ -118,14 +119,13 @@ function displayTable() {
   if (num) {
     html_content = `<p id = 'lec-today-text'>Lectures today 👇</p>`;
     for (i = 0; i < num; i++) {
-      let cardColorClass;
-      let targetStart = new Date(
-        nowDate + " " + table[dayToday][i].start + ":00"
+      let cardColorClass = "";
+      var targetStart = new Date(
+        nowDate + "T" + table[dayToday][i].start + ":00"
       );
-      let targetEnd = new Date(nowDate + " " + table[dayToday][i].end + ":00");
-      console.log(targetStart, targetEnd);
+      var targetEnd = new Date(nowDate + "T" + table[dayToday][i].end + ":00");
 
-      if (targetStart < now && targetEnd > now) {
+      if (targetStart <= now && targetEnd > now) {
         cardColorClass = "ongoing";
       } else if (targetStart > now && targetEnd > now) {
         // display default color
