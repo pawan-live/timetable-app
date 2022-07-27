@@ -81,7 +81,6 @@ function readDetails() {
 
 // function to write metadata
 function displayUserData() {
-  // username = getCookie("username");
   // get time
   var myDate = new Date();
   var hrs = myDate.getHours();
@@ -117,7 +116,7 @@ function displayTable() {
   var nowDate = nowDateTime.split("T")[0];
 
   if (num) {
-    html_content = `<p id = 'lec-today-text'>Lectures today 👇</p>`;
+    document.getElementById("date-display").innerHTML = `${dayToday}`;
     for (i = 0; i < num; i++) {
       let cardColorClass = "";
       var targetStart = new Date(
@@ -158,6 +157,7 @@ function displayTable() {
         "</div>";
     }
   } else {
+    document.getElementById("date-display").innerHTML = `${dayToday}`;
     // code here
     html_content += `
       <div class="no-lecs-msg">
