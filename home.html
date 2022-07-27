@@ -27,31 +27,33 @@
     <link rel="stylesheet" href="login.css" />
     <link rel="stylesheet" href="animations.css" />
 
-    <title>My Timetable</title>
+    <title>Timetable</title>
   </head>
   <body>
     <!-- splash screen -->
     <section class="splash" id="splash-section">
       <div class="wrapper">
-        <p class="text">Loading</p>
+        <p class="text">Loading...</p>
+        <br /><br />
+        <p>
+          Seeing a problem? <br />
+          Please submit an issue
+
+          <a href="https://github.com/pawan-live/timetable-app/issues">here</a>
+        </p>
       </div>
     </section>
 
     <!-- login section -->
     <section class="login" id="login-section">
       <div class="wrapper">
-        <h2 class="logo-title">Timetable</h2>
+        <h2 class="logo-title">Timetable 📚</h2>
         <div class="notif-area" id="login-notif-area"></div>
-        <!-- <img
-          id="login-bitmoji-img"
-          src="./images/login-snap-bitmoji.png"
-          alt="bitmoji-friends"
-        /> -->
+
         <button class="btn login-btn" style="display: none">
           Login with Snapchat<i class="icon fa-brands fa-snapchat"></i>
         </button>
         <div class="separator" style="display: none"></div>
-        <!-- <p class="text">Just logi</p> -->
         <input type="text" placeholder="Enter your name" id="username-field" />
 
         <button class="btn continue-btn" id="continue-btn">
@@ -64,35 +66,56 @@
     <section class="details" id="details-section">
       <div class="wrapper">
         <h2>Please select below</h2>
+        <p>You only need to do this once 😁</p>
         <div class="notif-area" id="details-notif-area"></div>
         <!-- faculty -->
         <div class="group">
           <label for="select-fac">Faculty: </label>
           <select id="select-fac">
             <option value="0">Select</option>
-            <option value="1">Computing</option>
-            <option value="2">Business</option>
+            <option value="Computing">Computing</option>
+            <option value="Business">Business</option>
           </select>
         </div>
         <!-- year of study -->
         <div class="group">
           <label for="select-year">Year of study: </label>
-          <select id="select-year">
+          <select id="select-year" disabled>
             <option value="0">Select</option>
-            <option value="1">Year 2</option>
-            <option value="2">Year 3</option>
           </select>
         </div>
-        <!-- sub group -->
+
+        <!-- semester -->
         <div class="group">
-          <label for="select-grp">Subgroup: </label>
-          <select id="select-grp">
+          <label for="select-sem"
+            ><span id="select-sem-label">Semester</span>:
+          </label>
+          <select id="select-1" disabled>
             <option value="0">Select</option>
-            <option value="4.1">4.1</option>
-            <option value="4.2">4.2</option>
-            <option value="7.1">7.1</option>
           </select>
         </div>
+
+        <!-- specialization -->
+        <div class="group">
+          <label for="select-sem"
+            ><span id="select-spec-label">Specialization</span>:
+          </label>
+          <select id="select-2" disabled>
+            <option value="0">Select</option>
+          </select>
+        </div>
+
+        <!-- subgroup -->
+        <div class="group">
+          <label for="select-sem"
+            ><span id="select-sub-label">Subgroup</span>:
+          </label>
+          <select id="select-3" disabled>
+            <option value="0">Select</option>
+          </select>
+        </div>
+
+        <!-- button -->
         <button class="btn continue-btn" id="details-continue-btn">
           Continue<i class="icon fa-solid fa-arrow-right"></i>
         </button>
@@ -110,28 +133,25 @@
           <!-- greeting row div -->
           <div class="row">
             <div class="greeting-text">
-              <p class="text">Hi <span id="greeting-username">John</span>,</p>
-              <p class="text"><span id="greeting-wish">Good morning</span>!</p>
+              <p class="text">Hi <span id="greeting-username"></span>,</p>
+              <p class="text"><span id="greeting-wish"></span>!</p>
             </div>
-            <div class="pfp">
-              <img
-                id="main-pfp"
-                src="https://api.lorem.space/image/face?w=150&h=150"
-                alt=""
-              />
-            </div>
+            <div class="pfp"></div>
           </div>
           <!-- time and weather div -->
           <div class="row" id="greeting-time-row">
             <p class="text">
-              <span id="greeting-time">12:00</span
-              ><span id="greeting-time-suffix">AM</span>
+              <span id="greeting-time">⌚</span>
+
+              <!-- <span id="greeting-time-suffix">AM</span> -->
             </p>
             <div class="weather-icon" id="weather-icon">
-              <i class="icon fa-solid fa-cloud-sun-rain"></i>
+              <!-- <i class="icon fa-solid fa-cloud-sun-rain"></i> -->
             </div>
           </div>
         </div>
+
+        <div class="cards" id="cards-container"></div>
 
         <div class="controls">
           <p class="text back-btn" id="main-back-btn">
@@ -141,39 +161,28 @@
             Logout <i class="icon fa-solid fa-right-from-bracket"></i>
           </p>
         </div>
+        <br />
+        <div class="footer-credits">
+          <p id="credits">
+            A community project 💚 by <br />
+            <a href="https://github.com/pawan-live">pawanlive</a> &
+            <a href="https://github.com/nethvish">nethvish</a>
+          </p>
+          <p>
+            <a href="https://github.com/pawan-live/timetable-app/issues"
+              >Submit an issue 💌</a
+            >
+            &nbsp;
+            <a href="https://github.com/pawan-live/timetable-app"
+              >Github repo 💻</a
+            >
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- firebase integration -->
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyB6O87eW4lOHE92aiDYncpuY-s1RMNYZVg",
-        authDomain: "timetable-app-881bd.firebaseapp.com",
-        databaseURL:
-          "https://timetable-app-881bd-default-rtdb.asia-southeast1.firebasedatabase.app",
-        projectId: "timetable-app-881bd",
-        storageBucket: "timetable-app-881bd.appspot.com",
-        messagingSenderId: "579880184460",
-        appId: "1:579880184460:web:099e017479ab2518dee9a9",
-        measurementId: "G-B85EKJTZJ7",
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
-
     <!-- JS files -->
-    <script src="functions.js"></script>
+    <script src="./functions.js"></script>
     <script src="main.js"></script>
-    <script src="login.js"></script>
   </body>
 </html>

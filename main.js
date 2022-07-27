@@ -1,12 +1,46 @@
 // Variables //
 var username;
+var keys = [];
 const options = []; //array to hold options
+
+var faculty, year, semester, spec, sub, randomSeed; // read values
+
+const weekday = [
+  "sunday",
+  "monday",
+  "tuesday",
+  "wednesday",
+  "thursday",
+  "friday",
+  "saturday",
+];
+
+const d = new Date();
+let dayToday = weekday[d.getDay()];
 
 window.addEventListener("load", (event) => {
   if (getCookie("username")) {
-    transition("splash-section", "main-section");
+    username = getCookie("username");
+    faculty = getCookie("faculty");
+    year = getCookie("year");
+    semester = getCookie("semester");
+    spec = getCookie("spec");
+    sub = getCookie("sub");
+    randomSeed = getCookie("seed"); // random seed
+
+    // read json file and get data to keys[]
+    fetch("./data.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => (keys = data))
+      .then(function () {
+        displayUserData();
+        transition("splash-section", "main-section");
+      });
   } else {
     transition("splash-section", "login-section");
+    document.getElementById("username-field").focus();
   }
 });
 
@@ -16,6 +50,7 @@ let detailsBtn = document.getElementById("details-continue-btn");
 let detailsBackBtn = document.getElementById("details-back-btn");
 let mainBackBtn = document.getElementById("main-back-btn");
 let logOutBtn = document.getElementById("logout-btn");
+let username_field = document.getElementById("username-field");
 
 // SEQUENCE //
 
@@ -35,155 +70,155 @@ mainBackBtn.addEventListener("click", function () {
 // logout button
 logOutBtn.addEventListener("click", function () {
   logOut();
-  transition("main-section", "login-section");
+  location.reload();
+  // transition("main-section", "login-section");
 });
 
-//////////// FUNCTIONS ////////////
+// details section >> fetch optins from databse and display within html
+let select_fac = document.getElementById("select-fac");
+let select_year = document.getElementById("select-year");
+let select_1 = document.getElementById("select-1");
+let select_2 = document.getElementById("select-2");
+let select_3 = document.getElementById("select-3");
 
-// read username on click continueBtn
-function readUsername() {
-  let loginSection = document.getElementById("login-section");
+/**
+ * SELECTION DROPDOWN MENUS
+ *
+ * This works by fetching data from the JSON object in data.json file
+ * the data is fetched in the order >>
+ * faculty > year > semester > specialization > subgroup
+ * and updates accordingly on change event
+ */
 
-  // read name from field
-  let readVal = document.getElementById("username-field").value;
-  if (readVal == "") {
-    loginError("Enter your name");
-    // shake on error
-    shake(loginSection);
+// faculty selection
+select_fac.addEventListener("change", function () {
+  let selected = select_fac.value;
+  faculty = selected; // assign to global
+
+  if (selected == "Select") {
+    select_year.value = 0;
+    select_year.disabled = true;
+    select_1.disabled = true;
+    select_1.value = "0";
+    select_2.disabled = true;
+    select_2.value = "0";
+    select_3.disabled = true;
+    select_3.value = "0";
   } else {
-    username = readVal;
+    let resultArr = Object.keys(keys.fac[faculty]); // data from JSON
+    let html_content = '<option value="0">Select</option>';
+    resultArr.forEach((element) => {
+      html_content +=
+        '<option value="' + element + '">' + element + "</option>";
+    });
 
-    // transition to next page
-    transition("login-section", "details-section");
+    select_year.innerHTML = html_content;
+    select_year.disabled = false;
   }
-}
+});
 
-// read details and (save them to cookies) -> at last
-function readDetails() {
-  let detailsSection = document.getElementById("details-section");
+// year selection
+select_year.addEventListener("change", function () {
+  // let faculty = select_fac.value;
+  let selected = select_year.value;
+  year = selected;
 
-  options[0] = document.getElementById("select-fac").value;
-  options[1] = document.getElementById("select-year").value;
-  options[2] = document.getElementById("select-grp").value;
-
-  if (checkVals() == 1) {
-    shake(detailsSection);
-    detailsError("Select options for all");
+  // if selected 'select'
+  if (selected == "0") {
+    select_1.disabled = true;
+    select_1.value = "0";
+    select_2.disabled = true;
+    select_2.value = "0";
+    select_3.disabled = true;
+    select_3.value = "0";
   } else {
-    // save details to cookies
-    setDetails(options);
-
-    // transition to next page
-    transition("details-section", "main-section");
-  }
-
-  // to check if options are 0
-  function checkVals() {
-    for (i = 0; i < options.length; i++) {
-      if (options[i] == 0) {
-        return 1;
-      } else {
-        continue;
-      }
+    let resultArr = Object.keys(keys.fac[faculty][year]);
+    if (resultArr == "") {
+      select_1.disabled = true;
+      select_1.value = "0";
+      select_2.disabled = true;
+      select_2.value = "0";
+      select_3.disabled = true;
+      select_3.value = "0";
+    } else {
+      let html_content = '<option value="0">Select</option>';
+      resultArr.forEach((element) => {
+        html_content +=
+          '<option value="' + element + '">' + element + "</option>";
+      });
+      select_1.innerHTML = html_content;
+      select_1.disabled = false;
     }
   }
-}
+});
 
-// transition
-// page1 = current page id
-// page2 = next page id
-function transition(page1, page2) {
-  let object1 = document.getElementById(page1);
-  let object2 = document.getElementById(page2);
-  object2.style.display = "flex";
-  object1.style.display = "none";
-  fadeIn(object2);
-}
+// semester selection
+select_1.addEventListener("change", function () {
+  // let faculty = select_fac.value;
+  let selected = select_1.value;
+  semester = selected; // assign to global
 
-function logOut() {
-  delCookie("username");
-  delCookie("faculty");
-  delCookie("year");
-  delCookie("group");
-}
-
-// set details to cookies
-function setDetails(options) {
-  setCookie("username", username, 90);
-  setCookie("faculty", options[0], 90);
-  setCookie("year", options[1], 90);
-  setCookie("group", options[2], 90);
-}
-
-// set a cookie
-function setCookie(cname, cvalue, exdays) {
-  const d = new Date();
-  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-  let expires = "expires=" + d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-// delete cookie
-function delCookie(cname) {
-  document.cookie = cname + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-}
-
-// get a cookie by name
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(";");
-  for (let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == " ") {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
+  // if selected 'select'
+  if (selected == "0") {
+    select_2.disabled = true;
+    select_2.value = "0";
+    select_3.disabled = true;
+    select_3.value = "0";
+  } else {
+    let resultArr = Object.keys(keys.fac[faculty][year][semester]);
+    if (resultArr == "") {
+      select_2.disabled = true;
+      select_2.value = "0";
+      select_3.disabled = true;
+      select_3.value = "0";
+    } else {
+      let html_content = '<option value="0">Select</option>';
+      resultArr.forEach((element) => {
+        html_content +=
+          '<option value="' + element + '">' + element + "</option>";
+      });
+      select_2.innerHTML = html_content;
+      select_2.disabled = false;
     }
   }
-  return "";
-}
+});
 
-// display error msg on notif area
-// in login section
-function loginError(message) {
-  let loginNotifArea = document.getElementById("login-notif-area");
-  loginNotifArea.innerHTML = message;
-}
-// in login section
-function detailsError(message) {
-  let detailsNotifArea = document.getElementById("details-notif-area");
-  detailsNotifArea.innerHTML = message;
-}
+// specialization selection
+select_2.addEventListener("change", function () {
+  // let faculty = select_fac.value;
+  let selected = select_2.value;
+  spec = selected; // assign to global
 
-// go back to login section
-function backToLogin() {
-  let loginSection = document.getElementById("login-section");
-  document.getElementById("login-section").style.display = "flex";
-  document.getElementById("details-section").style.display = "none";
-  fadeIn(loginSection);
-}
-
-// ANIMATIONS JS
-
-// shake object on error
-// pass the object to shake as argument
-function shake(object) {
-  object.classList.add("shake");
-  setTimeout(function () {
-    if (object.classList.contains("shake")) {
-      object.classList.remove("shake");
+  // if selected 'select'
+  if (selected == "0") {
+    select_3.disabled = true;
+    select_3.value = "0";
+  } else {
+    let resultArr = Object.keys(keys.fac[faculty][year][semester][spec]);
+    if (resultArr == "") {
+      select_3.disabled = true;
+      select_3.value = "0";
+    } else {
+      let html_content = '<option value="0">Select</option>';
+      resultArr.forEach((element) => {
+        html_content +=
+          '<option value="' + element + '">' + element + "</option>";
+      });
+      select_3.innerHTML = html_content;
+      select_3.disabled = false;
     }
-  }, 400);
-}
+  }
+});
 
-// fade in
-function fadeIn(object) {
-  object.classList.add("fade-in");
-  setTimeout(function () {
-    if (object.classList.contains("fade-in")) {
-      object.classList.remove("fade-in");
-    }
-  }, 400);
-}
+// group selection
+select_3.addEventListener("change", function () {
+  // let faculty = select_fac.value;
+  let selected = select_3.value;
+
+  if (selected != "0") {
+    sub = selected; // assign to global
+  }
+});
+
+// run the displayTime() function in 1 sec intervals
+let intervalHandle = setInterval(displayTime, 1000);
