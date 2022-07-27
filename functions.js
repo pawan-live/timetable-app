@@ -117,7 +117,7 @@ function displayTable() {
   var nowDate = nowDateTime.split("T")[0];
 
   if (num) {
-    html_content = `<p id = 'lec-today-text'>Lectures ${dayToday} 👇</p>`;
+    html_content = `<p id = 'lec-today-text'>Lectures today 👇</p>`;
     for (i = 0; i < num; i++) {
       let cardColorClass = "";
       var targetStart = new Date(

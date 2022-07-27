@@ -222,18 +222,3 @@ select_3.addEventListener("change", function () {
 
 // run the displayTime() function in 1 sec intervals
 let intervalHandle = setInterval(displayTime, 1000);
-
-function displayPrevious() {
-  dayToday = weekday[d.getDay() - 1];
-  displayTable();
-}
-
-function displayToday() {
-  dayToday = weekday[d.getDay()];
-  displayTable();
-}
-
-function displayNext() {
-  dayToday = weekday[d.getDay() + 1];
-  displayTable();
-}
