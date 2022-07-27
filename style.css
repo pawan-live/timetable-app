@@ -269,6 +269,34 @@ body {
   justify-content: space-between;
 }
 
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 25px;
+}
+
+.navigation i {
+  font-size: 1.5rem;
+  padding: 8px 10px;
+  border-radius: 50px;
+  box-shadow: 2px 5px 18px rgba(22, 102, 176, 0.413);
+  cursor: pointer;
+}
+
+.navigation i:hover {
+  background-color: #1f2198;
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+
+#date-display {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
 .card .row {
   display: flex;
   flex-direction: row;
@@ -333,7 +361,7 @@ body {
 
 .timecard {
   padding-top: 8px;
-  /* background: linear-gradient(to right, #c4deff, #cce1ff); */
+
   background-color: #96def8;
 }
 
@@ -348,13 +376,19 @@ body {
 }
 
 .card .type {
-  max-width: 30%;
-  /* font-size: 70%; */
+  margin-top: -5px;
+  max-width: 40%;
   text-transform: uppercase;
   background-color: white;
   border-radius: 150px;
   padding: 0 12px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 400px) {
+  .card .type {
+    font-size: 0.8rem;
+  }
 }
 
 .card .time {
