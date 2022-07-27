@@ -246,6 +246,7 @@
                 "sunday": []
               },
               "03_01": {
+                "_comment": "This is the 03.01 Time table",
                 "key": "foc_y2_s1_se_0301",
                 "table": {
                   "monday": [
