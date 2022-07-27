@@ -16,7 +16,8 @@ const weekday = [
 ];
 
 const d = new Date();
-let dayToday = weekday[d.getDay()];
+let currentDay = d.getDay();
+let dayToday = weekday[currentDay];
 
 window.addEventListener("load", (event) => {
   if (getCookie("username")) {
@@ -51,11 +52,32 @@ let detailsBackBtn = document.getElementById("details-back-btn");
 let mainBackBtn = document.getElementById("main-back-btn");
 let logOutBtn = document.getElementById("logout-btn");
 let username_field = document.getElementById("username-field");
+let prev_btn = document.getElementById("left-nav-icon");
+let next_btn = document.getElementById("right-nav-icon");
 
 // SEQUENCE //
 
 continueBtn.addEventListener("click", readUsername);
 detailsBtn.addEventListener("click", readDetails);
+
+// navigate through the week
+prev_btn.addEventListener("click", function () {
+  currentDay = currentDay - 1;
+  if (currentDay < 0) {
+    currentDay = 6;
+  }
+  dayToday = weekday[currentDay];
+  displayTable();
+});
+
+next_btn.addEventListener("click", function () {
+  currentDay = currentDay + 1;
+  if (currentDay > 6) {
+    currentDay = 0;
+  }
+  dayToday = weekday[currentDay];
+  displayTable();
+});
 
 // back buttons
 //back btn in details section
