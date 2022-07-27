@@ -1,3 +1,5 @@
+Build status: [![Netlify Status](https://api.netlify.com/api/v1/badges/6c7742b9-5d29-4cf4-bf37-85c3a9ecaee4/deploy-status)](https://app.netlify.com/sites/timetableapp/deploys)
+
 # Timetable App
 
 This web app is made for SLIIT students of all years and all specializations
