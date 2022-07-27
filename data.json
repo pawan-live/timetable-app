@@ -375,6 +375,137 @@
                 "sunday": []
               }
             }
+          },
+          "ISE": {
+            "03_01": {
+              "key": "foc_y2_s1_ise_0301",
+              "table": {
+                "monday": [
+                  {
+                    "mod": "OOP",
+                    "code": "IE2021",
+                    "start": "08:30",
+                    "end": "10:30",
+                    "type": "lecture",
+                    "loc": "Auditorium"
+                  },
+                  {
+                    "mod": "PAS",
+                    "code": "IT2110",
+                    "start": "14:30",
+                    "end": "16:30",
+                    "type": "Practical",
+                    "loc": "13L - C"
+                  }
+                ],
+                "tuesday": [
+                  {
+                    "mod": "PS",
+                    "code": "IT2090",
+                    "start": "8:30",
+                    "end": "10:30",
+                    "type": "Lecture (💻)",
+                    "loc": "Auditorium"
+                  },
+                  {
+                    "mod": "OOAD",
+                    "code": "IE2081",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Practical (💻)",
+                    "loc": "602+603 lab"
+                  },
+                  {
+                    "mod": "PAS",
+                    "code": "IT2110",
+                    "start": "14:30",
+                    "end": "15:30",
+                    "type": "Tutorial (💻)",
+                    "loc": "VA 9"
+                  },
+                  {
+                    "mod": "ESD",
+                    "code": "IT2100",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "Lecture (💻)",
+                    "loc": "Auditorium"
+                  }
+                ],
+                "wednesday": [
+                  {
+                    "mod": "OOP",
+                    "code": "IE2021",
+                    "start": "9:30",
+                    "end": "10:30",
+                    "type": "Tutorial",
+                    "loc": "A509"
+                  },
+                  {
+                    "mod": "PAS",
+                    "code": "IT2110",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Lecture",
+                    "loc": "N3D"
+                  },
+                  {
+                    "mod": "OOP",
+                    "code": "IE2021",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "practical",
+                    "loc": "13L - A & B"
+                  }
+                ],
+                "thursday": [
+                  {
+                    "mod": "OSSA",
+                    "code": "IE2061",
+                    "start": "8:30",
+                    "end": "10:30",
+                    "type": "Lecture (💻)",
+                    "loc": "VA 15"
+                  },
+                  {
+                    "mod": "OSSA",
+                    "code": "IE2061",
+                    "start": "10:30",
+                    "end": "12:30",
+                    "type": "practical (💻)",
+                    "loc": "410 A & B lab"
+                  },
+                  {
+                    "mod": "OOAD",
+                    "code": "IE2081",
+                    "start": "12:30",
+                    "end": "13:30",
+                    "type": "tutorial (💻)",
+                    "loc": "VA 4"
+                  },
+                  {
+                    "mod": "OOAD",
+                    "code": "IE2081",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "lecture (💻)",
+                    "loc": "VA 11"
+                  }
+                ],
+                "friday": [
+                  {
+                    "mod": "OSSA",
+                    "code": "IE2061",
+                    "start": "8:30",
+                    "end": "9:30",
+                    "type": "tutorial",
+                    "loc": "N3E"
+                  }
+                ],
+                "saturday": [],
+                "sunday": []
+              }
+            }
           }
         }
       }
