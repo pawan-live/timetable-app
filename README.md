@@ -8,7 +8,7 @@ The timetables of selected groups/batches have been added by volunteers
 ## Screenshot of the final webapp
 
 ``` 
-URL - (https://timetableapp.netlify.app/) 
+URL - [Timetableapp](https://timetableapp.netlify.app/) 
 ```
 (https://timetableapp.netlify.app/)
 
