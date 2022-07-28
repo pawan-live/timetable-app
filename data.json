@@ -1254,6 +1254,127 @@
                 "sunday": []
               }
             },
+            "08_01": {
+              "key": "foc_y2_s1_se_0801",
+              "table": {
+                "monday": [
+                  {
+                    "mod": "DMS",
+                    "code": "IT2040",
+                    "start": "08:30",
+                    "end": "09:30",
+                    "type": "Tutorial",
+                    "loc": "A308"
+                  },
+                  {
+                    "mod": "OOP",
+                    "code": "IT2030",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Practical",
+                    "loc": "410A + 410B Lab"
+                  },
+                  {
+                    "mod": "DMS",
+                    "code": "IT2040",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "Practical",
+                    "loc": "602 + 603 Lab"
+                  }
+                ],
+                "tuesday": [
+                  {
+                    "mod": "OSSA",
+                    "code": "IT2060",
+                    "start": "08:30",
+                    "end": "10:30",
+                    "type": "Lecture",
+                    "loc": "13H-B"
+                  },
+                  {
+                    "mod": "SE",
+                    "code": "IT2020",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Lecture",
+                    "loc": "B502"
+                  },
+                  {
+                    "mod": "OSSA",
+                    "code": "IT2060",
+                    "start": "16:30",
+                    "end": "17:30",
+                    "type": "Tutorial",
+                    "loc": "VA 5"
+                  }
+                ],
+                "wednesday": [
+                  {
+                    "mod": "OOP",
+                    "code": "IT2030",
+                    "start": "10:30",
+                    "end": "13:30",
+                    "type": "Lecture + Tutorial",
+                    "loc": "13H-A"
+                  },
+                  {
+                    "mod": "DMS",
+                    "code": "IT2040",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "Lecture",
+                    "loc": "New 3C"
+                  }
+                ],
+                "thursday": [
+                  {
+                    "mod": "OSSA",
+                    "code": "IT2060",
+                    "start": "08:30",
+                    "end": "10:30",
+                    "type": "Practical",
+                    "loc": "A406-Pclab"
+                  },
+                  {
+                    "mod": "SE",
+                    "code": "IT2020",
+                    "start": "10:30",
+                    "end": "12:30",
+                    "type": "Practical",
+                    "loc": "601-Pclab (New)"
+                  },
+                  {
+                    "mod": "CN",
+                    "code": "IT2050",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "Practical",
+                    "loc": "601-Pclab (New)"
+                  }
+                ],
+                "friday": [
+                  {
+                    "mod": "SE",
+                    "code": "IT2020",
+                    "start": "12:30",
+                    "end": "13:30",
+                    "type": "Tutorial",
+                    "loc": "13H-B"
+                  },
+                  {
+                    "mod": "CN",
+                    "code": "IT2050",
+                    "start": "14:30",
+                    "end": "17:30",
+                    "type": "Lecture + Tutorial",
+                    "loc": "B502"
+                  }
+                ],
+                "saturday": [],
+                "sunday": []
+              }
+            },
             "09_01": {
               "key": "foc_y2_s1_se_0901",
               "table": {
@@ -1749,7 +1870,270 @@
                 "saturday": [],
                 "sunday": []
               }
+            },
+            "WE_01_01": {
+              "key": "foc_y2_s1_se_we_0101",
+              "table": {
+                "monday": [
+                  {
+                    "mod": "CN",
+                    "code": "IT2050",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "type": "Practical",
+                    "loc": "B403 PC LAB"
+                  }
+                ],
+                "tuesday": [
+                  {
+                    "mod": "PS",
+                    "code": "IT2090",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "type": "Lecture (💻)",
+                    "loc": "Virtual Auditorium 1"
+                  }
+                ],
+                "wednesday": [
+                  {
+                    "mod": "DMS",
+                    "code": "IT2040",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "type": "Practical",
+                    "loc": "B403 PC LAB"
+                  }
+                ],
+                "thursday": [
+                  {
+                    "mod": "ESD",
+                    "code": "IT2100",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "type": "Lecture (💻)",
+                    "loc": "Virtual Auditorium 3"
+                  }               
+                ],
+                "friday": [
+                  {
+                    "mod": "OSSA",
+                    "code": "IT2060",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "type": "Practical",
+                    "loc": "B401 PC LAB"
+                  }
+                ],
+                "saturday": [
+                  {
+                    "mod": "DMS",
+                    "code": "IT2040",
+                    "start": "8:30",
+                    "end": "11:30",
+                    "type": "lec + tut",
+                    "loc": "N3D"
+                  },
+                  {
+                    "mod": "SE",
+                    "code": "IT2020",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Lecture",
+                    "loc": "A308"
+                  },
+                  {
+                    "mod": "SE",
+                    "code": "IT2020",
+                    "start": "14:00",
+                    "end": "15:00",
+                    "type": "Tutorial",
+                    "loc": "N3E"
+                  },
+                  {
+                    "mod": "OOP",
+                    "code": "IT2030",
+                    "start": "15:00",
+                    "end": "17:00",
+                    "type": "Practical",
+                    "loc": "N3B Lab"
+                  },
+                  {
+                    "mod": "CN",
+                    "code": "IT2050",
+                    "start": "17:00",
+                    "end": "19:00",
+                    "type": "lec + tut",
+                    "loc": "F501 IPU Hall"
+                  }
+                ],
+                "sunday": [
+                  {
+                    "mod": "SE",
+                    "code": "IT2020",
+                    "start": "8:30",
+                    "end": "10:30",
+                    "type": "Practical",
+                    "loc": "A405 LAB"
+                  },
+                  {
+                    "mod": "OOP",
+                    "code": "IT2030",
+                    "start": "10:30",
+                    "end": "13:30",
+                    "type": "lec + tut",
+                    "loc": "13H - A"
+                  },
+                  {
+                    "mod": "OSSA",
+                    "code": "IT2060",
+                    "start": "14:00",
+                    "end": "16:00",
+                    "type": "Lecture",
+                    "loc": "13H - B"
+                  },
+                  {
+                    "mod": "OSSA",
+                    "code": "IT2060",
+                    "start": "15:00",
+                    "end": "17:00",
+                    "type": "Tutorial",
+                    "loc": "New 3C"
+                  }
+                ]
+              }
+            },
+            "WE_01_02": {
+              "key": "foc_y2_s1_se_we_0102",
+              "table": {
+                "monday": [
+                  {
+                    "mod": "CN",
+                    "code": "IT2050",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "type": "Practical",
+                    "loc": "B403 PC LAB"
+                  }
+                ],
+                "tuesday": [
+                  {
+                    "mod": "PS",
+                    "code": "IT2090",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "type": "Lecture (💻)",
+                    "loc": "Virtual Auditorium 1"
+                  }
+                ],
+                "wednesday": [
+                  {
+                    "mod": "DMS",
+                    "code": "IT2040",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "type": "Practical BYOD",
+                    "loc": "New W2 - 11 Lab 1"
+                  }
+                ],
+                "thursday": [
+                  {
+                    "mod": "ESD",
+                    "code": "IT2100",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "type": "Lecture (💻)",
+                    "loc": "Virtual Auditorium 3"
+                  }               
+                ],
+                "friday": [
+                  {
+                    "mod": "OSSA",
+                    "code": "IT2060",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "type": "Practical",
+                    "loc": "B401 PC LAB"
+                  }
+                ],
+                "saturday": [
+                  {
+                    "mod": "DMS",
+                    "code": "IT2040",
+                    "start": "8:30",
+                    "end": "11:30",
+                    "type": "lec + tut",
+                    "loc": "N3D"
+                  },
+                  {
+                    "mod": "SE",
+                    "code": "IT2020",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Lecture",
+                    "loc": "A308"
+                  },
+                  {
+                    "mod": "SE",
+                    "code": "IT2020",
+                    "start": "14:00",
+                    "end": "15:00",
+                    "type": "Tutorial",
+                    "loc": "N3E"
+                  },
+                  {
+                    "mod": "OOP",
+                    "code": "IT2030",
+                    "start": "15:00",
+                    "end": "17:00",
+                    "type": "Practical",
+                    "loc": "601 PC LAB (NEW)"
+                  },
+                  {
+                    "mod": "CN",
+                    "code": "IT2050",
+                    "start": "17:00",
+                    "end": "19:00",
+                    "type": "lec + tut",
+                    "loc": "F501 IPU Hall"
+                  }
+                ],
+                "sunday": [
+                  {
+                    "mod": "SE",
+                    "code": "IT2020",
+                    "start": "8:30",
+                    "end": "10:30",
+                    "type": "Practical",
+                    "loc": "A405 LAB"
+                  },
+                  {
+                    "mod": "OOP",
+                    "code": "IT2030",
+                    "start": "10:30",
+                    "end": "13:30",
+                    "type": "lec + tut",
+                    "loc": "13H - A"
+                  },
+                  {
+                    "mod": "OSSA",
+                    "code": "IT2060",
+                    "start": "14:00",
+                    "end": "16:00",
+                    "type": "Lecture",
+                    "loc": "13H - B"
+                  },
+                  {
+                    "mod": "OSSA",
+                    "code": "IT2060",
+                    "start": "15:00",
+                    "end": "17:00",
+                    "type": "Tutorial",
+                    "loc": "New 3C"
+                  }
+                ]
+              }
             }
+            
           },
           "CS": {
             "02_01": {
