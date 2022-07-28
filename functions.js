@@ -5,7 +5,6 @@
 // read username on click continueBtn
 function readUsername() {
   let loginSection = document.getElementById("login-section");
-
   // read name from field
   let readVal = document.getElementById("username-field").value;
   if (readVal == "") {
@@ -119,10 +118,20 @@ function displayTable() {
     document.getElementById("date-display").innerHTML = `${dayToday}`;
     for (i = 0; i < num; i++) {
       let cardColorClass = "";
-      var targetStart = new Date(
-        nowDate + "T" + table[dayToday][i].start + ":00"
-      );
-      var targetEnd = new Date(nowDate + "T" + table[dayToday][i].end + ":00");
+
+      let startTime = table[dayToday][i].start;
+      let endTime = table[dayToday][i].end;
+
+      if (startTime.length != 5) {
+        startTime = addLeadingZeros(startTime, 5);
+      }
+
+      if (endTime.length != 5) {
+        endTime = addLeadingZeros(endTime, 5);
+      }
+
+      var targetStart = new Date(nowDate + "T" + startTime + ":00");
+      var targetEnd = new Date(nowDate + "T" + endTime + ":00");
 
       if (targetStart <= now && targetEnd > now) {
         cardColorClass = "ongoing";
@@ -177,6 +186,10 @@ function displayTime() {
   let currentTime = document.getElementById("greeting-time");
   let now = new Date().toLocaleTimeString();
   currentTime.innerHTML = now;
+}
+
+function addLeadingZeros(str, targetLength) {
+  return str.padStart(targetLength, "0");
 }
 
 // transition
