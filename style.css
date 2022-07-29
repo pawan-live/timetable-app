@@ -198,9 +198,8 @@ body {
 /* MAIN SECTION */
 
 #main-section {
-  /* display: none; */
-  height: 100vh;
-  /* display: flex; */
+  padding-top: 10px;
+  /* height: 100vh; */
   justify-content: center;
 }
 
@@ -443,6 +442,10 @@ body {
 
 #credits:hover {
   font-weight: 600;
+}
+
+.footer-credits {
+  padding-bottom: 30px;
 }
 
 .footer-credits a {

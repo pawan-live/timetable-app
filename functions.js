@@ -288,3 +288,5 @@ function fadeIn(object) {
     }
   }, 400);
 }
+
+function showAlert(title, message, button) {}
