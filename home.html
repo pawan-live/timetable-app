@@ -38,8 +38,8 @@
 
       gtag("config", "G-G6MMLWSB6D");
     </script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="dark.css" />
+    <link id= "css-file" rel="stylesheet" href="style.css" />
+
     <link rel="stylesheet" href="animations.css" />
 
     <title>Timetable</title>
@@ -184,6 +184,11 @@
         </div>
         <br />
         <div class="footer-credits">
+
+          <div class="toggle-btn">
+            <button id = "dark-btn" onclick="toggleTheme()">Switch Theme</button>
+          </div>
+
           <p id="credits">
             A community project 💚 by <br />
             <a href="https://github.com/pawan-live">pawanlive</a> &
@@ -203,6 +208,7 @@
     </section>
 
     <!-- JS files -->
+    <script src="./toggleTheme.js"></script>
     <script src="./functions.js"></script>
     <script src="main.js"></script>
   </body>
