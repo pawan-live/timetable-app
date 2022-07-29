@@ -198,7 +198,7 @@ body {
 /* MAIN SECTION */
 
 #main-section {
-  display: none;
+  /* display: none; */
   height: 100vh;
   /* display: flex; */
   justify-content: center;
@@ -431,11 +431,4 @@ body {
   background-color: rgb(110, 242, 180);
   padding: 0 5px;
   transition: 0.3s ease-in-out;
-}
-
-/* TEST RULES */
-#login-section,
-#details-section,
-#main-section {
-  display: none;
 }
