@@ -18,7 +18,8 @@ const weekday = [
 const d = new Date();
 let currentDay = d.getDay();
 let dateToday = d.getDate();
-let dayToday = weekday[currentDay];
+// let dayToday = weekday[currentDay];
+let dayToday = "thursday";
 
 window.addEventListener("load", (event) => {
   if (getCookie("username")) {
