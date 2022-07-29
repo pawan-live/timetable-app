@@ -425,6 +425,26 @@ body {
   transition: 0.3s ease-in-out;
   color: black;
 }
+option{
+  color: black;
+  font-weight: 900;
+}
+#select-fac{
+  color: black;
+}
+#select-year{
+  color: black;
+}
+#select-1{
+  color: black;
+}
+#select-2{
+  color: black;
+}
+#select-3{
+  color: black;
+}
+
 
 /* TEST RULES */
 #login-section,
