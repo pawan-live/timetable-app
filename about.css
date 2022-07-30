@@ -1,3 +1,44 @@
-#main-section {
-  height: auto;
+.main {
+  display: flex;
+}
+
+.about-section {
+  text-align: left;
+}
+
+.about-section p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.about-section .title-main i {
+  font-size: 1.5rem;
+  padding: 8px 10px;
+  border-radius: 50px;
+  box-shadow: 2px 5px 10px rgba(22, 102, 176, 0.413);
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.about-section .title-main i:hover {
+  background-color: #1f2198;
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+
+.title-main {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.title-sub {
+  margin-bottom: 10px;
+}
+
+.about-section img {
+  max-width: 100%;
+}
+
+.footer-credits {
+  text-align: left;
 }

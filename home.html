@@ -46,6 +46,8 @@
     <title>Timetable</title>
   </head>
   <body>
+    <div id="message-content"></div>
+
     <!-- splash screen -->
     <section class="splash" id="splash-section">
       <div class="wrapper">
@@ -185,27 +187,31 @@
         </div>
         <br />
         <div class="footer-credits">
-          <p id="credits">
-            A community project 💚 by <br />
-            <a href="https://github.com/pawan-live">pawanlive</a> &
-            <a href="https://github.com/nethvish">nethvish</a>
-          </p>
           <p>
             <a href="https://github.com/pawan-live/timetable-app/issues"
               >Submit an issue 💌</a
             >
-            &nbsp;
+            &nbsp; &nbsp;
             <a href="https://github.com/pawan-live/timetable-app"
-              >Github repo 💻</a
+              >View on Github 💻</a
             >
           </p>
+          <a href="./about.html">About App</a>
         </div>
       </div>
     </section>
 
+    <style>
+      /* Initial values */
+      #login-section,
+      #details-section,
+      #main-section {
+        display: none;
+      }
+    </style>
+
     <!-- JS files -->
     <script src="./functions.js"></script>
     <script src="main.js"></script>
-    <style></style>
   </body>
 </html>
