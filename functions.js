@@ -5,7 +5,6 @@
 // read username on click continueBtn
 function readUsername() {
   let loginSection = document.getElementById("login-section");
-
   // read name from field
   let readVal = document.getElementById("username-field").value;
   if (readVal == "") {
@@ -81,7 +80,6 @@ function readDetails() {
 
 // function to write metadata
 function displayUserData() {
-  // username = getCookie("username");
   // get time
   var myDate = new Date();
   var hrs = myDate.getHours();
@@ -117,13 +115,23 @@ function displayTable() {
   var nowDate = nowDateTime.split("T")[0];
 
   if (num) {
-    html_content = `<p id = 'lec-today-text'>Lectures today 👇</p>`;
+    document.getElementById("date-display").innerHTML = `${dayToday}`;
     for (i = 0; i < num; i++) {
       let cardColorClass = "";
-      var targetStart = new Date(
-        nowDate + "T" + table[dayToday][i].start + ":00"
-      );
-      var targetEnd = new Date(nowDate + "T" + table[dayToday][i].end + ":00");
+
+      let startTime = table[dayToday][i].start;
+      let endTime = table[dayToday][i].end;
+
+      if (startTime.length != 5) {
+        startTime = addLeadingZeros(startTime, 5);
+      }
+
+      if (endTime.length != 5) {
+        endTime = addLeadingZeros(endTime, 5);
+      }
+
+      var targetStart = new Date(nowDate + "T" + startTime + ":00");
+      var targetEnd = new Date(nowDate + "T" + endTime + ":00");
 
       if (targetStart <= now && targetEnd > now) {
         cardColorClass = "ongoing";
@@ -158,6 +166,7 @@ function displayTable() {
         "</div>";
     }
   } else {
+    document.getElementById("date-display").innerHTML = `${dayToday}`;
     // code here
     html_content += `
       <div class="no-lecs-msg">
@@ -177,6 +186,10 @@ function displayTime() {
   let currentTime = document.getElementById("greeting-time");
   let now = new Date().toLocaleTimeString();
   currentTime.innerHTML = now;
+}
+
+function addLeadingZeros(str, targetLength) {
+  return str.padStart(targetLength, "0");
 }
 
 // transition
