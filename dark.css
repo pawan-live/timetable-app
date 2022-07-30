@@ -444,7 +444,21 @@ option{
 #select-3{
   color: black;
 }
-
+#dark-btn{
+  background-color: #203652;
+  padding: 5px 10px 5px 10px;
+  border-radius: 40px;
+  margin: 10px;
+  transition: ease-in-out 0.5s;
+  border-style: none;
+  box-shadow: 2px 5px 10px rgba(255, 255, 255, 0.06);
+}
+#dark-btn:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-weight: 900;
+}
 
 /* TEST RULES */
 #login-section,

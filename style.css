@@ -432,6 +432,21 @@ body {
   padding: 0 5px;
   transition: 0.3s ease-in-out;
 }
+#dark-btn{
+  background-color: #96def8;
+  padding: 5px 10px 5px 10px;
+  border-radius: 40px;
+  margin: 10px;
+  border-style: none;
+  transition: ease-in-out 0.5s;
+  box-shadow: 2px 5px 18px rgba(22, 102, 176, 0.413);
+}
+#dark-btn:hover{
+  background-color: #1f2198;
+  color: white;
+  cursor: pointer;
+  font-weight: 900;
+}
 
 /* TEST RULES */
 #login-section,
