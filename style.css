@@ -506,7 +506,7 @@ body {
   border-radius: 50px;
   background-color: #1f2198;
   margin-top: 18px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   margin-left: -2px;
   font-size: 1.1rem;
   padding: 5px 18px;
@@ -518,4 +518,8 @@ body {
   background-color: white;
   color: #1f2198;
   transition: 0.3s ease-in-out;
+}
+
+.about-page-link {
+  margin-top: 10px;
 }
