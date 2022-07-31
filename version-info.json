@@ -2,6 +2,6 @@
   "version": "1.0.5",
   "title": "What's New ✨",
   "subtitle": "Version 1.0.5",
-  "notes": "✨ Added 'What's new' pop-up<br>✨ Added an <a href='./about.html'>About Page</a><br>✨ Dark theme (beta)",
+  "notes": "✨ Added 'What's new' pop-up<br>✨ Added an <a href='./about.html'>About Page</a><br>✨ Responsive for smaller screens",
   "alert_btn": "Got it! 👍"
 }
