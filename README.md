@@ -29,8 +29,7 @@ You can contribute to the project on github. Here's how you can do it.
 4. Do your part for the project
 5. Review everything, commit and push to your github repository
 6. Create a pull request comparing your branch with the development branch or the relevant existing branch of the main repository
-!! Make sure you do NOT compare to the main branch
+   !! Make sure you do NOT compare to the main branch
 7. That's all. Your contribution will be reviewed and merged with the main repository 🙌
 
-# Students from batch 2021
-`
+## Students from batch 2021
