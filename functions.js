@@ -26,17 +26,16 @@ function readUsername() {
         transition("login-section", "details-section");
       });
   }
+}
 
-  // get faculty list from JSON obj
-  function getFacList() {
-    let html_content = '<option value="Select">Select</option>';
-    let array = Object.keys(keys.fac);
-    array.forEach((element) => {
-      html_content +=
-        '<option value="' + element + '">' + element + "</option>";
-    });
-    select_fac.innerHTML = html_content;
-  }
+// get faculty list from JSON obj
+function getFacList() {
+  let html_content = '<option value="Select">Select</option>';
+  let array = Object.keys(keys.fac);
+  array.forEach((element) => {
+    html_content += '<option value="' + element + '">' + element + "</option>";
+  });
+  select_fac.innerHTML = html_content;
 }
 
 // read details and (save them to cookies) -> at last
@@ -180,6 +179,27 @@ function displayTable() {
   }
 
   document.getElementById("cards-container").innerHTML = html_content;
+
+  if (getCookie("version")) {
+    userVersion = getCookie("version");
+  }
+
+  if (thisVersion != userVersion) {
+    let versionData;
+    fetch("./version-info.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => (versionData = data))
+      .then(function () {
+        showAlert(
+          versionData.title,
+          versionData.subtitle,
+          versionData.notes,
+          versionData.alert_btn
+        );
+      });
+  }
 }
 
 function displayTime() {
@@ -287,4 +307,29 @@ function fadeIn(object) {
       object.classList.remove("fade-in");
     }
   }, 400);
+}
+
+function showAlert(title, subtitle, message, button) {
+  let messageContent = document.getElementById("message-content");
+
+  messageContent.innerHTML = `
+  <div class="alert-wrapper">
+  <div class="alert-box">
+    <p class="title">${title}</p>
+    <div class="separator"></div>
+    <div class="alert-body">
+    <p class="title">${subtitle}</p>
+    ${message}</div>
+    <div class="row">
+      <button class="btn-okay" id="alertbox-btn-ok" onclick="closeAlert()">${button}</button>
+    </div>
+  </div>
+</div>
+`;
+}
+
+function closeAlert() {
+  setCookie("version", thisVersion);
+  let messageContent = document.getElementById("message-content");
+  messageContent.innerHTML = "";
 }

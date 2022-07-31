@@ -1,0 +1,7 @@
+{
+  "version": "1.1.0",
+  "title": "What's New ✨",
+  "subtitle": "Version 1.1.0",
+  "notes": "✨ Added 'What's new' pop-up<br>✨ Added an <a href='./about.html'>About Page</a><br>✨ Responsive for smaller screens<br>🐞 Bug fixes",
+  "alert_btn": "Got it! 👍"
+}
