@@ -180,6 +180,10 @@ function displayTable() {
 
   document.getElementById("cards-container").innerHTML = html_content;
 
+  if (getCookie("version")) {
+    userVersion = getCookie("version");
+  }
+
   if (thisVersion != userVersion) {
     let versionData;
     fetch("./version-info.json")
