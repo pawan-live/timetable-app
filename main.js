@@ -1,4 +1,9 @@
 // Variables //
+
+// store last version number to display update alerts
+var thisVersion = "1.1.0";
+var userVersion;
+
 var username;
 var keys = [];
 const options = []; //array to hold options
@@ -88,6 +93,7 @@ detailsBackBtn.addEventListener("click", function () {
 // back btn in main section
 mainBackBtn.addEventListener("click", function () {
   transition("main-section", "details-section");
+  getFacList();
 });
 
 // logout button
