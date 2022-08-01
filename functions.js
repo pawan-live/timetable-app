@@ -166,7 +166,6 @@ function displayTable() {
     }
   } else {
     document.getElementById("date-display").innerHTML = `${dayToday}`;
-    // code here
     html_content += `
       <div class="no-lecs-msg">
             <p>Nice! No lectures for today! 😃</p>
@@ -175,16 +174,12 @@ function displayTable() {
               src="./images/no-lecs-svg.svg"
               alt="playing cat"
             />
-          </div>`;
+      </div>`;
   }
 
   document.getElementById("cards-container").innerHTML = html_content;
 
-  if (getCookie("version")) {
-    userVersion = getCookie("version");
-  }
-
-  if (thisVersion != userVersion) {
+  if (thisVersion != getCookie("version")) {
     let versionData;
     fetch("./version-info.json")
       .then((response) => {

@@ -4,10 +4,6 @@
 var thisVersion = "1.1.0";
 var userVersion;
 
-if (getCookie("version")) {
-  userVersion = getCookie("version");
-}
-
 var username;
 var keys = [];
 const options = []; //array to hold options
