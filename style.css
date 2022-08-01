@@ -448,7 +448,7 @@ body {
   padding: 0 5px;
   transition: 0.3s ease-in-out;
 }
-#dark-btn{
+/* #dark-btn{
   background-color: #96def8;
   padding: 5px 10px 5px 10px;
   border-radius: 40px;
@@ -462,7 +462,7 @@ body {
   color: white;
   cursor: pointer;
   font-weight: 900;
-}
+} */
 
 /* ALERT BOX */
 .alert-wrapper {
@@ -537,4 +537,67 @@ body {
 
 .about-page-link {
   margin-top: 10px;
+}
+
+/* Color preference : Dark*/
+@media (prefers-color-scheme: dark){
+  *{
+    color: white;
+  }
+  body{
+    background-color: #020c17;
+    /* background-image: linear-gradient(to right top, #04090e, #020c17, #040d1d, #080e24, #0f0e29); */
+  }
+  .text {
+    color: white;
+  }
+  .card.greeting {
+    /* to add gradient overlay over the background image of the greeting card */
+    background-image: linear-gradient(to right top, #04090eef, #020c17ef, #040d1def, #080e24ef, #0f0e29ef),   url(./images/greeting-backg.png);
+  }
+  .navigation i{
+    box-shadow: 2px 5px 18px rgba(241, 241, 241, 0.09);
+  }
+  .navigation i:hover {
+    background-color: white;
+    color: #1A1A2E;
+  }
+  #module-code{
+    color: white;
+  }
+  .timecard{
+    background-color: #0c1a33;
+  }
+  .card .type{
+    background-color: #203652;
+  }
+  .footer-credits a:hover{
+    background-color: rgb(255, 255, 255,0.9);
+    color: black;
+  }
+  option{
+    color: black;
+    font-weight: 900;
+  }
+  #select-fac{
+    color: black;
+  }
+  #select-year{
+    color: black;
+  }
+  #select-1{
+    color: black;
+  }
+  #select-2{
+    color: black;
+  }
+  #select-3{
+    color: black;
+  }
+  .btn.continue-btn {
+    color: white;
+    /* font-size: 1.2rem; */
+  }
+
+
 }
