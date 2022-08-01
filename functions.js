@@ -179,7 +179,7 @@ function displayTable() {
 
   document.getElementById("cards-container").innerHTML = html_content;
 
-  if (thisVersion != getCookie("version")) {
+  if (getCookie("current") != thisVersion) {
     let versionData;
     fetch("./version-info.json")
       .then((response) => {
@@ -324,7 +324,7 @@ function showAlert(title, subtitle, message, button) {
 }
 
 function closeAlert() {
-  setCookie("version", thisVersion);
+  setCookie("current", thisVersion);
   let messageContent = document.getElementById("message-content");
   messageContent.innerHTML = "";
 }
