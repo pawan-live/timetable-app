@@ -2421,6 +2421,102 @@
                 "saturday": [],
                 "sunday": []
               }
+            },
+            "WE_02": {
+              "key": "foc_y2_s1_cs_WE_02",
+              "table": {
+                "monday": [
+                  {
+                    "mod": "SOS",
+                    "code": "IE2032",
+                    "start": "18.00",
+                    "end": "19.00",
+                    "type": "Practical",
+                    "loc": "N3B Lab"
+                  }
+                ],
+
+                "tuesday": [
+                  {
+                    "mod": "PS",
+                    "code": "IT2090",
+                    "start": "18.00",
+                    "end": "19.00",
+                    "type": "Lecture (💻)",
+                    "loc": "Virtual Auditorium 1"
+                  }
+                ],
+
+                "wednesday": [
+            
+                ],
+
+                "thursday": [
+                  {
+                    "mod": "ESD",
+                    "code": "IT2100",
+                    "start": "18.00",
+                    "end": "19.00",
+                    "type": "Lecture (💻)",
+                    "loc": "Virtual Auditorium 3"
+                  }
+                ],
+
+                "friday": [
+                ],
+                "saturday": [
+                  {
+                    "mod": "SOS",
+                    "code": "IE2032",
+                    "start": "10.30",
+                    "end": "12.30",
+                    "type": "Lec + Tut",
+                    "loc": "A307"
+                  },
+                  {
+                    "mod": "ICS",
+                    "code": "IE2022",
+                    "start": "14.00",
+                    "end": "16.00",
+                    "type": "Lec + Tut",
+                    "loc": "VA 1"
+                  },
+                  {
+                    "mod": "DMSS",
+                    "code": "IE2042" ,
+                    "start": "17.00",
+                    "end": "19.00",
+                    "type": "Lec + Tut",
+                    "loc": "A507"
+                  }
+                ],
+                "sunday": [
+                  {
+                    "mod": "SNP",
+                    "code": "IE2012" ,
+                    "start": "8.30",
+                    "end": "9.30",
+                    "type": "Lecture ",
+                    "loc": "A507"
+                  },
+                  {
+                    "mod": "ICS",
+                    "code": "IE2022" ,
+                    "start": "16.00",
+                    "end": "17.00",
+                    "type": "Practical (💻)",
+                    "loc": "601 - Pclab (New)"
+                  },
+                  {
+                    "mod": "DMSS",
+                    "code": "IE2042" ,
+                    "start": "18.00",
+                    "end": "19.00",
+                    "type": "Practical (💻)",
+                    "loc": "601 - Pclab (New)"
+                  }
+                ]
+              }
             }
           },
           "ISE": {
