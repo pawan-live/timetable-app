@@ -85,8 +85,8 @@ function displayUserData() {
   let greet;
 
   if (hrs < 12) greet = "Good Morning";
-  else if (hrs >= 12 && hrs <= 17) greet = "Good Afternoon";
-  else if (hrs >= 17 && hrs <= 24) greet = "Good Evening";
+  else if (hrs >= 12 && hrs <= 15) greet = "Good Afternoon";
+  else if (hrs >= 15 && hrs <= 24) greet = "Good Evening";
 
   // display time
   document.getElementById("greeting-wish").innerText = greet;
@@ -178,7 +178,7 @@ function displayTable() {
 
     html_content += `
       <div class="no-lecs-msg">
-            <p>Nice! No lectures for ${displayDay}! 😃</p>
+            <p>Nice! No lectures for <span> ${displayDay}</span>! 😃</p>
             <img
               id="no-lecs-img"
               src="./images/no-lecs-svg.svg"
