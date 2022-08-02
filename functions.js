@@ -107,8 +107,7 @@ function displayTable() {
   let num = table[dayToday].length;
   let html_content = "";
 
-  // get now date
-
+  // get now date time
   var now = new Date();
 
   var nowDateTime = now.toISOString();
@@ -167,9 +166,19 @@ function displayTable() {
     }
   } else {
     document.getElementById("date-display").innerHTML = `${dayToday}`;
+
+    let displayDay;
+
+    // set display message day
+    if (dayToday == realDay) {
+      displayDay = "today";
+    } else {
+      displayDay = dayToday;
+    }
+
     html_content += `
       <div class="no-lecs-msg">
-            <p>Nice! No lectures for today! 😃</p>
+            <p>Nice! No lectures for ${displayDay}! 😃</p>
             <img
               id="no-lecs-img"
               src="./images/no-lecs-svg.svg"
