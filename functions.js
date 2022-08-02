@@ -111,16 +111,6 @@ function displayTable() {
 
   var now = new Date();
 
-  
-  //get weekday number
-
-  const dayOfWeekDigit = new Date().getDay();
-  console.log(dayOfWeekDigit); 
-
-   
-
-
-
   var nowDateTime = now.toISOString();
   var nowDate = nowDateTime.split("T")[0];
 
@@ -175,28 +165,11 @@ function displayTable() {
         "</div>" +
         "</div>";
     }
-  } 
-  
-  else if (dayOfWeekDigit === 6) { 
+  } else {
     document.getElementById("date-display").innerHTML = `${dayToday}`;
     html_content += `
       <div class="no-lecs-msg">
             <p>Nice! No lectures for today! 😃</p>
-            <img
-              id="no-lecs-img"
-              src="./images/no-lecs-svg.svg"
-              alt="playing cat"
-            />
-      </div>`;
-
-
-  }
-  
-  else {
-    document.getElementById("date-display").innerHTML = `${dayToday}`;
-    html_content += `
-      <div class="no-lecs-msg">
-            <p>Nice! No lectures for Saturday! 😃</p>
             <img
               id="no-lecs-img"
               src="./images/no-lecs-svg.svg"
