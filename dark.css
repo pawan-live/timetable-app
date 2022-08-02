@@ -1,12 +1,13 @@
 * {
   font-family: "Poppins", sans-serif;
-  color: #1f2198;
+  color: white;
   margin: 0;
   padding: 0;
 }
 
 body {
   overflow-x: hidden;
+  background-image: linear-gradient(to right top, #04090e, #020c17, #040d1d, #080e24, #0f0e29);
 }
 
 .btn {
@@ -21,7 +22,7 @@ body {
 
 .text {
   font-size: 1.3em;
-  color: #1f2198;
+  color: white;
 }
 
 /* splash screen */
@@ -198,8 +199,9 @@ body {
 /* MAIN SECTION */
 
 #main-section {
-  padding-top: 10px;
-  /* height: 100vh; */
+  display: none;
+  height: 100vh;
+  /* display: flex; */
   justify-content: center;
 }
 
@@ -245,23 +247,14 @@ body {
   flex-direction: column;
   border-radius: 14px;
   padding: 12px 12px 12px 18px;
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.232);
+  box-shadow: 2px 5px 10px rgba(255, 255, 255, 0.06);
   margin-bottom: 15px;
 }
 
 /* greeting card top */
 .card.greeting {
   /* to add gradient overlay over the background image of the greeting card */
-  background-image: linear-gradient(
-      to bottom,
-      #a3d6ef,
-      #7fccf3,
-      #1ca7cea2,
-      #3db6d8af,
-      #3db6d8df,
-      #3db6d8df
-    ),
-    url("./images/greeting-backg.png");
+  background-image: linear-gradient(to right top, #04090eef, #020c17ef, #040d1def, #080e24ef, #0f0e29ef),   url(./images/greeting-backg.png);
   background-size: cover;
   color: #f1f12d;
   height: 150px;
@@ -281,14 +274,14 @@ body {
   font-size: 1.5rem;
   padding: 8px 10px;
   border-radius: 50px;
-  box-shadow: 2px 5px 18px rgba(22, 102, 176, 0.413);
+  box-shadow: 2px 5px 18px rgba(241, 241, 241, 0.09);
   cursor: pointer;
 }
 
 .navigation i:hover {
-  background-color: #1f2198;
+  background-color: white;
   transition: 0.3s ease-in-out;
-  color: white;
+  color: #1A1A2E;
 }
 
 #date-display {
@@ -354,14 +347,14 @@ body {
 #module-code {
   font-weight: 100;
   /* font-style: italic; */
-  color: rgb(77, 77, 77);
+  color: white;
   font-size: 1.5rem;
 }
 
 .timecard {
   padding-top: 8px;
 
-  background-color: #96def8;
+  background-color: #0c1a33;
 }
 
 .ongoing {
@@ -378,40 +371,18 @@ body {
   margin-top: -5px;
   max-width: 40%;
   text-transform: uppercase;
-  background-color: white;
+  background-color: #203652;
   border-radius: 150px;
   padding: 0 12px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
   .card .type {
     font-size: 0.8rem;
   }
-  .login .logo-title {
-    font-size: 2.5em;
-  }
-  
-  .login input {
-    padding: 7px 18px 7px 0px;
-    width: 16em;
-  }
-  }
-  
-  @media screen and (max-width: 350px) {
-    .card .type {
-      font-size: 0.8rem;
-      padding: 7px 18px 7px 20px;
-    }
-  
-    .login .logo-title {
-      font-size: 2.3em;
-    }
-    .login input {
-      padding: 7px 18px 7px 0px;
-      width: 13em;
-    }
-    }
+}
+
 .card .time {
   font-size: 1.3rem;
 }
@@ -435,8 +406,13 @@ body {
 }
 
 /* footer */
-.footer-credits {
-  padding-bottom: 30px;
+
+#credits {
+  margin-bottom: 10px;
+}
+
+#credits:hover {
+  font-weight: 600;
 }
 
 .footer-credits a {
@@ -444,161 +420,49 @@ body {
 }
 
 .footer-credits a:hover {
-  background-color: rgb(110, 242, 180);
+  background-color: rgb(255, 255, 255,0.9);
   padding: 0 5px;
   transition: 0.3s ease-in-out;
+  color: black;
 }
-
+option{
+  color: black;
+  font-weight: 900;
+}
+#select-fac{
+  color: black;
+}
+#select-year{
+  color: black;
+}
+#select-1{
+  color: black;
+}
+#select-2{
+  color: black;
+}
+#select-3{
+  color: black;
+}
 #dark-btn{
-  background-color: #96def8;
+  background-color: #203652;
   padding: 5px 10px 5px 10px;
   border-radius: 40px;
   margin: 10px;
-  border-style: none;
   transition: ease-in-out 0.5s;
-  box-shadow: 2px 5px 18px rgba(22, 102, 176, 0.413);
+  border-style: none;
+  box-shadow: 2px 5px 10px rgba(255, 255, 255, 0.06);
 }
 #dark-btn:hover{
-  background-color: #1f2198;
-  color: white;
+  background-color: white;
+  color: black;
   cursor: pointer;
   font-weight: 900;
 }
 
-/* ALERT BOX */
-.alert-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  z-index: 99;
-  background-color: #161631b9;
-}
-
-.alert-box {
-  min-width: 300px;
-  max-width: 400px;
-  border: 1px solid black;
-  padding: 10px 20px;
-  border-radius: 15px;
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.232);
-  background-color: white;
-}
-
-.alert-box .title {
-  font-weight: 600;
-  font-size: 1.5rem;
-}
-
-.separator {
-  margin: 8px 0;
-  border-bottom: 1px solid black;
-}
-
-.alert-body {
-  margin-left: 10px;
-}
-
-.alert-body .title {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
-  color: #6e70cf;
-}
-
-.alert-box .row {
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-}
-
-.btn-okay {
-  border: 1px solid black;
-  color: white;
-  border-radius: 50px;
-  background-color: #1f2198;
-  margin-top: 18px;
-  margin-bottom: 16px;
-  margin-left: -2px;
-  font-size: 1.1rem;
-  padding: 5px 18px;
-  cursor: pointer;
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.232);
-}
-
-.btn-okay:hover {
-  background-color: white;
-  color: #1f2198;
-  transition: 0.3s ease-in-out;
-}
-
-.about-page-link {
-  margin-top: 10px;
-}
-
-/* Color preference : Dark*/
-@media (prefers-color-scheme: dark){
-  *{
-    color: white;
-  }
-  body{
-    background-color: #020c17;
-    /* background-image: linear-gradient(to right top, #04090e, #020c17, #040d1d, #080e24, #0f0e29); */
-  }
-  .text {
-    color: white;
-  }
-  .card.greeting {
-    /* to add gradient overlay over the background image of the greeting card */
-    background-image: linear-gradient(to right top, #04090eef, #020c17ef, #040d1def, #080e24ef, #0f0e29ef),   url(./images/greeting-backg.png);
-  }
-  .navigation i{
-    box-shadow: 2px 5px 18px rgba(241, 241, 241, 0.09);
-  }
-  .navigation i:hover {
-    background-color: white;
-    color: #1A1A2E;
-  }
-  #module-code{
-    color: white;
-  }
-  .timecard{
-    background-color: #0c1a33;
-  }
-  .card .type{
-    background-color: #203652;
-  }
-  .footer-credits a:hover{
-    background-color: rgb(255, 255, 255,0.9);
-    color: black;
-  }
-  option{
-    color: black;
-    font-weight: 900;
-  }
-  #select-fac{
-    color: black;
-  }
-  #select-year{
-    color: black;
-  }
-  #select-1{
-    color: black;
-  }
-  #select-2{
-    color: black;
-  }
-  #select-3{
-    color: black;
-  }
-  .btn.continue-btn {
-    color: white;
-    /* font-size: 1.2rem; */
-  }
-
-
+/* TEST RULES */
+#login-section,
+#details-section,
+#main-section {
+  display: none;
 }
