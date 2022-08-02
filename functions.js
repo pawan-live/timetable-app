@@ -166,7 +166,6 @@ function displayTable() {
     }
   } else {
     document.getElementById("date-display").innerHTML = `${dayToday}`;
-    // code here
     html_content += `
       <div class="no-lecs-msg">
             <p>Nice! No lectures for today! 😃</p>
@@ -175,7 +174,7 @@ function displayTable() {
               src="./images/no-lecs-svg.svg"
               alt="playing cat"
             />
-          </div>`;
+      </div>`;
   }
 
   document.getElementById("cards-container").innerHTML = html_content;
@@ -325,7 +324,7 @@ function showAlert(title, subtitle, message, button) {
 }
 
 function closeAlert() {
-  setCookie("version", thisVersion);
+  setCookie("version", thisVersion, 90);
   let messageContent = document.getElementById("message-content");
   messageContent.innerHTML = "";
 }
