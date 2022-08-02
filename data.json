@@ -2431,7 +2431,7 @@
                     "code": "IE2032",
                     "start": "18.00",
                     "end": "19.00",
-                    "type": "practical",
+                    "type": "Practical",
                     "loc": "N3B Lab"
                   }
                 ],
@@ -2442,7 +2442,7 @@
                     "code": "IT2090",
                     "start": "18.00",
                     "end": "19.00",
-                    "type": "online lectures",
+                    "type": "Lecture (💻)",
                     "loc": "Virtual Auditorium 1"
                   }
                 ],
@@ -2457,7 +2457,7 @@
                     "code": "IT2100",
                     "start": "18.00",
                     "end": "19.00",
-                    "type": "online lectures",
+                    "type": "Lecture (💻)",
                     "loc": "Virtual Auditorium 3"
                   }
                 ],
@@ -2470,7 +2470,7 @@
                     "code": "IE2032",
                     "start": "10.30",
                     "end": "12.30",
-                    "type": "Lecture + Tutorial",
+                    "type": "Lec + Tut",
                     "loc": "A307"
                   },
                   {
@@ -2478,7 +2478,7 @@
                     "code": "IE2022",
                     "start": "14.00",
                     "end": "16.00",
-                    "type": "Lecture + Tutorial",
+                    "type": "Lec + Tut",
                     "loc": "VA 1"
                   },
                   {
@@ -2486,7 +2486,7 @@
                     "code": "IE2042" ,
                     "start": "17.00",
                     "end": "19.00",
-                    "type": "Lecture + Tutorial",
+                    "type": "Lec + Tut",
                     "loc": "A507"
                   }
                 ],
@@ -2504,7 +2504,7 @@
                     "code": "IE2022" ,
                     "start": "16.00",
                     "end": "17.00",
-                    "type": "practical (💻)",
+                    "type": "Practical (💻)",
                     "loc": "601 - Pclab (New)"
                   },
                   {
@@ -2512,7 +2512,7 @@
                     "code": "IE2042" ,
                     "start": "18.00",
                     "end": "19.00",
-                    "type": "practical (💻)",
+                    "type": "Practical (💻)",
                     "loc": "601 - Pclab (New)"
                   }
                 ]
