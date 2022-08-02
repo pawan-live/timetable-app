@@ -110,6 +110,17 @@ function displayTable() {
   // get now date
 
   var now = new Date();
+
+  
+  //get weekday number
+
+  const dayOfWeekDigit = new Date().getDay();
+  console.log(dayOfWeekDigit); 
+
+   
+
+
+
   var nowDateTime = now.toISOString();
   var nowDate = nowDateTime.split("T")[0];
 
@@ -164,9 +175,10 @@ function displayTable() {
         "</div>" +
         "</div>";
     }
-  } else {
+  } 
+  
+  else if (dayOfWeekDigit === 6) { 
     document.getElementById("date-display").innerHTML = `${dayToday}`;
-    // code here
     html_content += `
       <div class="no-lecs-msg">
             <p>Nice! No lectures for today! 😃</p>
@@ -175,16 +187,27 @@ function displayTable() {
               src="./images/no-lecs-svg.svg"
               alt="playing cat"
             />
-          </div>`;
+      </div>`;
+
+
+  }
+  
+  else {
+    document.getElementById("date-display").innerHTML = `${dayToday}`;
+    html_content += `
+      <div class="no-lecs-msg">
+            <p>Nice! No lectures for Saturday! 😃</p>
+            <img
+              id="no-lecs-img"
+              src="./images/no-lecs-svg.svg"
+              alt="playing cat"
+            />
+      </div>`;
   }
 
   document.getElementById("cards-container").innerHTML = html_content;
 
-  if (getCookie("version")) {
-    userVersion = getCookie("version");
-  }
-
-  if (thisVersion != userVersion) {
+  if (thisVersion != getCookie("version")) {
     let versionData;
     fetch("./version-info.json")
       .then((response) => {
@@ -329,7 +352,7 @@ function showAlert(title, subtitle, message, button) {
 }
 
 function closeAlert() {
-  setCookie("version", thisVersion);
+  setCookie("version", thisVersion, 90);
   let messageContent = document.getElementById("message-content");
   messageContent.innerHTML = "";
 }
