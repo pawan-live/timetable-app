@@ -179,7 +179,7 @@ function displayTable() {
 
   document.getElementById("cards-container").innerHTML = html_content;
 
-  if (getCookie("version") != thisVersion) {
+  if (thisVersion != getCookie("version")) {
     let versionData;
     fetch("./version-info.json")
       .then((response) => {
