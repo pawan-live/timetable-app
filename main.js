@@ -1,8 +1,8 @@
 // Variables //
 
 // store last version number to display update alerts
-var thisVersion = "1.1.0";
-var userVersion;
+
+var thisVersion = "1.1.1";
 
 var username;
 var keys = [];
