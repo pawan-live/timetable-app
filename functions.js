@@ -85,8 +85,8 @@ function displayUserData() {
   let greet;
 
   if (hrs < 12) greet = "Good Morning";
-  else if (hrs >= 12 && hrs <= 17) greet = "Good Afternoon";
-  else if (hrs >= 17 && hrs <= 24) greet = "Good Evening";
+  else if (hrs >= 12 && hrs <= 15) greet = "Good Afternoon";
+  else if (hrs >= 15 && hrs <= 24) greet = "Good Evening";
 
   // display time
   document.getElementById("greeting-wish").innerText = greet;
@@ -107,9 +107,9 @@ function displayTable() {
   let num = table[dayToday].length;
   let html_content = "";
 
-  // get now date
-
+  // get now date time
   var now = new Date();
+
   var nowDateTime = now.toISOString();
   var nowDate = nowDateTime.split("T")[0];
 
@@ -166,9 +166,19 @@ function displayTable() {
     }
   } else {
     document.getElementById("date-display").innerHTML = `${dayToday}`;
+
+    let displayDay;
+
+    // set display message day
+    if (dayToday == realDay) {
+      displayDay = "today";
+    } else {
+      displayDay = dayToday;
+    }
+
     html_content += `
       <div class="no-lecs-msg">
-            <p>Nice! No lectures for today! 😃</p>
+            <p>Nice! No lectures for <span> ${displayDay}</span>! 😃</p>
             <img
               id="no-lecs-img"
               src="./images/no-lecs-svg.svg"
