@@ -32,5 +32,3 @@ You can contribute to the project on github. Here's how you can do it.
 5. Review everything, commit and push to your branch on your forked repository
 6. Create a pull request from your branch to the `develop` branch on the base repository (⛔️ Do not create PR to the main branch)
 7. That's all. Your contribution will be reviewed and merged with the main repository 🙌
-
-by Students from batch 2021
