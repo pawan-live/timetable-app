@@ -5,7 +5,7 @@ Build status: [![Netlify Status](https://api.netlify.com/api/v1/badges/6c7742b9-
 This web app is made for SLIIT students of all years and all specializations.
 The timetables of most groups/batches of 2nd year have been added by volunteers.
 
-## How to contribute to the app? 💖
+## How to contribute to the app?
 [Click here to scroll to section 👇](#how-to-contribute-)
 
 ## Screenshot of the final webapp
