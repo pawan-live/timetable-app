@@ -5,7 +5,7 @@ Build status: [![Netlify Status](https://api.netlify.com/api/v1/badges/6c7742b9-
 This web app is made for SLIIT students of all years and all specializations.
 The timetables of most groups/batches of 2nd year have been added by volunteers.
 
-## How to contribute to the app? 💖
+## How to contribute to the app?
 [Click here to scroll to section 👇](#how-to-contribute-)
 
 ## Screenshot of the final webapp
@@ -32,5 +32,3 @@ You can contribute to the project on github. Here's how you can do it.
 5. Review everything, commit and push to your branch on your forked repository
 6. Create a pull request from your branch to the `develop` branch on the base repository (⛔️ Do not create PR to the main branch)
 7. That's all. Your contribution will be reviewed and merged with the main repository 🙌
-
-by Students from batch 2021

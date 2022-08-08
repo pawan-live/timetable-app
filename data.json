@@ -1,6 +1,125 @@
 {
   "fac": {
     "FOC": {
+      "Y1": {
+        "S2": {
+          "IT": {
+            "01_02": {
+              "key": "foc_y1_s2_it_0102",
+              "table": {
+                "monday": [
+                  {
+                    "mod": "OOC",
+                    "code": "IT1050",
+                    "start": "08:30",
+                    "end": "09:30",
+                    "type": "Tutorial",
+                    "loc": "A411 - Pclab"
+                  },
+		              {
+                    "mod": "ISDM",
+                    "code": "IT1090",
+                    "start": "09:30",
+                    "end": "11:30",
+                    "type": "Lecture",
+                    "loc": "A308"
+                  },
+		              {
+                    "mod": "ISDM",
+                    "code": "IT1090",
+                    "start": "11:30",
+                    "end": "12:30",
+                    "type": "Tutorial",
+                    "loc": "N3E"
+                  },
+		              {
+                    "mod": "IWT",
+                    "code": "IT1100",
+                    "start": "13:30",
+                    "end": "15:30",
+                    "type": "Lecture",
+                    "loc": "F502 IPU Hall"
+                  },
+                  {
+                    "mod": "IWT",
+                    "code": "IT1100",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "Practical",
+                    "loc": "A405 - Pclab"
+                  }
+                ],
+                "tuesday": [
+                  {
+                    "mod": "ISDM",
+                    "code": "IT1090",
+                    "start": "13:30",
+                    "end": "15:30",
+                    "type": "Practical (💻)",
+                    "loc": "B402 - Pclab"
+                  }
+                ],
+                "wednesday": [
+                  {
+                    "mod": "OOC",
+                    "code": "IT1050",
+                    "start": "08:30",
+                    "end": "10:30",
+                    "type": "Practical",
+                    "loc": "13L-E1 + 13L-E2"
+                  },
+                  {
+                    "mod": "SPM",
+                    "code": "IT1060",
+                    "start": "13:30",
+                    "end": "15:30",
+                    "type": "Lecture",
+                    "loc": "N3D"
+                  },
+                  {
+                    "mod": "OOC",
+                    "code": "IT1050",
+                    "start": "16:30",
+                    "end": "17:30",
+                    "type": "Lecture",
+                    "loc": "N3E"
+                  }
+                ],
+                "thursday": [
+                  {
+                    "mod": "SPM",
+                    "code": "IT1060",
+                    "start": "08:30",
+                    "end": "10:30",
+                    "type": "practical (💻)",
+                    "loc": "VA 7"
+                  },
+                  {
+                    "mod": "EAP",
+                    "code": "IT1080",
+                    "start": "13:30",
+                    "end": "17:30",
+                    "type": "Lecture (💻)",
+                    "loc": "13H-B"
+                  }
+                ],
+                "friday": [
+                  {
+                    "mod": "IWT",
+                    "code": "IT1100",
+                    "start": "13:30",
+                    "end": "14:30",
+                    "type": "Tutorial",
+                    "loc": "N3E"
+                  }
+                ],
+                "saturday": [],
+                "sunday": []
+              }
+            }
+          }
+        }
+      },
       "Y2": {
         "S1": {
           "SE/IT": {
