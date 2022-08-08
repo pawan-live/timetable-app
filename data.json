@@ -667,7 +667,8 @@
                     "start": "8:30",
                     "end": "10:30",
                     "type": "practical 💻",
-                    "loc": "B401 PC Lab"
+                    "loc": "B401 PC Lab",
+                    "link": "http://tiny.cc/roavuz"
                   },
                   {
                     "mod": "SE",
@@ -675,7 +676,8 @@
                     "start": "10:30",
                     "end": "12:30",
                     "type": "lecture 💻",
-                    "loc": "A308"
+                    "loc": "A308",
+                    "link": "https://us02web.zoom.us/j/81786375997?pwd=RkYwWTU4U2xLSGFZZldoMit4UURRUT09"
                   },
                   {
                     "mod": "CN",
@@ -683,7 +685,8 @@
                     "start": "15:30",
                     "end": "17:30",
                     "type": "practical 💻",
-                    "loc": "N3A Lab"
+                    "loc": "N3A Lab",
+                    "link": "http://tiny.cc/0pavuz"
                   }
                 ],
                 "wednesday": [
