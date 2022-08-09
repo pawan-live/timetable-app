@@ -2,7 +2,7 @@
 
 // store last version number to display update alerts
 
-var thisVersion = "1.1.1";
+var thisVersion = "1.2.0"; // this must be updated only on a major change (not patches and bug fixes)
 
 var username;
 var keys = [];
@@ -23,7 +23,8 @@ const weekday = [
 const d = new Date();
 let currentDay = d.getDay();
 let dateToday = d.getDate();
-let dayToday = weekday[currentDay];
+let realDay = weekday[currentDay];
+let dayToday = realDay;
 
 window.addEventListener("load", (event) => {
   if (getCookie("username")) {
@@ -85,6 +86,13 @@ next_btn.addEventListener("click", function () {
   displayTable();
 });
 
+// details section >> fetch options from databse and display within html
+let select_fac = document.getElementById("select-fac");
+let select_year = document.getElementById("select-year");
+let select_1 = document.getElementById("select-1");
+let select_2 = document.getElementById("select-2");
+let select_3 = document.getElementById("select-3");
+
 // back buttons
 //back btn in details section
 detailsBackBtn.addEventListener("click", function () {
@@ -102,13 +110,6 @@ logOutBtn.addEventListener("click", function () {
   location.reload();
   // transition("main-section", "login-section");
 });
-
-// details section >> fetch optins from databse and display within html
-let select_fac = document.getElementById("select-fac");
-let select_year = document.getElementById("select-year");
-let select_1 = document.getElementById("select-1");
-let select_2 = document.getElementById("select-2");
-let select_3 = document.getElementById("select-3");
 
 /**
  * SELECTION DROPDOWN MENUS

@@ -2,6 +2,8 @@
 // keys.fac.FOC.Y2.S1.SE.table.tuesday[2]
 // keys.fac.<faculty>.<year>.<sem>.<spec>.table.<dayToday>
 
+const { link } = require("fs");
+
 // read username on click continueBtn
 function readUsername() {
   let loginSection = document.getElementById("login-section");
@@ -85,8 +87,8 @@ function displayUserData() {
   let greet;
 
   if (hrs < 12) greet = "Good Morning";
-  else if (hrs >= 12 && hrs <= 17) greet = "Good Afternoon";
-  else if (hrs >= 17 && hrs <= 24) greet = "Good Evening";
+  else if (hrs >= 12 && hrs <= 15) greet = "Good Afternoon";
+  else if (hrs >= 15 && hrs <= 24) greet = "Good Evening";
 
   // display time
   document.getElementById("greeting-wish").innerText = greet;
@@ -107,9 +109,9 @@ function displayTable() {
   let num = table[dayToday].length;
   let html_content = "";
 
-  // get now date
-
+  // get now date time
   var now = new Date();
+
   var nowDateTime = now.toISOString();
   var nowDate = nowDateTime.split("T")[0];
 
@@ -117,6 +119,17 @@ function displayTable() {
     document.getElementById("date-display").innerHTML = `${dayToday}`;
     for (i = 0; i < num; i++) {
       let cardColorClass = "";
+      let linkTag = "";
+
+      if (table[dayToday][i].link) {
+        let link = table[dayToday][i].link;
+        linkTag =
+          '<a class="link-btn" href="' +
+          link +
+          '" target="_blank"><i class="fa-solid fa-link"></i><span class="link-btn-text">Link</span></a>';
+      } else {
+        linkTag = "<i>Link not added 🔗❌</i>";
+      }
 
       let startTime = table[dayToday][i].start;
       let endTime = table[dayToday][i].end;
@@ -161,14 +174,25 @@ function displayTable() {
         " - " +
         table[dayToday][i].end +
         "</p>" +
+        linkTag +
         "</div>" +
         "</div>";
     }
   } else {
     document.getElementById("date-display").innerHTML = `${dayToday}`;
+
+    let displayDay;
+
+    // set display message day
+    if (dayToday == realDay) {
+      displayDay = "today";
+    } else {
+      displayDay = dayToday;
+    }
+
     html_content += `
       <div class="no-lecs-msg">
-            <p>Nice! No lectures for today! 😃</p>
+            <p>Nice! No lectures for <span> ${displayDay}</span>! 😃</p>
             <img
               id="no-lecs-img"
               src="./images/no-lecs-svg.svg"
