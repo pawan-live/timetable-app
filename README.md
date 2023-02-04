@@ -1,5 +1,9 @@
 Build status: [![Netlify Status](https://api.netlify.com/api/v1/badges/6c7742b9-5d29-4cf4-bf37-85c3a9ecaee4/deploy-status)](https://app.netlify.com/sites/timetableapp/deploys)
 
+# MAJOR PROJECT UPDATE! 
+
+We are migrating to React with more features and a refreshed new UI! Lookout for the `react-migration` branch for more info!
+
 # Timetable App (for SLIIT students)
 
 This web app is made for SLIIT students of all years and all specializations.

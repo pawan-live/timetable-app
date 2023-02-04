@@ -3183,6 +3183,247 @@
               }
             }
           }
+        },
+        "S2": {
+          "SE/IT":{
+            "08_01":{
+              "key": "foc_y2_s2_se_08_01",
+              "table": {
+                "monday": [
+                  {
+                    "mod": "PS",
+                    "code": "IT2090",
+                    "start": "08:30",
+                    "end": "10:30",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "DSA",
+                    "code": "IT2070",
+                    "start": "10:30",
+                    "end": "12:30",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "DSA",
+                    "code": "IT2070",
+                    "start": "12:30",
+                    "end": "13:30",
+                    "type": "Tutorial",
+                    "loc": "A504"
+                  },
+                  
+                  {
+                    "mod": "ESD",
+                    "code": "IT2100",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "Lecture",
+                    "loc": "Main Auditorium"
+                  }
+                ],
+                "tuesday": [
+                  {
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "16:30",
+                    "end": "15:30",
+                    "type": "Lecture",
+                    "loc": "F502 IPU Hall"
+                  }
+                ],
+                "wednesday": [
+                  {
+                    "mod": "ITP",
+                    "code": "IT2080",
+                    "start": "8.30",
+                    "end": "11:30",
+                    "type": "Lec + Tut",
+                    "loc": "F502 IPU Hall"
+                  },
+                  {
+                    "mod": "ITP",
+                    "code": "IT2080",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Evaluation",
+                    "loc": "G604"
+                  },
+                  {
+                    "mod": "P&S",
+                    "code": "IT2110",
+                    "start": "14:30",
+                    "end": "17:30",
+                    "type": "Lec + Tut",
+                    "loc": "B501"
+                  }
+                ],
+                "thursday": [
+                  {
+                    "mod": "P&S",
+                    "code": "IT2110",
+                    "start": "8:30",
+                    "end": "10:30",
+                    "type": "Practical BYOD",
+                    "loc": "G1103"
+                  },
+                  {
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "10:30",
+                    "end": "12:30",
+                    "type": "Tute",
+                    "loc": "B403 PC LAB"
+                  },
+                  {
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "Practical",
+                    "loc": "B401 PC LAB"
+                  }
+                ],
+                "friday": [
+                  {
+                    "mod": "DSA",
+                    "code": "IT2010",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Practical",
+                    "loc": "A406 PC Lab"
+                  }
+                ],
+                "saturday": [],
+                "sunday": []
+              }
+
+            },
+            "08_02": {
+              "key": "foc_y2_s2_se_08_02",
+              "table": {
+                "monday": [
+                  {
+                    "mod": "PS",
+                    "code": "IT2090",
+                    "start": "08:30",
+                    "end": "10:30",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "DSA",
+                    "code": "IT2070",
+                    "start": "10:30",
+                    "end": "12:30",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "DSA",
+                    "code": "IT2070",
+                    "start": "12:30",
+                    "end": "13:30",
+                    "type": "Tutorial",
+                    "loc": "A504"
+                  },
+                  
+                  {
+                    "mod": "ESD",
+                    "code": "IT2100",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "Lecture",
+                    "loc": "Main Auditorium"
+                  }
+                ],
+                "tuesday": [
+                  {
+                    "mod": "DSA",
+                    "code": "IT2070",
+                    "start": "08:30",
+                    "end": "10:30",
+                    "type": "Practical",
+                    "loc": "F305-lab"
+                  },
+                  {
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "16:30",
+                    "end": "17:30",
+                    "type": "Lecture",
+                    "loc": "F502 IPU Hall"
+                  }
+                ],
+                "wednesday": [
+                  {
+                    "mod": "ITP",
+                    "code": "IT2080",
+                    "start": "8.30",
+                    "end": "11:30",
+                    "type": "Lec + Tut",
+                    "loc": "F502 IPU Hall"
+                  },
+                  {
+                    "mod": "ITP",
+                    "code": "IT2080",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Evaluation",
+                    "loc": "G1104"
+                  },
+                  {
+                    "mod": "P&S",
+                    "code": "IT2110",
+                    "start": "14:30",
+                    "end": "17:30",
+                    "type": "Lec + Tut",
+                    "loc": "B501"
+                  }
+                ],
+                "thursday": [
+                  {
+                    "mod": "P&S",
+                    "code": "IT2110",
+                    "start": "8:30",
+                    "end": "10:30",
+                    "type": "Practical BYOD",
+                    "loc": "G1106"
+                  },
+                  {
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "10:30",
+                    "end": "12:30",
+                    "type": "Tute",
+                    "loc": "A601 PC lab"
+                  },
+                  {
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "Practical",
+                    "loc": "B401 PC LAB"
+                  }
+                ],
+                "friday": [
+                  {
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "08:30",
+                    "end": "10:30",
+                    "type": "Practical",
+                    "loc": "410A + A411 lab"
+                  }
+                ],
+                "saturday": [],
+                "sunday": []
+
+            }
+          }
         }
       }
     }
