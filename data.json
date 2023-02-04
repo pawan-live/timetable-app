@@ -7,8 +7,7 @@
             "01_02": {
               "key": "foc_y1_s2_it_0102",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "OOC",
                     "code": "IT1050",
                     "start": "08:30",
@@ -49,18 +48,15 @@
                     "loc": "A405 - Pclab"
                   }
                 ],
-                "tuesday": [
-                  {
-                    "mod": "ISDM",
-                    "code": "IT1090",
-                    "start": "13:30",
-                    "end": "15:30",
-                    "type": "Practical 💻",
-                    "loc": "B402 - Pclab"
-                  }
-                ],
-                "wednesday": [
-                  {
+                "tuesday": [{
+                  "mod": "ISDM",
+                  "code": "IT1090",
+                  "start": "13:30",
+                  "end": "15:30",
+                  "type": "Practical 💻",
+                  "loc": "B402 - Pclab"
+                }],
+                "wednesday": [{
                     "mod": "OOC",
                     "code": "IT1050",
                     "start": "08:30",
@@ -85,8 +81,7 @@
                     "loc": "N3E"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "SPM",
                     "code": "IT1060",
                     "start": "08:30",
@@ -103,16 +98,14 @@
                     "loc": "13H-B"
                   }
                 ],
-                "friday": [
-                  {
-                    "mod": "IWT",
-                    "code": "IT1100",
-                    "start": "13:30",
-                    "end": "14:30",
-                    "type": "Tutorial",
-                    "loc": "N3E"
-                  }
-                ],
+                "friday": [{
+                  "mod": "IWT",
+                  "code": "IT1100",
+                  "start": "13:30",
+                  "end": "14:30",
+                  "type": "Tutorial",
+                  "loc": "N3E"
+                }],
                 "saturday": [],
                 "sunday": []
               }
@@ -126,8 +119,7 @@
             "03_01": {
               "key": "foc_y2_s1_se_0301",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "08:30",
@@ -160,8 +152,7 @@
                     "loc": "N3E"
                   }
                 ],
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "SE",
                     "code": "IT2020",
                     "start": "8:30",
@@ -186,8 +177,7 @@
                     "loc": "602 + 603 Lab"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "9:30",
@@ -204,8 +194,7 @@
                     "loc": "B501"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "12:30",
@@ -222,8 +211,7 @@
                     "loc": "13H - A"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "CN",
                     "code": "IT2050",
                     "start": "11:30",
@@ -247,8 +235,7 @@
             "03_02": {
               "key": "foc_y2_s1_se_0302",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "08:30",
@@ -281,8 +268,7 @@
                     "loc": "N3E"
                   }
                 ],
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "SE",
                     "code": "IT2020",
                     "start": "8:30",
@@ -307,8 +293,7 @@
                     "loc": "602 + 603 Lab"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "CN",
                     "code": "IT2050",
                     "start": "12:30",
@@ -325,8 +310,7 @@
                     "loc": "13L-E1+13L-E2"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "12:30",
@@ -343,8 +327,7 @@
                     "loc": "13H - A"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "08:30",
@@ -368,8 +351,7 @@
             "04_01": {
               "key": "foc_y2_s1_se_0401",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "8:30",
@@ -386,8 +368,7 @@
                     "loc": "F502 IPU Hall"
                   }
                 ],
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "SE",
                     "code": "IT2020",
                     "start": "9:30",
@@ -412,8 +393,7 @@
                     "loc": "B401-Pclab"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "8:30",
@@ -438,8 +418,7 @@
                     "loc": "B501"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "8:30",
@@ -472,8 +451,7 @@
                     "loc": "VA 14"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "8:30",
@@ -505,8 +483,7 @@
             "04_02": {
               "key": "foc_y2_s1_se_0402",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "8:30",
@@ -531,8 +508,7 @@
                     "loc": "B402-Pclab"
                   }
                 ],
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "SE",
                     "code": "IT2020",
                     "start": "9:30",
@@ -549,8 +525,7 @@
                     "loc": "VA 5"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "8:30",
@@ -575,8 +550,7 @@
                     "loc": "B501"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "8:30",
@@ -609,8 +583,7 @@
                     "loc": "VA 14"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "8:30",
@@ -634,18 +607,15 @@
             "05_01": {
               "key": "foc_y2_s1_se_0501",
               "table": {
-                "monday": [
-                  {
-                    "mod": "OOP",
-                    "code": "IT2030",
-                    "start": "15:30",
-                    "end": "17:30",
-                    "type": "practical",
-                    "loc": "605 PC Lab (New)"
-                  }
-                ],
-                "tuesday": [
-                  {
+                "monday": [{
+                  "mod": "OOP",
+                  "code": "IT2030",
+                  "start": "15:30",
+                  "end": "17:30",
+                  "type": "practical",
+                  "loc": "605 PC Lab (New)"
+                }],
+                "tuesday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "8:30",
@@ -673,8 +643,7 @@
                     "link": "http://tiny.cc/0pavuz"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "9:30",
@@ -699,8 +668,7 @@
                     "loc": "410A & 410B Lab"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "SE",
                     "code": "IT2020",
                     "start": "8:30",
@@ -725,8 +693,7 @@
                     "loc": "B502"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "8:30",
@@ -758,19 +725,16 @@
             "05_02": {
               "key": "foc_y2_s1_se_0502",
               "table": {
-                "monday": [
-                  {
-                    "mod": "DMS",
-                    "code": "IT2040",
-                    "start": "15:30",
-                    "end": "17:30",
-                    "type": "practical",
-                    "loc": "N3B Lab",
-                    "link": ""
-                  }
-                ],
-                "tuesday": [
-                  {
+                "monday": [{
+                  "mod": "DMS",
+                  "code": "IT2040",
+                  "start": "15:30",
+                  "end": "17:30",
+                  "type": "practical",
+                  "loc": "N3B Lab",
+                  "link": ""
+                }],
+                "tuesday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "8:30",
@@ -798,8 +762,7 @@
                     "link": "http://tiny.cc/0pavuz"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "9:30",
@@ -816,8 +779,7 @@
                     "loc": "F502 IPU Hall"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "SE",
                     "code": "IT2020",
                     "start": "8:30",
@@ -842,8 +804,7 @@
                     "loc": "B502"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "8:30",
@@ -883,8 +844,7 @@
             "06_01": {
               "key": "foc_y2_s1_se_0601",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "09:30",
@@ -909,8 +869,7 @@
                     "loc": "601 - Pclab (New)"
                   }
                 ],
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "09:30",
@@ -935,8 +894,7 @@
                     "loc": "N3D"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "OOp",
                     "code": "IT2030",
                     "start": "10:30",
@@ -953,8 +911,7 @@
                     "loc": "A308"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "CN",
                     "code": "IT2050",
                     "start": "08:30",
@@ -979,8 +936,7 @@
                     "loc": "F502 IPU Hall"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "CN",
                     "code": "IT2050",
                     "start": "11:30",
@@ -1004,8 +960,7 @@
             "06_02": {
               "key": "foc_y2_s1_se_0602",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "09:30",
@@ -1022,8 +977,7 @@
                     "loc": "601 - Pclab (New)"
                   }
                 ],
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "09:30",
@@ -1048,8 +1002,7 @@
                     "loc": "N3D"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "OOp",
                     "code": "IT2030",
                     "start": "10:30",
@@ -1066,8 +1019,7 @@
                     "loc": "A308"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "CN",
                     "code": "IT2050",
                     "start": "08:30",
@@ -1092,8 +1044,7 @@
                     "loc": "F502 IPU Hall"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "08:30",
@@ -1125,18 +1076,15 @@
             "07_01": {
               "key": "foc_y2_s1_se_0701",
               "table": {
-                "monday": [
-                  {
-                    "mod": "DMS",
-                    "code": "IT2040",
-                    "start": "10:30",
-                    "end": "12:30",
-                    "type": "lecture",
-                    "loc": "13H - C (New)"
-                  }
-                ],
-                "tuesday": [
-                  {
+                "monday": [{
+                  "mod": "DMS",
+                  "code": "IT2040",
+                  "start": "10:30",
+                  "end": "12:30",
+                  "type": "lecture",
+                  "loc": "13H - C (New)"
+                }],
+                "tuesday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "8:30",
@@ -1161,8 +1109,7 @@
                     "loc": "13H - A"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "08:30",
@@ -1187,8 +1134,7 @@
                     "loc": "13L - C"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "08:30",
@@ -1213,8 +1159,7 @@
                     "loc": "B403-Pclab"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "09:30",
@@ -1246,8 +1191,7 @@
             "07_02": {
               "key": "foc_y2_s1_se_0702",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "08:30",
@@ -1264,8 +1208,7 @@
                     "loc": "13H - C (New)"
                   }
                 ],
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "8:30",
@@ -1290,8 +1233,7 @@
                     "loc": "13H - A"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "08:30",
@@ -1308,8 +1250,7 @@
                     "loc": "602 & 603 Lab"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "08:30",
@@ -1334,8 +1275,7 @@
                     "loc": "B403-Pclab"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "09:30",
@@ -1367,8 +1307,7 @@
             "08_01": {
               "key": "foc_y2_s1_se_0801",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "08:30",
@@ -1393,8 +1332,7 @@
                     "loc": "602 + 603 Lab"
                   }
                 ],
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "08:30",
@@ -1419,8 +1357,7 @@
                     "loc": "VA 5"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "10:30",
@@ -1437,8 +1374,7 @@
                     "loc": "New 3C"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "08:30",
@@ -1463,8 +1399,7 @@
                     "loc": "601-Pclab (New)"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "SE",
                     "code": "IT2020",
                     "start": "12:30",
@@ -1488,8 +1423,7 @@
             "08_02": {
               "key": "foc_y2_s1_se_0802",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "08:30",
@@ -1506,8 +1440,7 @@
                     "loc": "13L-A + 13L-B "
                   }
                 ],
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "08:30",
@@ -1532,8 +1465,7 @@
                     "loc": "VA 5"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "8:30",
@@ -1558,8 +1490,7 @@
                     "loc": "New 3C"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "08:30",
@@ -1584,8 +1515,7 @@
                     "loc": "601-Pclab (New)"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "SE",
                     "code": "IT2020",
                     "start": "12:30",
@@ -1609,18 +1539,15 @@
             "09_01": {
               "key": "foc_y2_s1_se_0901",
               "table": {
-                "monday": [
-                  {
-                    "mod": "OOP",
-                    "code": "IT2030",
-                    "start": "10:30",
-                    "end": "12:30",
-                    "type": "Lecture + Tutorial",
-                    "loc": "N3E"
-                  }
-                ],
-                "tuesday": [
-                  {
+                "monday": [{
+                  "mod": "OOP",
+                  "code": "IT2030",
+                  "start": "10:30",
+                  "end": "12:30",
+                  "type": "Lecture + Tutorial",
+                  "loc": "N3E"
+                }],
+                "tuesday": [{
                     "mod": "CN",
                     "code": "IT2050",
                     "start": "8:30",
@@ -1645,8 +1572,7 @@
                     "loc": "F501 IPU Hall"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "9:30",
@@ -1679,8 +1605,7 @@
                     "loc": "B501"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "8:30",
@@ -1705,8 +1630,7 @@
                     "loc": "13L-E1+13L-E2"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "10:30",
@@ -1730,8 +1654,7 @@
             "09_02": {
               "key": "foc_y2_s1_se_0901",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "8:30",
@@ -1748,8 +1671,7 @@
                     "loc": "N3E"
                   }
                 ],
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "CN",
                     "code": "IT2050",
                     "start": "8:30",
@@ -1774,8 +1696,7 @@
                     "loc": "F501 IPU Hall"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "9:30",
@@ -1808,8 +1729,7 @@
                     "loc": "B501"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "OSSA",
                     "code": "IT2060",
                     "start": "8:30",
@@ -1834,8 +1754,7 @@
                     "loc": "13L-E1+13L-E2"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "8:30",
@@ -1859,8 +1778,7 @@
             "10_01": {
               "key": "foc_y2_s1_se_1001",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "8:30",
@@ -1886,8 +1804,7 @@
                     "loc": "F502-IPU Hall"
                   }
                 ],
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "SE",
                     "code": "IT2020",
                     "start": "8:30",
@@ -1912,8 +1829,7 @@
                     "loc": "VA3 Lab"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "8:30",
@@ -1940,8 +1856,7 @@
                   }
                 ],
 
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "SE",
                     "code": "IT2020",
                     "start": "8:30",
@@ -1966,16 +1881,14 @@
                     "loc": "A308"
                   }
                 ],
-                "friday": [
-                  {
-                    "mod": "SE",
-                    "code": "IT2020",
-                    "start": "15:30",
-                    "end": "17:30",
-                    "type": "tutorial",
-                    "loc": "B501"
-                  }
-                ],
+                "friday": [{
+                  "mod": "SE",
+                  "code": "IT2020",
+                  "start": "15:30",
+                  "end": "17:30",
+                  "type": "tutorial",
+                  "loc": "B501"
+                }],
                 "saturday": [],
                 "sunday": []
               }
@@ -1983,8 +1896,7 @@
             "10_02": {
               "key": "foc_y2_s1_se_1002",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "8:30",
@@ -2009,8 +1921,7 @@
                     "loc": "F502-IPU Hall"
                   }
                 ],
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "SE",
                     "code": "IT2020",
                     "start": "8:30",
@@ -2035,8 +1946,7 @@
                     "loc": "VA3 Lab"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "9:30",
@@ -2062,8 +1972,7 @@
                   }
                 ],
 
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "SE",
                     "code": "IT2020",
                     "start": "8:30",
@@ -2088,16 +1997,14 @@
                     "loc": "A308"
                   }
                 ],
-                "friday": [
-                  {
-                    "mod": "SE",
-                    "code": "IT2020",
-                    "start": "15:30",
-                    "end": "17:30",
-                    "type": "tutorial",
-                    "loc": "B501"
-                  }
-                ],
+                "friday": [{
+                  "mod": "SE",
+                  "code": "IT2020",
+                  "start": "15:30",
+                  "end": "17:30",
+                  "type": "tutorial",
+                  "loc": "B501"
+                }],
                 "saturday": [],
                 "sunday": []
               }
@@ -2105,58 +2012,47 @@
             "WE_01_01": {
               "key": "foc_y2_s1_se_we_0101",
               "table": {
-                "monday": [
-                  {
-                    "mod": "CN",
-                    "code": "IT2050",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Practical",
-                    "loc": "B403 PC LAB"
-                  }
-                ],
-                "tuesday": [
-                  {
-                    "mod": "PS",
-                    "code": "IT2090",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Lecture 💻",
-                    "loc": "Virtual Auditorium 1"
-                  }
-                ],
-                "wednesday": [
-                  {
-                    "mod": "DMS",
-                    "code": "IT2040",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Practical",
-                    "loc": "B403 PC LAB"
-                  }
-                ],
-                "thursday": [
-                  {
-                    "mod": "ESD",
-                    "code": "IT2100",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Lecture 💻",
-                    "loc": "Virtual Auditorium 3"
-                  }
-                ],
-                "friday": [
-                  {
-                    "mod": "OSSA",
-                    "code": "IT2060",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Practical",
-                    "loc": "B401 PC LAB"
-                  }
-                ],
-                "saturday": [
-                  {
+                "monday": [{
+                  "mod": "CN",
+                  "code": "IT2050",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Practical",
+                  "loc": "B403 PC LAB"
+                }],
+                "tuesday": [{
+                  "mod": "PS",
+                  "code": "IT2090",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Lecture 💻",
+                  "loc": "Virtual Auditorium 1"
+                }],
+                "wednesday": [{
+                  "mod": "DMS",
+                  "code": "IT2040",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Practical",
+                  "loc": "B403 PC LAB"
+                }],
+                "thursday": [{
+                  "mod": "ESD",
+                  "code": "IT2100",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Lecture 💻",
+                  "loc": "Virtual Auditorium 3"
+                }],
+                "friday": [{
+                  "mod": "OSSA",
+                  "code": "IT2060",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Practical",
+                  "loc": "B401 PC LAB"
+                }],
+                "saturday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "8:30",
@@ -2197,8 +2093,7 @@
                     "loc": "F501 IPU Hall"
                   }
                 ],
-                "sunday": [
-                  {
+                "sunday": [{
                     "mod": "SE",
                     "code": "IT2020",
                     "start": "8:30",
@@ -2236,58 +2131,47 @@
             "WE_01_02": {
               "key": "foc_y2_s1_se_we_0102",
               "table": {
-                "monday": [
-                  {
-                    "mod": "CN",
-                    "code": "IT2050",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Practical",
-                    "loc": "B403 PC LAB"
-                  }
-                ],
-                "tuesday": [
-                  {
-                    "mod": "PS",
-                    "code": "IT2090",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Lecture 💻",
-                    "loc": "Virtual Auditorium 1"
-                  }
-                ],
-                "wednesday": [
-                  {
-                    "mod": "DMS",
-                    "code": "IT2040",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Practical BYOD",
-                    "loc": "New W2 - 11 Lab 1"
-                  }
-                ],
-                "thursday": [
-                  {
-                    "mod": "ESD",
-                    "code": "IT2100",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Lecture 💻",
-                    "loc": "Virtual Auditorium 3"
-                  }
-                ],
-                "friday": [
-                  {
-                    "mod": "OSSA",
-                    "code": "IT2060",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Practical",
-                    "loc": "B401 PC LAB"
-                  }
-                ],
-                "saturday": [
-                  {
+                "monday": [{
+                  "mod": "CN",
+                  "code": "IT2050",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Practical",
+                  "loc": "B403 PC LAB"
+                }],
+                "tuesday": [{
+                  "mod": "PS",
+                  "code": "IT2090",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Lecture 💻",
+                  "loc": "Virtual Auditorium 1"
+                }],
+                "wednesday": [{
+                  "mod": "DMS",
+                  "code": "IT2040",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Practical BYOD",
+                  "loc": "New W2 - 11 Lab 1"
+                }],
+                "thursday": [{
+                  "mod": "ESD",
+                  "code": "IT2100",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Lecture 💻",
+                  "loc": "Virtual Auditorium 3"
+                }],
+                "friday": [{
+                  "mod": "OSSA",
+                  "code": "IT2060",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Practical",
+                  "loc": "B401 PC LAB"
+                }],
+                "saturday": [{
                     "mod": "DMS",
                     "code": "IT2040",
                     "start": "8:30",
@@ -2328,8 +2212,7 @@
                     "loc": "F501 IPU Hall"
                   }
                 ],
-                "sunday": [
-                  {
+                "sunday": [{
                     "mod": "SE",
                     "code": "IT2020",
                     "start": "8:30",
@@ -2371,8 +2254,7 @@
               "table": {
                 "monday": [],
 
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "SOS",
                     "code": "IE2032",
                     "start": "8:30",
@@ -2397,8 +2279,7 @@
                     "loc": "13H-B"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "DMSS",
                     "code": "IE2042",
                     "start": "8:30",
@@ -2415,18 +2296,15 @@
                     "loc": "B403 PC Lab"
                   }
                 ],
-                "thursday": [
-                  {
-                    "mod": "SOS",
-                    "code": "IE2032",
-                    "start": "11:30",
-                    "end": "13:30",
-                    "type": "practical 💻",
-                    "loc": "602 + 603 Lab"
-                  }
-                ],
-                "friday": [
-                  {
+                "thursday": [{
+                  "mod": "SOS",
+                  "code": "IE2032",
+                  "start": "11:30",
+                  "end": "13:30",
+                  "type": "practical 💻",
+                  "loc": "602 + 603 Lab"
+                }],
+                "friday": [{
                     "mod": "DMSS",
                     "code": "IE2042",
                     "start": "11:30",
@@ -2450,19 +2328,16 @@
             "02_02": {
               "key": "foc_y2_s1_cs_0202",
               "table": {
-                "monday": [
-                  {
-                    "mod": "DMSS",
-                    "code": "IE2042",
-                    "start": "11:30",
-                    "end": "13:30",
-                    "type": "practical",
-                    "loc": "602 + 603 Lab"
-                  }
-                ],
+                "monday": [{
+                  "mod": "DMSS",
+                  "code": "IE2042",
+                  "start": "11:30",
+                  "end": "13:30",
+                  "type": "practical",
+                  "loc": "602 + 603 Lab"
+                }],
 
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "SOS",
                     "code": "IE2032",
                     "start": "8:30",
@@ -2488,30 +2363,25 @@
                   }
                 ],
 
-                "wednesday": [
-                  {
-                    "mod": "SNP",
-                    "code": "IE2012",
-                    "start": "10:30",
-                    "end": "12:30",
-                    "type": "practical",
-                    "loc": "A405 PC Lab"
-                  }
-                ],
+                "wednesday": [{
+                  "mod": "SNP",
+                  "code": "IE2012",
+                  "start": "10:30",
+                  "end": "12:30",
+                  "type": "practical",
+                  "loc": "A405 PC Lab"
+                }],
 
-                "thursday": [
-                  {
-                    "mod": "ICS",
-                    "code": "IE2022",
-                    "start": "15:30",
-                    "end": "17:30",
-                    "type": "practical 💻",
-                    "loc": "A406 PC Lab"
-                  }
-                ],
+                "thursday": [{
+                  "mod": "ICS",
+                  "code": "IE2022",
+                  "start": "15:30",
+                  "end": "17:30",
+                  "type": "practical 💻",
+                  "loc": "A406 PC Lab"
+                }],
 
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "DMSS",
                     "code": "IE2042",
                     "start": "10:30",
@@ -2535,44 +2405,37 @@
             "WE_02": {
               "key": "foc_y2_s1_cs_WE_02",
               "table": {
-                "monday": [
-                  {
-                    "mod": "SOS",
-                    "code": "IE2032",
-                    "start": "18.00",
-                    "end": "19.00",
-                    "type": "Practical",
-                    "loc": "N3B Lab"
-                  }
-                ],
+                "monday": [{
+                  "mod": "SOS",
+                  "code": "IE2032",
+                  "start": "18.00",
+                  "end": "19.00",
+                  "type": "Practical",
+                  "loc": "N3B Lab"
+                }],
 
-                "tuesday": [
-                  {
-                    "mod": "PS",
-                    "code": "IT2090",
-                    "start": "18.00",
-                    "end": "19.00",
-                    "type": "Lecture 💻",
-                    "loc": "Virtual Auditorium 1"
-                  }
-                ],
+                "tuesday": [{
+                  "mod": "PS",
+                  "code": "IT2090",
+                  "start": "18.00",
+                  "end": "19.00",
+                  "type": "Lecture 💻",
+                  "loc": "Virtual Auditorium 1"
+                }],
 
                 "wednesday": [],
 
-                "thursday": [
-                  {
-                    "mod": "ESD",
-                    "code": "IT2100",
-                    "start": "18.00",
-                    "end": "19.00",
-                    "type": "Lecture 💻",
-                    "loc": "Virtual Auditorium 3"
-                  }
-                ],
+                "thursday": [{
+                  "mod": "ESD",
+                  "code": "IT2100",
+                  "start": "18.00",
+                  "end": "19.00",
+                  "type": "Lecture 💻",
+                  "loc": "Virtual Auditorium 3"
+                }],
 
                 "friday": [],
-                "saturday": [
-                  {
+                "saturday": [{
                     "mod": "SOS",
                     "code": "IE2032",
                     "start": "10.30",
@@ -2597,8 +2460,7 @@
                     "loc": "A507"
                   }
                 ],
-                "sunday": [
-                  {
+                "sunday": [{
                     "mod": "SNP",
                     "code": "IE2012",
                     "start": "8.30",
@@ -2630,8 +2492,7 @@
             "03_01": {
               "key": "foc_y2_s1_ise_0301",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "OOP",
                     "code": "IE2021",
                     "start": "08:30",
@@ -2648,8 +2509,7 @@
                     "loc": "13L - C"
                   }
                 ],
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "PS",
                     "code": "IT2090",
                     "start": "8:30",
@@ -2682,8 +2542,7 @@
                     "loc": "Auditorium"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "OOP",
                     "code": "IE2021",
                     "start": "9:30",
@@ -2708,8 +2567,7 @@
                     "loc": "13L - A & B"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "OSSA",
                     "code": "IE2061",
                     "start": "8:30",
@@ -2742,16 +2600,14 @@
                     "loc": "VA 11"
                   }
                 ],
-                "friday": [
-                  {
-                    "mod": "OSSA",
-                    "code": "IE2061",
-                    "start": "8:30",
-                    "end": "9:30",
-                    "type": "tutorial",
-                    "loc": "N3E"
-                  }
-                ],
+                "friday": [{
+                  "mod": "OSSA",
+                  "code": "IE2061",
+                  "start": "8:30",
+                  "end": "9:30",
+                  "type": "tutorial",
+                  "loc": "N3E"
+                }],
                 "saturday": [],
                 "sunday": []
               }
@@ -2761,19 +2617,16 @@
             "01_01": {
               "key": "foc_y2_s1_CSNE_0101",
               "table": {
-                "monday": [
-                  {
-                    "mod": "PS",
-                    "code": "IT2110",
-                    "start": "15:30",
-                    "end": "17:30",
-                    "type": "practical 💻",
-                    "loc": "B403-Pclab"
-                  }
-                ],
+                "monday": [{
+                  "mod": "PS",
+                  "code": "IT2110",
+                  "start": "15:30",
+                  "end": "17:30",
+                  "type": "practical 💻",
+                  "loc": "B403-Pclab"
+                }],
 
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "RS",
                     "code": "IE2020",
                     "start": "8:30",
@@ -2798,8 +2651,7 @@
                     "loc": "New3C"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "DE/AE",
                     "code": "IE2010/IE2030",
                     "start": "8:30",
@@ -2824,8 +2676,7 @@
                     "loc": "13H-A"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "DSA",
                     "code": "IE2032",
                     "start": "8:30",
@@ -2842,8 +2693,7 @@
                     "loc": "410A + 410B labs"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "8:30",
@@ -2867,8 +2717,7 @@
             "01_02": {
               "key": "foc_y2_s1_CSNE_0102",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "DE/AE",
                     "code": "IE2010/IE2030",
                     "start": "8:30",
@@ -2894,8 +2743,7 @@
                   }
                 ],
 
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "RS",
                     "code": "IE2020",
                     "start": "8:30",
@@ -2920,8 +2768,7 @@
                     "loc": "New3C"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "DE",
                     "code": "IE2010",
                     "start": "10:30",
@@ -2938,8 +2785,7 @@
                     "loc": "13H-A"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "DSA",
                     "code": "IE2032",
                     "start": "8:30",
@@ -2956,16 +2802,14 @@
                     "loc": "A406-Pclab"
                   }
                 ],
-                "friday": [
-                  {
-                    "mod": "OOP",
-                    "code": "IT2030",
-                    "start": "14:30",
-                    "end": "17:30",
-                    "type": "lec + tut",
-                    "loc": "F502 IPU Hall"
-                  }
-                ],
+                "friday": [{
+                  "mod": "OOP",
+                  "code": "IT2030",
+                  "start": "14:30",
+                  "end": "17:30",
+                  "type": "lec + tut",
+                  "loc": "F502 IPU Hall"
+                }],
                 "saturday": [],
                 "sunday": []
               }
@@ -2973,8 +2817,7 @@
             "01_03": {
               "key": "foc_y2_s1_CSNE_0103",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "DE/AE",
                     "code": "IE2010/IE2030",
                     "start": "11:30",
@@ -2992,8 +2835,7 @@
                   }
                 ],
 
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "RS",
                     "code": "IE2020",
                     "start": "8:30",
@@ -3018,8 +2860,7 @@
                     "loc": "New3C"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "DE",
                     "code": "IE2010",
                     "start": "10:30",
@@ -3036,8 +2877,7 @@
                     "loc": "13H-A"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "DSA",
                     "code": "IE2032",
                     "start": "8:30",
@@ -3054,8 +2894,7 @@
                     "loc": "410A + 410B lab"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "OOP",
                     "code": "IT2030",
                     "start": "8:30",
@@ -3079,8 +2918,7 @@
             "01_04": {
               "key": "foc_y2_s1_CSNE_0104",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "PS",
                     "code": "IT2110",
                     "start": "11:30",
@@ -3098,8 +2936,7 @@
                   }
                 ],
 
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "RS",
                     "code": "IE2020",
                     "start": "8:30",
@@ -3124,8 +2961,7 @@
                     "loc": "New3C"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "DE",
                     "code": "IE2010",
                     "start": "10:30",
@@ -3142,8 +2978,7 @@
                     "loc": "13H-A"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "DSA",
                     "code": "IE2032",
                     "start": "8:30",
@@ -3160,8 +2995,7 @@
                     "loc": "A406-Pclab"
                   }
                 ],
-                "friday": [
-                  {
+                "friday": [{
                     "mod": "DE/AE",
                     "code": "IE2010/IE2030",
                     "start": "10:30",
@@ -3185,12 +3019,11 @@
           }
         },
         "S2": {
-          "SE/IT":{
-            "08_01":{
+          "SE/IT": {
+            "08_01": {
               "key": "foc_y2_s2_se_08_01",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "PS",
                     "code": "IT2090",
                     "start": "08:30",
@@ -3214,7 +3047,7 @@
                     "type": "Tutorial",
                     "loc": "A504"
                   },
-                  
+
                   {
                     "mod": "ESD",
                     "code": "IT2100",
@@ -3224,18 +3057,15 @@
                     "loc": "Main Auditorium"
                   }
                 ],
-                "tuesday": [
-                  {
-                    "mod": "MAD",
-                    "code": "IT2010",
-                    "start": "16:30",
-                    "end": "15:30",
-                    "type": "Lecture",
-                    "loc": "F502 IPU Hall"
-                  }
-                ],
-                "wednesday": [
-                  {
+                "tuesday": [{
+                  "mod": "MAD",
+                  "code": "IT2010",
+                  "start": "16:30",
+                  "end": "15:30",
+                  "type": "Lecture",
+                  "loc": "F502 IPU Hall"
+                }],
+                "wednesday": [{
                     "mod": "ITP",
                     "code": "IT2080",
                     "start": "8.30",
@@ -3260,8 +3090,7 @@
                     "loc": "B501"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "P&S",
                     "code": "IT2110",
                     "start": "8:30",
@@ -3286,16 +3115,14 @@
                     "loc": "B401 PC LAB"
                   }
                 ],
-                "friday": [
-                  {
-                    "mod": "DSA",
-                    "code": "IT2010",
-                    "start": "11:30",
-                    "end": "13:30",
-                    "type": "Practical",
-                    "loc": "A406 PC Lab"
-                  }
-                ],
+                "friday": [{
+                  "mod": "DSA",
+                  "code": "IT2010",
+                  "start": "11:30",
+                  "end": "13:30",
+                  "type": "Practical",
+                  "loc": "A406 PC Lab"
+                }],
                 "saturday": [],
                 "sunday": []
               }
@@ -3304,8 +3131,7 @@
             "08_02": {
               "key": "foc_y2_s2_se_08_02",
               "table": {
-                "monday": [
-                  {
+                "monday": [{
                     "mod": "PS",
                     "code": "IT2090",
                     "start": "08:30",
@@ -3329,7 +3155,7 @@
                     "type": "Tutorial",
                     "loc": "A504"
                   },
-                  
+
                   {
                     "mod": "ESD",
                     "code": "IT2100",
@@ -3339,8 +3165,7 @@
                     "loc": "Main Auditorium"
                   }
                 ],
-                "tuesday": [
-                  {
+                "tuesday": [{
                     "mod": "DSA",
                     "code": "IT2070",
                     "start": "08:30",
@@ -3357,8 +3182,7 @@
                     "loc": "F502 IPU Hall"
                   }
                 ],
-                "wednesday": [
-                  {
+                "wednesday": [{
                     "mod": "ITP",
                     "code": "IT2080",
                     "start": "8.30",
@@ -3383,8 +3207,7 @@
                     "loc": "B501"
                   }
                 ],
-                "thursday": [
-                  {
+                "thursday": [{
                     "mod": "P&S",
                     "code": "IT2110",
                     "start": "8:30",
@@ -3409,19 +3232,18 @@
                     "loc": "B401 PC LAB"
                   }
                 ],
-                "friday": [
-                  {
-                    "mod": "MAD",
-                    "code": "IT2010",
-                    "start": "08:30",
-                    "end": "10:30",
-                    "type": "Practical",
-                    "loc": "410A + A411 lab"
-                  }
-                ],
+                "friday": [{
+                  "mod": "MAD",
+                  "code": "IT2010",
+                  "start": "08:30",
+                  "end": "10:30",
+                  "type": "Practical",
+                  "loc": "410A + A411 lab"
+                }],
                 "saturday": [],
                 "sunday": []
 
+              }
             }
           }
         }
