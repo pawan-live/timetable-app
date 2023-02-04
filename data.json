@@ -3389,7 +3389,7 @@
                 "wednesday": [{
                     "mod": "ESD",
                     "code": "IT2100",
-                    "start": "18.00",
+                    "start": "18:00",
                     "end": "20:00",
                     "type": "Lecture ",
                     "loc": "B502"
@@ -3692,6 +3692,101 @@
                     "type": "Evaluation",
                     "loc": "G1104"
                   }]
+              }
+            }
+          },
+          "CS": {
+            "WE_02": {
+              "key": "foc_y2_s2_se_WE_02",
+              "table": {
+                "monday": [{
+                    "mod": "PS",
+                    "code": "IT2090",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Lecture",
+                    "loc": "B502"
+                  }],
+                "wednesday": [{
+                    "mod": "ESD",
+                    "code": "IT2100",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Lecture",
+                    "loc": "B502"
+                  }],
+                "saturday": [{
+                  "mod": "DM",
+                  "code": "IE2082",
+                  "start": "8:30",
+                  "end": "11:30",
+                  "type": "Lecture + Tute",
+                  "loc": "F302"
+                },
+                {
+                  "mod": "FA",
+                  "code": "IE2072",
+                  "start": "11:30",
+                  "end": "13:30",
+                  "type": "Lecture",
+                  "loc": "G1101"
+                },
+                {
+                  "mod": "WS",
+                  "code": "IE2062",
+                  "start": "14:00",
+                  "end": "17:00",
+                  "type": "Lecture + Tute",
+                  "loc": "A505"
+                },
+                {
+                  "mod": "FA",
+                  "code": "IE2072",
+                  "start": "17:00",
+                  "end": "18:00",
+                  "type": "Tutorial",
+                  "loc": "A504"
+                },
+                {
+                  "mod": "FA",
+                  "code": "IE2072",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Practical BYOD VL",
+                  "loc": "G1102"
+                }],
+                "sunday": [{
+                  "mod": "WS",
+                  "code": "IE2062",
+                  "start": "8:30",
+                  "end": "10:30",
+                  "type": "Practical",
+                  "loc": "CyberSecLab"
+                },
+                {
+                  "mod": "ANT",
+                  "code": "IE2052",
+                  "start": "10:30",
+                  "end": "1:30",
+                  "type": "Lecture + Tute",
+                  "loc": "G1102"
+                },
+                {
+                  "mod": "DM",
+                  "code": "IE2082",
+                  "start": "14:00",
+                  "end": "15:00",
+                  "type": "Practical",
+                  "loc": "F304-lab"
+                },
+                {
+                  "mod": "ANT",
+                  "code": "IE2052",
+                  "start": "15:00",
+                  "end": "18:00",
+                  "type": "Practical",
+                  "loc": "B401-Pclab"
+                }]
               }
             }
           }
