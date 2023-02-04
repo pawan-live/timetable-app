@@ -3082,7 +3082,7 @@
                     "loc": "G604"
                   },
                   {
-                    "mod": "P&S",
+                    "mod": "PS",
                     "code": "IT2110",
                     "start": "14:30",
                     "end": "17:30",
@@ -3091,7 +3091,7 @@
                   }
                 ],
                 "thursday": [{
-                    "mod": "P&S",
+                    "mod": "PS",
                     "code": "IT2110",
                     "start": "8:30",
                     "end": "10:30",
@@ -3199,7 +3199,7 @@
                     "loc": "G1104"
                   },
                   {
-                    "mod": "P&S",
+                    "mod": "PS",
                     "code": "IT2110",
                     "start": "14:30",
                     "end": "17:30",
@@ -3208,7 +3208,7 @@
                   }
                 ],
                 "thursday": [{
-                    "mod": "P&S",
+                    "mod": "PS",
                     "code": "IT2110",
                     "start": "8:30",
                     "end": "10:30",
@@ -3243,6 +3243,455 @@
                 "saturday": [],
                 "sunday": []
 
+              }
+            },
+            "WE_01_01": {
+              "key": "foc_y2_s2_se_WE_01_01",
+              "table": {
+                "monday": [{
+                    "mod": "PS",
+                    "code": "IT2090",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Lecture",
+                    "loc": "B502"
+                  }
+                ],
+                "tuesday": [{
+                  "mod": "DSA",
+                  "code": "IT2070",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Practical",
+                  "loc": "B403-Pclab"
+                  } 
+                ],
+                "wednesday": [{
+                    "mod": "ESD",
+                    "code": "IT2100",
+                    "start": "18.00",
+                    "end": "20:00",
+                    "type": "Lecture",
+                    "loc": "B502"
+                  }
+                ],
+                "saturday": [{
+                  "mod": "DSA",
+                  "code": "IT2070",
+                  "start": "8:30",
+                  "end": "10:30",
+                  "type": "Lecture",
+                  "loc": "B501"
+                },
+                {
+                  "mod": "DSA",
+                  "code": "IT2070",
+                  "start": "10:30",
+                  "end": "11:30",
+                  "type": "Tutorial",
+                  "loc": "B501"
+                },
+                {
+                  "mod": "PS",
+                  "code": "IT2110",
+                  "start": "11:30",
+                  "end": "13:30",
+                  "type": "Lecture",
+                  "loc": "B501"
+                },
+                {
+                  "mod": "PS",
+                  "code": "IT2110",
+                  "start": "14:00",
+                  "end": "15:00",
+                  "type": "Tutorial",
+                  "loc": "B502"
+                },
+                {
+                  "mod": "MAD",
+                  "code": "IT2010",
+                  "start": "17:00",
+                  "end": "19:00",
+                  "type": "Practical",
+                  "loc": "F305-lab"
+                },
+                {
+                  "mod": "MAD",
+                  "code": "IT2010",
+                  "start": "19:00",
+                  "end": "20:00",
+                  "type": "Lecture",
+                  "loc": "B501"
+                }],
+                "sunday": [{
+                  "mod": "PS",
+                  "code": "IT2110",
+                  "start": "8:30",
+                  "end": "10:30",
+                  "type": "Practical",
+                  "loc": "F1303 + F1304"
+                },
+                {
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "10:30",
+                    "end": "11:30",
+                    "type": "Tutorial",
+                    "loc": "B401-Pclab"
+                },
+                {
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "11:30",
+                    "end": "12:30",
+                    "type": "Tutorial",
+                    "loc": "B401-Pclab"
+                  },
+                  {
+                    "mod": "ITP",
+                    "code": "IT2080",
+                    "start": "15:00",
+                    "end": "18:00",
+                    "type": "Lecture + Tute",
+                    "loc": "B502"
+                  },
+                  {
+                    "mod": "ITP",
+                    "code": "IT2080",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Evaluation",
+                    "loc": "G1105"
+                  }]
+              }
+            },
+            "WE_01_02": {
+              "key": "foc_y2_s2_se_WE_01_02",
+              "table": {
+                "monday": [{
+                    "mod": "PS",
+                    "code": "IT2090",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Lecture",
+                    "loc": "B502"
+                  }
+                ],
+                "tuesday": [{
+                  "mod": "MAD",
+                  "code": "IT2010",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Tutorial",
+                  "loc": "A406-PClab"
+                  } 
+                ],
+                "wednesday": [{
+                    "mod": "ESD",
+                    "code": "IT2100",
+                    "start": "18.00",
+                    "end": "20:00",
+                    "type": "Lecture ",
+                    "loc": "B502"
+                  }
+                ],
+                "thursday": [{
+                    "mod": "PS",
+                    "code": "IT2110",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Practical",
+                    "loc": "B402-PcLab"
+                  }
+                ],
+                "friday": [{
+                  "mod": "DSA",
+                  "code": "IT2070",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Practical",
+                  "loc": "A405-Pclab"
+                }],
+                "saturday": [{
+                  "mod": "DSA",
+                  "code": "IT2070",
+                  "start": "8:30",
+                  "end": "10:30",
+                  "type": "Lecture",
+                  "loc": "B501"
+                },
+                {
+                  "mod": "DSA",
+                  "code": "IT2070",
+                  "start": "10:30",
+                  "end": "11:30",
+                  "type": "Tutorial",
+                  "loc": "B501"
+                },
+                {
+                  "mod": "PS",
+                  "code": "IT2110",
+                  "start": "11:30",
+                  "end": "13:30",
+                  "type": "Lecture",
+                  "loc": "B501"
+                },
+                {
+                  "mod": "PS",
+                  "code": "IT2110",
+                  "start": "14:00",
+                  "end": "15:00",
+                  "type": "Tutorial",
+                  "loc": "B502"
+                },
+                {
+                  "mod": "MAD",
+                  "code": "IT2010",
+                  "start": "19:00",
+                  "end": "20:00",
+                  "type": "Lecture",
+                  "loc": "B501"
+                }],
+                "sunday": [{
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "9:30",
+                    "end": "11:30",
+                    "type": "Practical",
+                    "loc": "F304-lab"
+                  },
+                  {
+                    "mod": "ITP",
+                    "code": "IT2080",
+                    "start": "15:00",
+                    "end": "18:00",
+                    "type": "Lecture + Tute",
+                    "loc": "B502"
+                  },
+                  {
+                    "mod": "ITP",
+                    "code": "IT2080",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Evaluation",
+                    "loc": "G1105"
+                  }]
+              }
+            },
+            "WE_02_02": {
+              "key": "foc_y2_s2_se_WE_02_02",
+              "table": {
+                "monday": [{
+                    "mod": "PS",
+                    "code": "IT2090",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Lecture",
+                    "loc": "B502"
+                  }
+                ],
+                "wednesday": [{
+                    "mod": "ESD",
+                    "code": "IT2100",
+                    "start": "18.00",
+                    "end": "20:00",
+                    "type": "Lecture ",
+                    "loc": "B502"
+                  }
+                ],
+                "thursday": [{
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Tutorial",
+                    "loc": "A604-Pclab"
+                  }
+                ],
+                "saturday": [{
+                  "mod": "DSA",
+                  "code": "IT2070",
+                  "start": "8:30",
+                  "end": "10:30",
+                  "type": "Lecture",
+                  "loc": "B501"
+                },
+                {
+                  "mod": "DSA",
+                  "code": "IT2070",
+                  "start": "10:30",
+                  "end": "11:30",
+                  "type": "Tutorial",
+                  "loc": "B501"
+                },
+                {
+                  "mod": "PS",
+                  "code": "IT2110",
+                  "start": "11:30",
+                  "end": "13:30",
+                  "type": "Lecture",
+                  "loc": "B501"
+                },
+                {
+                  "mod": "PS",
+                  "code": "IT2110",
+                  "start": "14:00",
+                  "end": "15:00",
+                  "type": "Tutorial",
+                  "loc": "B502"
+                },
+                {
+                  "mod": "PS",
+                  "code": "IT2110",
+                  "start": "15:00",
+                  "end": "17:00",
+                  "type": "Practical",
+                  "loc": "B401-Pclab"
+                },
+                {
+                  "mod": "MAD",
+                  "code": "IT2010",
+                  "start": "19:00",
+                  "end": "20:00",
+                  "type": "Lecture",
+                  "loc": "B501"
+                }],
+                "sunday": [{
+                    "mod": "DSA",
+                    "code": "IT2070",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Practical",
+                    "loc": "F304-lab"
+                  },
+                  {
+                    "mod": "ITP",
+                    "code": "IT2080",
+                    "start": "15:00",
+                    "end": "18:00",
+                    "type": "Lecture + Tute",
+                    "loc": "B502"
+                  },
+                  {
+                    "mod": "ITP",
+                    "code": "IT2080",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Evaluation",
+                    "loc": "G1104"
+                  }]
+              }
+            },
+            "WE_02_01": {
+              "key": "foc_y2_s2_se_WE_02_01",
+              "table": {
+                "monday": [{
+                    "mod": "PS",
+                    "code": "IT2090",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Lecture",
+                    "loc": "B502"
+                  }
+                ],
+                "wednesday": [{
+                    "mod": "ESD",
+                    "code": "IT2100",
+                    "start": "18.00",
+                    "end": "20:00",
+                    "type": "Lecture ",
+                    "loc": "B502"
+                  }
+                ],
+                "thursday": [{
+                    "mod": "P&S",
+                    "code": "IT2110",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Practical",
+                    "loc": "A601-PcLab"
+                  }
+                ],
+                "friday": [{
+                  "mod": "MAD",
+                  "code": "IT2010",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Tutorial",
+                  "loc": "A604-Pclab"
+                }],
+                "saturday": [{
+                  "mod": "DSA",
+                  "code": "IT2070",
+                  "start": "8:30",
+                  "end": "10:30",
+                  "type": "Lecture",
+                  "loc": "B501"
+                },
+                {
+                  "mod": "DSA",
+                  "code": "IT2070",
+                  "start": "10:30",
+                  "end": "11:30",
+                  "type": "Tutorial",
+                  "loc": "B501"
+                },
+                {
+                  "mod": "PS",
+                  "code": "IT2110",
+                  "start": "11:30",
+                  "end": "13:30",
+                  "type": "Lecture",
+                  "loc": "B501"
+                },
+                {
+                  "mod": "PS",
+                  "code": "IT2110",
+                  "start": "14:00",
+                  "end": "15:00",
+                  "type": "Tutorial",
+                  "loc": "B502"
+                },
+                {
+                  "mod": "MAD",
+                  "code": "IT2010",
+                  "start": "15:00",
+                  "end": "17:00",
+                  "type": "Practical",
+                  "loc": "B401-Pclab"
+                },
+                {
+                  "mod": "MAD",
+                  "code": "IT2010",
+                  "start": "19:00",
+                  "end": "20:00",
+                  "type": "Lecture",
+                  "loc": "B501"
+                }],
+                "sunday": [{
+                    "mod": "DSA",
+                    "code": "IT2070",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Practical",
+                    "loc": "F304-lab"
+                  },
+                  {
+                    "mod": "ITP",
+                    "code": "IT2080",
+                    "start": "15:00",
+                    "end": "18:00",
+                    "type": "Lecture + Tute",
+                    "loc": "B502"
+                  },
+                  {
+                    "mod": "ITP",
+                    "code": "IT2080",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Evaluation",
+                    "loc": "G1104"
+                  }]
               }
             }
           }
