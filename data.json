@@ -3697,7 +3697,7 @@
           },
           "CS": {
             "WE_02": {
-              "key": "foc_y2_s2_se_WE_02",
+              "key": "foc_y2_s2_cs_WE_02",
               "table": {
                 "monday": [{
                     "mod": "PS",
