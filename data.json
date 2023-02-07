@@ -3796,7 +3796,7 @@
               "table": {
                 "monday": [{
                     "mod": "PEPIM",
-                    "code": "IE2090",
+                    "code": "IT2090",
                     "start": "09:30",
                     "end": "11:30",
                     "type": "Practical BYOD",
@@ -3812,7 +3812,7 @@
                   },
                   {
                     "mod": "OS",
-                    "code": "IT2050",
+                    "code": "IE2050",
                     "start": "12:30",
                     "end": "13:30",
                     "type": "Tutorial",
@@ -3821,7 +3821,7 @@
 
                   {
                     "mod": "ES",
-                    "code": "IT2070",
+                    "code": "IE2070",
                     "start": "14:30",
                     "end": "17:30",
                     "type": "Lecture",
@@ -3854,7 +3854,7 @@
                 }],
                 "wednesday": [{
                     "mod": "ES",
-                    "code": "IT2070",
+                    "code": "IE2070",
                     "start": "11.30",
                     "end": "1:30",
                     "type": "Practical",
@@ -3951,7 +3951,7 @@
                   },
                   {
                     "mod": "OS",
-                    "code": "IT2050",
+                    "code": "IE2050",
                     "start": "12:30",
                     "end": "13:30",
                     "type": "Tutorial",
@@ -3959,7 +3959,7 @@
                   },
                   {
                     "mod": "ES",
-                    "code": "IT2070",
+                    "code": "IE2070",
                     "start": "14:30",
                     "end": "17:30",
                     "type": "Lecture",
@@ -4068,7 +4068,7 @@
               }
             },
             "01_03": {
-              "key": "foc_y2_s2_csne_01_02",
+              "key": "foc_y2_s2_csne_01_03",
               "table": {
                 "monday": [{
                   "mod": "AI",
@@ -4087,7 +4087,7 @@
                   },
                   {
                     "mod": "OS",
-                    "code": "IT2050",
+                    "code": "IE2050",
                     "start": "12:30",
                     "end": "13:30",
                     "type": "Tutorial",
@@ -4095,7 +4095,7 @@
                   },
                   {
                     "mod": "ES",
-                    "code": "IT2070",
+                    "code": "IE2070",
                     "start": "14:30",
                     "end": "17:30",
                     "type": "Lecture",
@@ -4215,7 +4215,7 @@
                   },
                   {
                     "mod": "OS",
-                    "code": "IT2050",
+                    "code": "IE2050",
                     "start": "12:30",
                     "end": "13:30",
                     "type": "Tutorial",
@@ -4223,7 +4223,7 @@
                   },
                   {
                     "mod": "ES",
-                    "code": "IT2070",
+                    "code": "IE2070",
                     "start": "14:30",
                     "end": "17:30",
                     "type": "Lecture",
@@ -4231,7 +4231,7 @@
                   }],
                   "tuesday": [{
                     "mod": "AI",
-                    "code": "IT2040",
+                    "code": "IE2040",
                     "start": "9:30",
                     "end": "11:30",
                     "type": "Practical",
@@ -4239,7 +4239,7 @@
                     },
                   {
                   "mod": "PS",
-                  "code": "IT2090",
+                  "code": "IE2090",
                   "start": "11:30",
                   "end": "1:30",
                   "type": "Lecture",
