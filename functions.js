@@ -2,8 +2,6 @@
 // keys.fac.FOC.Y2.S1.SE.table.tuesday[2]
 // keys.fac.<faculty>.<year>.<sem>.<spec>.table.<dayToday>
 
-const { link } = require("fs");
-
 // read username on click continueBtn
 function readUsername() {
   let loginSection = document.getElementById("login-section");
