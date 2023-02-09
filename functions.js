@@ -2,8 +2,6 @@
 // keys.fac.FOC.Y2.S1.SE.table.tuesday[2]
 // keys.fac.<faculty>.<year>.<sem>.<spec>.table.<dayToday>
 
-const { link } = require("fs");
-
 // read username on click continueBtn
 function readUsername() {
   let loginSection = document.getElementById("login-section");
@@ -127,9 +125,10 @@ function displayTable() {
           '<a class="link-btn" href="' +
           link +
           '" target="_blank"><i class="fa-solid fa-link"></i><span class="link-btn-text">Link</span></a>';
-      } else {
-        linkTag = "<i>Link not added 🔗❌</i>";
       }
+      //  else {
+      //   linkTag = "<i>Link not added 🔗❌</i>";
+      // }
 
       let startTime = table[dayToday][i].start;
       let endTime = table[dayToday][i].end;

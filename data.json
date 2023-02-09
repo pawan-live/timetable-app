@@ -3249,14 +3249,13 @@
               "key": "foc_y2_s2_se_WE_01_01",
               "table": {
                 "monday": [{
-                    "mod": "PS",
-                    "code": "IT2090",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Lecture",
-                    "loc": "B502"
-                  }
-                ],
+                  "mod": "PS",
+                  "code": "IT2090",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Lecture",
+                  "loc": "B502"
+                }],
                 "tuesday": [{
                   "mod": "DSA",
                   "code": "IT2070",
@@ -3264,82 +3263,81 @@
                   "end": "20:00",
                   "type": "Practical",
                   "loc": "B403-Pclab"
-                  } 
-                ],
+                }],
                 "wednesday": [{
-                    "mod": "ESD",
-                    "code": "IT2100",
-                    "start": "18.00",
-                    "end": "20:00",
-                    "type": "Lecture",
-                    "loc": "B502"
-                  }
-                ],
-                "saturday": [{
-                  "mod": "DSA",
-                  "code": "IT2070",
-                  "start": "8:30",
-                  "end": "10:30",
-                  "type": "Lecture",
-                  "loc": "B501"
-                },
-                {
-                  "mod": "DSA",
-                  "code": "IT2070",
-                  "start": "10:30",
-                  "end": "11:30",
-                  "type": "Tutorial",
-                  "loc": "B501"
-                },
-                {
-                  "mod": "PS",
-                  "code": "IT2110",
-                  "start": "11:30",
-                  "end": "13:30",
-                  "type": "Lecture",
-                  "loc": "B501"
-                },
-                {
-                  "mod": "PS",
-                  "code": "IT2110",
-                  "start": "14:00",
-                  "end": "15:00",
-                  "type": "Tutorial",
-                  "loc": "B502"
-                },
-                {
-                  "mod": "MAD",
-                  "code": "IT2010",
-                  "start": "17:00",
-                  "end": "19:00",
-                  "type": "Practical",
-                  "loc": "F305-lab"
-                },
-                {
-                  "mod": "MAD",
-                  "code": "IT2010",
-                  "start": "19:00",
+                  "mod": "ESD",
+                  "code": "IT2100",
+                  "start": "18.00",
                   "end": "20:00",
                   "type": "Lecture",
-                  "loc": "B501"
+                  "loc": "B502"
                 }],
+                "saturday": [{
+                    "mod": "DSA",
+                    "code": "IT2070",
+                    "start": "8:30",
+                    "end": "10:30",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "DSA",
+                    "code": "IT2070",
+                    "start": "10:30",
+                    "end": "11:30",
+                    "type": "Tutorial",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "PS",
+                    "code": "IT2110",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "PS",
+                    "code": "IT2110",
+                    "start": "14:00",
+                    "end": "15:00",
+                    "type": "Tutorial",
+                    "loc": "B502"
+                  },
+                  {
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "17:00",
+                    "end": "19:00",
+                    "type": "Practical",
+                    "loc": "F305-lab"
+                  },
+                  {
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "19:00",
+                    "end": "20:00",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  }
+                ],
                 "sunday": [{
-                  "mod": "PS",
-                  "code": "IT2110",
-                  "start": "8:30",
-                  "end": "10:30",
-                  "type": "Practical",
-                  "loc": "F1303 + F1304"
-                },
-                {
+                    "mod": "PS",
+                    "code": "IT2110",
+                    "start": "8:30",
+                    "end": "10:30",
+                    "type": "Practical",
+                    "loc": "F1303 + F1304"
+                  },
+                  {
                     "mod": "MAD",
                     "code": "IT2010",
                     "start": "10:30",
                     "end": "11:30",
                     "type": "Tutorial",
                     "loc": "B401-Pclab"
-                },
-                {
+                  },
+                  {
                     "mod": "MAD",
                     "code": "IT2010",
                     "start": "11:30",
@@ -3362,21 +3360,21 @@
                     "end": "20:00",
                     "type": "Evaluation",
                     "loc": "G1105"
-                  }]
+                  }
+                ]
               }
             },
             "WE_01_02": {
               "key": "foc_y2_s2_se_WE_01_02",
               "table": {
                 "monday": [{
-                    "mod": "PS",
-                    "code": "IT2090",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Lecture",
-                    "loc": "B502"
-                  }
-                ],
+                  "mod": "PS",
+                  "code": "IT2090",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Lecture",
+                  "loc": "B502"
+                }],
                 "tuesday": [{
                   "mod": "MAD",
                   "code": "IT2010",
@@ -3384,74 +3382,75 @@
                   "end": "20:00",
                   "type": "Tutorial",
                   "loc": "A406-PClab"
-                  } 
-                ],
+                }],
                 "wednesday": [{
-                    "mod": "ESD",
-                    "code": "IT2100",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Lecture ",
-                    "loc": "B502"
-                  }
-                ],
+                  "mod": "ESD",
+                  "code": "IT2100",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Lecture ",
+                  "loc": "B502",
+                  "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                }],
                 "thursday": [{
-                    "mod": "PS",
-                    "code": "IT2110",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Practical",
-                    "loc": "B402-PcLab"
-                  }
-                ],
+                  "mod": "PS",
+                  "code": "IT2110",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Practical",
+                  "loc": "B402-PcLab",
+                  "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                }],
                 "friday": [{
                   "mod": "DSA",
                   "code": "IT2070",
                   "start": "18:00",
                   "end": "20:00",
                   "type": "Practical",
-                  "loc": "A405-Pclab"
+                  "loc": "A405-Pclab",
+                  "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 }],
                 "saturday": [{
-                  "mod": "DSA",
-                  "code": "IT2070",
-                  "start": "8:30",
-                  "end": "10:30",
-                  "type": "Lecture",
-                  "loc": "B501"
-                },
-                {
-                  "mod": "DSA",
-                  "code": "IT2070",
-                  "start": "10:30",
-                  "end": "11:30",
-                  "type": "Tutorial",
-                  "loc": "B501"
-                },
-                {
-                  "mod": "PS",
-                  "code": "IT2110",
-                  "start": "11:30",
-                  "end": "13:30",
-                  "type": "Lecture",
-                  "loc": "B501"
-                },
-                {
-                  "mod": "PS",
-                  "code": "IT2110",
-                  "start": "14:00",
-                  "end": "15:00",
-                  "type": "Tutorial",
-                  "loc": "B502"
-                },
-                {
-                  "mod": "MAD",
-                  "code": "IT2010",
-                  "start": "19:00",
-                  "end": "20:00",
-                  "type": "Lecture",
-                  "loc": "B501"
-                }],
+                    "mod": "DSA",
+                    "code": "IT2070",
+                    "start": "8:30",
+                    "end": "10:30",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "DSA",
+                    "code": "IT2070",
+                    "start": "10:30",
+                    "end": "11:30",
+                    "type": "Tutorial",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "PS",
+                    "code": "IT2110",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "PS",
+                    "code": "IT2110",
+                    "start": "14:00",
+                    "end": "15:00",
+                    "type": "Tutorial",
+                    "loc": "B502"
+                  },
+                  {
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "19:00",
+                    "end": "20:00",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  }
+                ],
                 "sunday": [{
                     "mod": "MAD",
                     "code": "IT2010",
@@ -3475,87 +3474,86 @@
                     "end": "20:00",
                     "type": "Evaluation",
                     "loc": "G1105"
-                  }]
+                  }
+                ]
               }
             },
             "WE_02_02": {
               "key": "foc_y2_s2_se_WE_02_02",
               "table": {
                 "monday": [{
-                    "mod": "PS",
-                    "code": "IT2090",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Lecture",
-                    "loc": "B502"
-                  }
-                ],
-                "wednesday": [{
-                    "mod": "ESD",
-                    "code": "IT2100",
-                    "start": "18.00",
-                    "end": "20:00",
-                    "type": "Lecture ",
-                    "loc": "B502"
-                  }
-                ],
-                "thursday": [{
-                    "mod": "MAD",
-                    "code": "IT2010",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Tutorial",
-                    "loc": "A604-Pclab"
-                  }
-                ],
-                "saturday": [{
-                  "mod": "DSA",
-                  "code": "IT2070",
-                  "start": "8:30",
-                  "end": "10:30",
-                  "type": "Lecture",
-                  "loc": "B501"
-                },
-                {
-                  "mod": "DSA",
-                  "code": "IT2070",
-                  "start": "10:30",
-                  "end": "11:30",
-                  "type": "Tutorial",
-                  "loc": "B501"
-                },
-                {
                   "mod": "PS",
-                  "code": "IT2110",
-                  "start": "11:30",
-                  "end": "13:30",
-                  "type": "Lecture",
-                  "loc": "B501"
-                },
-                {
-                  "mod": "PS",
-                  "code": "IT2110",
-                  "start": "14:00",
-                  "end": "15:00",
-                  "type": "Tutorial",
-                  "loc": "B502"
-                },
-                {
-                  "mod": "PS",
-                  "code": "IT2110",
-                  "start": "15:00",
-                  "end": "17:00",
-                  "type": "Practical",
-                  "loc": "B401-Pclab"
-                },
-                {
-                  "mod": "MAD",
-                  "code": "IT2010",
-                  "start": "19:00",
+                  "code": "IT2090",
+                  "start": "18:00",
                   "end": "20:00",
                   "type": "Lecture",
-                  "loc": "B501"
+                  "loc": "B502"
                 }],
+                "wednesday": [{
+                  "mod": "ESD",
+                  "code": "IT2100",
+                  "start": "18.00",
+                  "end": "20:00",
+                  "type": "Lecture ",
+                  "loc": "B502"
+                }],
+                "thursday": [{
+                  "mod": "MAD",
+                  "code": "IT2010",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Tutorial",
+                  "loc": "A604-Pclab"
+                }],
+                "saturday": [{
+                    "mod": "DSA",
+                    "code": "IT2070",
+                    "start": "8:30",
+                    "end": "10:30",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "DSA",
+                    "code": "IT2070",
+                    "start": "10:30",
+                    "end": "11:30",
+                    "type": "Tutorial",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "PS",
+                    "code": "IT2110",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "PS",
+                    "code": "IT2110",
+                    "start": "14:00",
+                    "end": "15:00",
+                    "type": "Tutorial",
+                    "loc": "B502"
+                  },
+                  {
+                    "mod": "PS",
+                    "code": "IT2110",
+                    "start": "15:00",
+                    "end": "17:00",
+                    "type": "Practical",
+                    "loc": "B401-Pclab"
+                  },
+                  {
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "19:00",
+                    "end": "20:00",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  }
+                ],
                 "sunday": [{
                     "mod": "DSA",
                     "code": "IT2070",
@@ -3579,39 +3577,37 @@
                     "end": "20:00",
                     "type": "Evaluation",
                     "loc": "G1104"
-                  }]
+                  }
+                ]
               }
             },
             "WE_02_01": {
               "key": "foc_y2_s2_se_WE_02_01",
               "table": {
                 "monday": [{
-                    "mod": "PS",
-                    "code": "IT2090",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Lecture",
-                    "loc": "B502"
-                  }
-                ],
+                  "mod": "PS",
+                  "code": "IT2090",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Lecture",
+                  "loc": "B502"
+                }],
                 "wednesday": [{
-                    "mod": "ESD",
-                    "code": "IT2100",
-                    "start": "18.00",
-                    "end": "20:00",
-                    "type": "Lecture ",
-                    "loc": "B502"
-                  }
-                ],
+                  "mod": "ESD",
+                  "code": "IT2100",
+                  "start": "18.00",
+                  "end": "20:00",
+                  "type": "Lecture ",
+                  "loc": "B502"
+                }],
                 "thursday": [{
-                    "mod": "P&S",
-                    "code": "IT2110",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Practical",
-                    "loc": "A601-PcLab"
-                  }
-                ],
+                  "mod": "P&S",
+                  "code": "IT2110",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Practical",
+                  "loc": "A601-PcLab"
+                }],
                 "friday": [{
                   "mod": "MAD",
                   "code": "IT2010",
@@ -3621,53 +3617,54 @@
                   "loc": "A604-Pclab"
                 }],
                 "saturday": [{
-                  "mod": "DSA",
-                  "code": "IT2070",
-                  "start": "8:30",
-                  "end": "10:30",
-                  "type": "Lecture",
-                  "loc": "B501"
-                },
-                {
-                  "mod": "DSA",
-                  "code": "IT2070",
-                  "start": "10:30",
-                  "end": "11:30",
-                  "type": "Tutorial",
-                  "loc": "B501"
-                },
-                {
-                  "mod": "PS",
-                  "code": "IT2110",
-                  "start": "11:30",
-                  "end": "13:30",
-                  "type": "Lecture",
-                  "loc": "B501"
-                },
-                {
-                  "mod": "PS",
-                  "code": "IT2110",
-                  "start": "14:00",
-                  "end": "15:00",
-                  "type": "Tutorial",
-                  "loc": "B502"
-                },
-                {
-                  "mod": "MAD",
-                  "code": "IT2010",
-                  "start": "15:00",
-                  "end": "17:00",
-                  "type": "Practical",
-                  "loc": "B401-Pclab"
-                },
-                {
-                  "mod": "MAD",
-                  "code": "IT2010",
-                  "start": "19:00",
-                  "end": "20:00",
-                  "type": "Lecture",
-                  "loc": "B501"
-                }],
+                    "mod": "DSA",
+                    "code": "IT2070",
+                    "start": "8:30",
+                    "end": "10:30",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "DSA",
+                    "code": "IT2070",
+                    "start": "10:30",
+                    "end": "11:30",
+                    "type": "Tutorial",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "PS",
+                    "code": "IT2110",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "PS",
+                    "code": "IT2110",
+                    "start": "14:00",
+                    "end": "15:00",
+                    "type": "Tutorial",
+                    "loc": "B502"
+                  },
+                  {
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "15:00",
+                    "end": "17:00",
+                    "type": "Practical",
+                    "loc": "B401-Pclab"
+                  },
+                  {
+                    "mod": "MAD",
+                    "code": "IT2010",
+                    "start": "19:00",
+                    "end": "20:00",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  }
+                ],
                 "sunday": [{
                     "mod": "DSA",
                     "code": "IT2070",
@@ -3691,7 +3688,8 @@
                     "end": "20:00",
                     "type": "Evaluation",
                     "loc": "G1104"
-                  }]
+                  }
+                ]
               }
             }
           },
@@ -3700,93 +3698,95 @@
               "key": "foc_y2_s2_cs_WE_02",
               "table": {
                 "monday": [{
-                    "mod": "PS",
-                    "code": "IT2090",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Lecture",
-                    "loc": "B502"
-                  }],
-                "wednesday": [{
-                    "mod": "ESD",
-                    "code": "IT2100",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "Lecture",
-                    "loc": "B502"
-                  }],
-                "saturday": [{
-                  "mod": "DM",
-                  "code": "IE2082",
-                  "start": "8:30",
-                  "end": "11:30",
-                  "type": "Lecture + Tute",
-                  "loc": "F302"
-                },
-                {
-                  "mod": "FA",
-                  "code": "IE2072",
-                  "start": "11:30",
-                  "end": "13:30",
-                  "type": "Lecture",
-                  "loc": "G1101"
-                },
-                {
-                  "mod": "WS",
-                  "code": "IE2062",
-                  "start": "14:00",
-                  "end": "17:00",
-                  "type": "Lecture + Tute",
-                  "loc": "A505"
-                },
-                {
-                  "mod": "FA",
-                  "code": "IE2072",
-                  "start": "17:00",
-                  "end": "18:00",
-                  "type": "Tutorial",
-                  "loc": "A504"
-                },
-                {
-                  "mod": "FA",
-                  "code": "IE2072",
+                  "mod": "PS",
+                  "code": "IT2090",
                   "start": "18:00",
                   "end": "20:00",
-                  "type": "Practical BYOD VL",
-                  "loc": "G1102"
+                  "type": "Lecture",
+                  "loc": "B502"
                 }],
+                "wednesday": [{
+                  "mod": "ESD",
+                  "code": "IT2100",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "Lecture",
+                  "loc": "B502"
+                }],
+                "saturday": [{
+                    "mod": "DM",
+                    "code": "IE2082",
+                    "start": "8:30",
+                    "end": "11:30",
+                    "type": "Lecture + Tute",
+                    "loc": "F302"
+                  },
+                  {
+                    "mod": "FA",
+                    "code": "IE2072",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Lecture",
+                    "loc": "G1101"
+                  },
+                  {
+                    "mod": "WS",
+                    "code": "IE2062",
+                    "start": "14:00",
+                    "end": "17:00",
+                    "type": "Lecture + Tute",
+                    "loc": "A505"
+                  },
+                  {
+                    "mod": "FA",
+                    "code": "IE2072",
+                    "start": "17:00",
+                    "end": "18:00",
+                    "type": "Tutorial",
+                    "loc": "A504"
+                  },
+                  {
+                    "mod": "FA",
+                    "code": "IE2072",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Practical BYOD VL",
+                    "loc": "G1102"
+                  }
+                ],
                 "sunday": [{
-                  "mod": "WS",
-                  "code": "IE2062",
-                  "start": "8:30",
-                  "end": "10:30",
-                  "type": "Practical",
-                  "loc": "CyberSecLab"
-                },
-                {
-                  "mod": "ANT",
-                  "code": "IE2052",
-                  "start": "10:30",
-                  "end": "1:30",
-                  "type": "Lecture + Tute",
-                  "loc": "G1102"
-                },
-                {
-                  "mod": "DM",
-                  "code": "IE2082",
-                  "start": "14:00",
-                  "end": "15:00",
-                  "type": "Practical",
-                  "loc": "F304-lab"
-                },
-                {
-                  "mod": "ANT",
-                  "code": "IE2052",
-                  "start": "15:00",
-                  "end": "18:00",
-                  "type": "Practical",
-                  "loc": "B401-Pclab"
-                }]
+                    "mod": "WS",
+                    "code": "IE2062",
+                    "start": "8:30",
+                    "end": "10:30",
+                    "type": "Practical",
+                    "loc": "CyberSecLab"
+                  },
+                  {
+                    "mod": "ANT",
+                    "code": "IE2052",
+                    "start": "10:30",
+                    "end": "1:30",
+                    "type": "Lecture + Tute",
+                    "loc": "G1102"
+                  },
+                  {
+                    "mod": "DM",
+                    "code": "IE2082",
+                    "start": "14:00",
+                    "end": "15:00",
+                    "type": "Practical",
+                    "loc": "F304-lab"
+                  },
+                  {
+                    "mod": "ANT",
+                    "code": "IE2052",
+                    "start": "15:00",
+                    "end": "18:00",
+                    "type": "Practical",
+                    "loc": "B401-Pclab"
+                  }
+                ]
               }
             }
           },
@@ -3829,29 +3829,30 @@
                   }
                 ],
                 "tuesday": [{
-                  "mod": "AI",
-                  "code": "IE2040",
-                  "start": "9:30",
-                  "end": "11:30",
-                  "type": "Practical",
-                  "loc": "New-DClab"
-                },
-                {
-                  "mod": "PS",
-                  "code": "IT2090",
-                  "start": "11:30",
-                  "end": "1:30",
-                  "type": "Lecture",
-                  "loc": "B501"
-                },
-                {
-                  "mod": "CSA",
-                  "code": "IE2060",
-                  "start": "14:30",
-                  "end": "16:30",
-                  "type": "Practical BYOD",
-                  "loc": "G605"
-                }],
+                    "mod": "AI",
+                    "code": "IE2040",
+                    "start": "9:30",
+                    "end": "11:30",
+                    "type": "Practical",
+                    "loc": "New-DClab"
+                  },
+                  {
+                    "mod": "PS",
+                    "code": "IT2090",
+                    "start": "11:30",
+                    "end": "1:30",
+                    "type": "Lecture",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "CSA",
+                    "code": "IE2060",
+                    "start": "14:30",
+                    "end": "16:30",
+                    "type": "Practical BYOD",
+                    "loc": "G605"
+                  }
+                ],
                 "wednesday": [{
                     "mod": "ES",
                     "code": "IE2070",
@@ -3903,29 +3904,30 @@
                   }
                 ],
                 "friday": [{
-                  "mod": "PEPIM",
-                  "code": "IE2090",
-                  "start": "11:30",
-                  "end": "13:30",
-                  "type": "Lecture",
-                  "loc": "G602"
-                },
-                {
-                  "mod": "AI",
-                  "code": "IE2040",
-                  "start": "14:30",
-                  "end": "16:30",
-                  "type": "Lecture",
-                  "loc": "F1306"
-                },
-                {
-                  "mod": "PEPIM",
-                  "code": "IE2090",
-                  "start": "16:30",
-                  "end": "15:30",
-                  "type": "Tutorial",
-                  "loc": "F503 IPU Hall"
-                }],
+                    "mod": "PEPIM",
+                    "code": "IE2090",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Lecture",
+                    "loc": "G602"
+                  },
+                  {
+                    "mod": "AI",
+                    "code": "IE2040",
+                    "start": "14:30",
+                    "end": "16:30",
+                    "type": "Lecture",
+                    "loc": "F1306"
+                  },
+                  {
+                    "mod": "PEPIM",
+                    "code": "IE2090",
+                    "start": "16:30",
+                    "end": "15:30",
+                    "type": "Tutorial",
+                    "loc": "F503 IPU Hall"
+                  }
+                ],
                 "saturday": [],
                 "sunday": []
               }
@@ -3935,19 +3937,20 @@
               "key": "foc_y2_s2_csne_01_02",
               "table": {
                 "monday": [{
-                  "mod": "PEPIM",
-                  "code": "IE2090",
-                  "start": "09:30",
-                  "end": "11:30",
-                  "type": "Practical BYOD",
-                  "loc": "G1104"
+                    "mod": "PEPIM",
+                    "code": "IE2090",
+                    "start": "09:30",
+                    "end": "11:30",
+                    "type": "Practical BYOD",
+                    "loc": "G1104"
                   },
-                  {"mod": "CSA",
-                  "code": "IE2060",
-                  "start": "11:30",
-                  "end": "12:30",
-                  "type": "Tutorial",
-                  "loc": "B502"
+                  {
+                    "mod": "CSA",
+                    "code": "IE2060",
+                    "start": "11:30",
+                    "end": "12:30",
+                    "type": "Tutorial",
+                    "loc": "B502"
                   },
                   {
                     "mod": "OS",
@@ -3964,14 +3967,15 @@
                     "end": "17:30",
                     "type": "Lecture",
                     "loc": "Main Auditorium"
-                  }],
-                  "tuesday": [{
-                  "mod": "PS",
-                  "code": "IT2090",
-                  "start": "11:30",
-                  "end": "1:30",
-                  "type": "Lecture",
-                  "loc": "B501"
+                  }
+                ],
+                "tuesday": [{
+                    "mod": "PS",
+                    "code": "IT2090",
+                    "start": "11:30",
+                    "end": "1:30",
+                    "type": "Lecture",
+                    "loc": "B501"
                   },
                   {
                     "mod": "CSA",
@@ -3980,65 +3984,67 @@
                     "end": "16:30",
                     "type": "Practical BYOD",
                     "loc": "G605"
-                  }],
-                  "wednesday": [{
-                      "mod": "AI",
-                      "code": "IE2040",
-                      "start": "11:30",
-                      "end": "1:30",
-                      "type": "Practical",
-                      "loc": "New-DClab"
-                    },
-                    {
-                      "mod": "AI",
-                      "code": "IE2040",
-                      "start": "14:30",
-                      "end": "15:30",
-                      "type": "Tutorial",
-                      "loc": "G602"
-                    },
-                    {
-                      "mod": "ES",
-                      "code": "IE2070",
-                      "start": "15:30",
-                      "end": "17:30",
-                      "type": "Practical",
-                      "loc": "B501"
-                    }
-                  ],
-                  "thursday": [{
-                      "mod": "OS",
-                      "code": "IE2050",
-                      "start": "9:30",
-                      "end": "11:30",
-                      "type": "Practical BYOD",
-                      "loc": "G606"
-                    },
-                    {
-                      "mod": "OS",
-                      "code": "IE2050",
-                      "start": "10:30",
-                      "end": "11:30",
-                      "type": "Practical BYOD",
-                      "loc": "G602"
-                    },
-                    {
-                      "mod": "OS",
-                      "code": "IE2050",
-                      "start": "11:30",
-                      "end": "13:30",
-                      "type": "Lecture",
-                      "loc": "G602"
-                    },
-                    {
-                      "mod": "CSA",
-                      "code": "IE2060",
-                      "start": "15:30",
-                      "end": "17:30",
-                      "type": "Lecture",
-                      "loc": "G602"
-                    }],
-                  "friday": [{
+                  }
+                ],
+                "wednesday": [{
+                    "mod": "AI",
+                    "code": "IE2040",
+                    "start": "11:30",
+                    "end": "1:30",
+                    "type": "Practical",
+                    "loc": "New-DClab"
+                  },
+                  {
+                    "mod": "AI",
+                    "code": "IE2040",
+                    "start": "14:30",
+                    "end": "15:30",
+                    "type": "Tutorial",
+                    "loc": "G602"
+                  },
+                  {
+                    "mod": "ES",
+                    "code": "IE2070",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "Practical",
+                    "loc": "B501"
+                  }
+                ],
+                "thursday": [{
+                    "mod": "OS",
+                    "code": "IE2050",
+                    "start": "9:30",
+                    "end": "11:30",
+                    "type": "Practical BYOD",
+                    "loc": "G606"
+                  },
+                  {
+                    "mod": "OS",
+                    "code": "IE2050",
+                    "start": "10:30",
+                    "end": "11:30",
+                    "type": "Practical BYOD",
+                    "loc": "G602"
+                  },
+                  {
+                    "mod": "OS",
+                    "code": "IE2050",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Lecture",
+                    "loc": "G602"
+                  },
+                  {
+                    "mod": "CSA",
+                    "code": "IE2060",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "Lecture",
+                    "loc": "G602"
+                  }
+                ],
+                "friday": [{
                     "mod": "PEPIM",
                     "code": "IE2090",
                     "start": "11:30",
@@ -4061,9 +4067,10 @@
                     "end": "17:30",
                     "type": "Tutorial",
                     "loc": "F503 IPU Hall"
-                  }],
-                  "saturday": [],
-                  "sunday": []
+                  }
+                ],
+                "saturday": [],
+                "sunday": []
 
               }
             },
@@ -4071,19 +4078,20 @@
               "key": "foc_y2_s2_csne_01_03",
               "table": {
                 "monday": [{
-                  "mod": "AI",
-                  "code": "IE2040",
-                  "start": "09:30",
-                  "end": "11:30",
-                  "type": "Practical",
-                  "loc": "New-DClab"
+                    "mod": "AI",
+                    "code": "IE2040",
+                    "start": "09:30",
+                    "end": "11:30",
+                    "type": "Practical",
+                    "loc": "New-DClab"
                   },
-                  {"mod": "CSA",
-                  "code": "IE2060",
-                  "start": "11:30",
-                  "end": "12:30",
-                  "type": "Tutorial",
-                  "loc": "B502"
+                  {
+                    "mod": "CSA",
+                    "code": "IE2060",
+                    "start": "11:30",
+                    "end": "12:30",
+                    "type": "Tutorial",
+                    "loc": "B502"
                   },
                   {
                     "mod": "OS",
@@ -4100,15 +4108,15 @@
                     "end": "17:30",
                     "type": "Lecture",
                     "loc": "Main Auditorium"
-                  }],
-                  "tuesday": [
-                  {
-                  "mod": "PS",
-                  "code": "IT2090",
-                  "start": "11:30",
-                  "end": "1:30",
-                  "type": "Lecture",
-                  "loc": "B501"
+                  }
+                ],
+                "tuesday": [{
+                    "mod": "PS",
+                    "code": "IT2090",
+                    "start": "11:30",
+                    "end": "1:30",
+                    "type": "Lecture",
+                    "loc": "B501"
                   },
                   {
                     "mod": "PEPIM",
@@ -4117,56 +4125,59 @@
                     "end": "17:30",
                     "type": "Practical BYOD",
                     "loc": "G1103"
-                  }],
-                  "wednesday": [{
-                      "mod": "ES",
-                      "code": "IE2040",
-                      "start": "9:30",
-                      "end": "11:30",
-                      "type": "Practical",
-                      "loc": "New-Emblab"
-                    },
-                    {
-                      "mod": "OS",
-                      "code": "IE2050",
-                      "start": "11:30",
-                      "end": "1:30",
-                      "type": "Practical BYOD",
-                      "loc": "G606"
-                    },
-                    {
-                      "mod": "AI",
-                      "code": "IE2040",
-                      "start": "14:30",
-                      "end": "15:30",
-                      "type": "Tutorial",
-                      "loc": "G602"
-                    }],
-                  "thursday": [{
-                      "mod": "CSA",
-                      "code": "IE2060",
-                      "start": "8:30",
-                      "end": "10:30",
-                      "type": "Practical BYOD",
-                      "loc": "G604"
-                    },
-                    {
-                      "mod": "OS",
-                      "code": "IE2050",
-                      "start": "11:30",
-                      "end": "13:30",
-                      "type": "Lecture",
-                      "loc": "G602"
-                    },
-                    {
-                      "mod": "CSA",
-                      "code": "IE2060",
-                      "start": "15:30",
-                      "end": "17:30",
-                      "type": "Lecture",
-                      "loc": "G602"
-                    }],
-                  "friday": [{
+                  }
+                ],
+                "wednesday": [{
+                    "mod": "ES",
+                    "code": "IE2040",
+                    "start": "9:30",
+                    "end": "11:30",
+                    "type": "Practical",
+                    "loc": "New-Emblab"
+                  },
+                  {
+                    "mod": "OS",
+                    "code": "IE2050",
+                    "start": "11:30",
+                    "end": "1:30",
+                    "type": "Practical BYOD",
+                    "loc": "G606"
+                  },
+                  {
+                    "mod": "AI",
+                    "code": "IE2040",
+                    "start": "14:30",
+                    "end": "15:30",
+                    "type": "Tutorial",
+                    "loc": "G602"
+                  }
+                ],
+                "thursday": [{
+                    "mod": "CSA",
+                    "code": "IE2060",
+                    "start": "8:30",
+                    "end": "10:30",
+                    "type": "Practical BYOD",
+                    "loc": "G604"
+                  },
+                  {
+                    "mod": "OS",
+                    "code": "IE2050",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Lecture",
+                    "loc": "G602"
+                  },
+                  {
+                    "mod": "CSA",
+                    "code": "IE2060",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "Lecture",
+                    "loc": "G602"
+                  }
+                ],
+                "friday": [{
                     "mod": "PEPIM",
                     "code": "IE2090",
                     "start": "11:30",
@@ -4189,29 +4200,30 @@
                     "end": "17:30",
                     "type": "Tutorial",
                     "loc": "F503 IPU Hall"
-                  }],
-                  "saturday": [],
-                  "sunday": []
+                  }
+                ],
+                "saturday": [],
+                "sunday": []
               }
             },
             "01_04": {
               "key": "foc_y2_s2_csne_01_04",
               "table": {
                 "monday": [{
-                  "mod": "ES",
-                  "code": "IE2070",
-                  "start": "08:30",
-                  "end": "10:30",
-                  "type": "Practical",
-                  "loc": "New-Emlab"
+                    "mod": "ES",
+                    "code": "IE2070",
+                    "start": "08:30",
+                    "end": "10:30",
+                    "type": "Practical",
+                    "loc": "New-Emlab"
                   },
                   {
-                  "mod": "CSA",
-                  "code": "IE2060",
-                  "start": "11:30",
-                  "end": "12:30",
-                  "type": "Tutorial",
-                  "loc": "B502"
+                    "mod": "CSA",
+                    "code": "IE2060",
+                    "start": "11:30",
+                    "end": "12:30",
+                    "type": "Tutorial",
+                    "loc": "B502"
                   },
                   {
                     "mod": "OS",
@@ -4228,22 +4240,23 @@
                     "end": "17:30",
                     "type": "Lecture",
                     "loc": "Main Auditorium"
-                  }],
-                  "tuesday": [{
+                  }
+                ],
+                "tuesday": [{
                     "mod": "AI",
                     "code": "IE2040",
                     "start": "9:30",
                     "end": "11:30",
                     "type": "Practical",
                     "loc": "New-DClab"
-                    },
+                  },
                   {
-                  "mod": "PS",
-                  "code": "IE2090",
-                  "start": "11:30",
-                  "end": "1:30",
-                  "type": "Lecture",
-                  "loc": "B501"
+                    "mod": "PS",
+                    "code": "IE2090",
+                    "start": "11:30",
+                    "end": "1:30",
+                    "type": "Lecture",
+                    "loc": "B501"
                   },
                   {
                     "mod": "PEPIM",
@@ -4252,48 +4265,51 @@
                     "end": "17:30",
                     "type": "Practical BYOD",
                     "loc": "G1103"
-                  }],
-                  "wednesday": [{
-                      "mod": "OS",
-                      "code": "IE2050",
-                      "start": "11:30",
-                      "end": "1:30",
-                      "type": "Practical BYOD",
-                      "loc": "G606"
-                    },
-                    {
-                      "mod": "AI",
-                      "code": "IE2040",
-                      "start": "14:30",
-                      "end": "15:30",
-                      "type": "Tutorial",
-                      "loc": "G602"
-                    }],
-                  "thursday": [{
-                      "mod": "CSA",
-                      "code": "IE2060",
-                      "start": "8:30",
-                      "end": "10:30",
-                      "type": "Practical BYOD",
-                      "loc": "G604"
-                    },
-                    {
-                      "mod": "OS",
-                      "code": "IE2050",
-                      "start": "11:30",
-                      "end": "13:30",
-                      "type": "Lecture",
-                      "loc": "G602"
-                    },
-                    {
-                      "mod": "CSA",
-                      "code": "IE2060",
-                      "start": "15:30",
-                      "end": "17:30",
-                      "type": "Lecture",
-                      "loc": "G602"
-                    }],
-                  "friday": [{
+                  }
+                ],
+                "wednesday": [{
+                    "mod": "OS",
+                    "code": "IE2050",
+                    "start": "11:30",
+                    "end": "1:30",
+                    "type": "Practical BYOD",
+                    "loc": "G606"
+                  },
+                  {
+                    "mod": "AI",
+                    "code": "IE2040",
+                    "start": "14:30",
+                    "end": "15:30",
+                    "type": "Tutorial",
+                    "loc": "G602"
+                  }
+                ],
+                "thursday": [{
+                    "mod": "CSA",
+                    "code": "IE2060",
+                    "start": "8:30",
+                    "end": "10:30",
+                    "type": "Practical BYOD",
+                    "loc": "G604"
+                  },
+                  {
+                    "mod": "OS",
+                    "code": "IE2050",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Lecture",
+                    "loc": "G602"
+                  },
+                  {
+                    "mod": "CSA",
+                    "code": "IE2060",
+                    "start": "15:30",
+                    "end": "17:30",
+                    "type": "Lecture",
+                    "loc": "G602"
+                  }
+                ],
+                "friday": [{
                     "mod": "PEPIM",
                     "code": "IE2090",
                     "start": "11:30",
@@ -4316,9 +4332,10 @@
                     "end": "17:30",
                     "type": "Tutorial",
                     "loc": "F503 IPU Hall"
-                  }],
-                  "saturday": [],
-                  "sunday": []
+                  }
+                ],
+                "saturday": [],
+                "sunday": []
 
               }
             }

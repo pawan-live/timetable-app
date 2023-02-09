@@ -1,7 +1,7 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "title": "What's New ✨",
   "subtitle": "",
-  "notes": "",
-  "alert_btn": "Got it! 👍"
+  "notes": "—Minor Bug Fixes<br />—New table additions",
+  "alert_btn": "Okay 👍"
 }
