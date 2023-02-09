@@ -3705,6 +3705,7 @@
                   "type": "Lecture",
                   "loc": "B502"
                 }],
+                "tuesday": [],
                 "wednesday": [{
                   "mod": "ESD",
                   "code": "IT2100",
@@ -3713,6 +3714,8 @@
                   "type": "Lecture",
                   "loc": "B502"
                 }],
+                "thursday": [],
+                "friday": [],
                 "saturday": [{
                     "mod": "DM",
                     "code": "IE2082",
