@@ -195,6 +195,7 @@ body {
   margin-right: 5px;
 }
 
+
 /* MAIN SECTION */
 
 #main-section {
@@ -208,8 +209,14 @@ body {
   cursor: pointer;
 }
 
+
 #logout-btn .icon {
   margin-left: 5px;
+}
+
+#logout-btn .icon:hover {
+  transition: 0.1s ease-in-out;
+  color: rgb(242, 64, 64);
 }
 
 .main .wrapper {
@@ -226,6 +233,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
 }
 
 .main .text {
@@ -482,7 +490,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 20px 0;
+  margin: 10px 0;
   flex-wrap: wrap;
 }
 
@@ -500,6 +508,12 @@ body {
 
 .footer-link:hover {
   background-color: #1f2198;
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+
+.footer-link:hover>i {
+
   transition: 0.3s ease-in-out;
   color: white;
 }
