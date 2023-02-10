@@ -3272,6 +3272,8 @@
                   "type": "Lecture",
                   "loc": "B502"
                 }],
+                "thursday":[],
+                "friday":[],
                 "saturday": [{
                     "mod": "DSA",
                     "code": "IT2070",
@@ -3489,6 +3491,7 @@
                   "type": "Lecture",
                   "loc": "B502"
                 }],
+                "tuesday":[],
                 "wednesday": [{
                   "mod": "ESD",
                   "code": "IT2100",
@@ -3505,6 +3508,7 @@
                   "type": "Tutorial",
                   "loc": "A604-Pclab"
                 }],
+                "friday":[],
                 "saturday": [{
                     "mod": "DSA",
                     "code": "IT2070",
@@ -3592,6 +3596,7 @@
                   "type": "Lecture",
                   "loc": "B502"
                 }],
+                "tuesday":[],
                 "wednesday": [{
                   "mod": "ESD",
                   "code": "IT2100",
