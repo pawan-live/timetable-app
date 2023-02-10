@@ -195,6 +195,7 @@ body {
   margin-right: 5px;
 }
 
+
 /* MAIN SECTION */
 
 #main-section {
@@ -208,8 +209,14 @@ body {
   cursor: pointer;
 }
 
+
 #logout-btn .icon {
   margin-left: 5px;
+}
+
+#logout-btn .icon:hover {
+  transition: 0.1s ease-in-out;
+  color: rgb(242, 64, 64);
 }
 
 .main .wrapper {
@@ -226,6 +233,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
 }
 
 .main .text {
@@ -252,15 +260,13 @@ body {
 /* greeting card top */
 .card.greeting {
   /* to add gradient overlay over the background image of the greeting card */
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       #a3d6ef,
       #7fccf3,
       #1ca7cea2,
       #3db6d8af,
       #3db6d8df,
-      #3db6d8df
-    ),
+      #3db6d8df),
     url("./images/greeting-backg.png");
   background-size: cover;
   color: #f1f12d;
@@ -372,7 +378,7 @@ body {
   background: linear-gradient(to bottom right, #afb3ff, #9297f6);
 }
 
-.timecard.ongoing > p {
+.timecard.ongoing>p {
   color: white;
 }
 
@@ -405,10 +411,29 @@ body {
   display: inline;
 }
 
+.lec-hall {
+  margin-left: 10px;
+
+  font-size: 16px;
+  background-color: #ffffff79;
+  color: #151515cf;
+  padding: 2px 7px 2px 7px;
+  border-radius: 8px;
+  text-transform: uppercase;
+
+}
+
+.lec-hall>i {
+  font-size: 15px;
+  margin-right: 6px;
+  color: #151515cf;
+}
+
 @media screen and (max-width: 450px) {
   .card .type {
     font-size: 0.8rem;
   }
+
   .login .logo-title {
     font-size: 2.5em;
   }
@@ -428,14 +453,19 @@ body {
   .login .logo-title {
     font-size: 2.3em;
   }
+
   .login input {
     padding: 7px 18px 7px 0px;
     width: 13em;
   }
 }
+
 .card .time {
   font-size: 1.3rem;
+  color: #1f2198c2;
 }
+
+
 
 .card.now {
   background: linear-gradient(to right, #a38ed2, #f9c1eb);
@@ -460,7 +490,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 20px 0;
+  margin: 10px 0;
   flex-wrap: wrap;
 }
 
@@ -478,6 +508,12 @@ body {
 
 .footer-link:hover {
   background-color: #1f2198;
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+
+.footer-link:hover>i {
+
   transition: 0.3s ease-in-out;
   color: white;
 }
@@ -535,7 +571,7 @@ body {
   color: #6e70cf;
 }
 
-.alert-body > img {
+.alert-body>img {
   border-radius: 8px;
   margin-top: 15px;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.232);

@@ -2,7 +2,7 @@
 
 // store last version number to display update alerts
 
-var thisVersion = "1.2.1"; // this must be updated only on a major change (not patches and bug fixes)
+var thisVersion = "1.2.2"; // this must be updated only on a major change (not patches and bug fixes)
 
 var username;
 var keys = [];
