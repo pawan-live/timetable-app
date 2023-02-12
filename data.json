@@ -3272,8 +3272,8 @@
                   "type": "Lecture",
                   "loc": "B502"
                 }],
-                "thursday":[],
-                "friday":[],
+                "thursday": [],
+                "friday": [],
                 "saturday": [{
                     "mod": "DSA",
                     "code": "IT2070",
@@ -3350,7 +3350,7 @@
                   {
                     "mod": "ITP",
                     "code": "IT2080",
-                    "start": "15:00",
+                    "start": "14:00",
                     "end": "18:00",
                     "type": "Lecture + Tute",
                     "loc": "B502"
@@ -3464,7 +3464,7 @@
                   {
                     "mod": "ITP",
                     "code": "IT2080",
-                    "start": "15:00",
+                    "start": "14:00",
                     "end": "18:00",
                     "type": "Lecture + Tute",
                     "loc": "B502"
@@ -3491,7 +3491,7 @@
                   "type": "Lecture",
                   "loc": "B502"
                 }],
-                "tuesday":[],
+                "tuesday": [],
                 "wednesday": [{
                   "mod": "ESD",
                   "code": "IT2100",
@@ -3508,7 +3508,7 @@
                   "type": "Tutorial",
                   "loc": "A604-Pclab"
                 }],
-                "friday":[],
+                "friday": [],
                 "saturday": [{
                     "mod": "DSA",
                     "code": "IT2070",
@@ -3569,7 +3569,7 @@
                   {
                     "mod": "ITP",
                     "code": "IT2080",
-                    "start": "15:00",
+                    "start": "14:00",
                     "end": "18:00",
                     "type": "Lecture + Tute",
                     "loc": "B502"
@@ -3596,7 +3596,7 @@
                   "type": "Lecture",
                   "loc": "B502"
                 }],
-                "tuesday":[],
+                "tuesday": [],
                 "wednesday": [{
                   "mod": "ESD",
                   "code": "IT2100",
@@ -3681,7 +3681,7 @@
                   {
                     "mod": "ITP",
                     "code": "IT2080",
-                    "start": "15:00",
+                    "start": "14:00",
                     "end": "18:00",
                     "type": "Lecture + Tute",
                     "loc": "B502"
