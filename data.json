@@ -4346,6 +4346,118 @@
                 "sunday": []
 
               }
+            },
+            "WE": {
+              "key": "foc_y2_s2_csne_WE_01",
+              "table": {
+                "monday": [{
+                    "mod": "PS",
+                    "code": "IT2090",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Lecture",
+                    "loc": "B502"
+                  }
+                ],
+                "tuesday": [],
+                "wednesday": [
+                  {
+                    "mod": "CSA",
+                    "code": "IE2060",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Practical",
+                    "loc": "A406 PC Lab"
+                  }
+                ],
+                "thursday": [{
+                    "mod": "PS",
+                    "code": "IT2090",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Lecture ",
+                    "loc": "G1104"
+                  }
+                ],
+                "friday": [{
+                    "mod": "AI",
+                    "code": "IE2040",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "Practical",
+                    "loc": "New-DClab"
+                  }
+                ],
+                "saturday": [
+                  {
+                    "mod": "PEPIM",
+                    "code": "IE2090",
+                    "start": "08:30",
+                    "end": "10:30",
+                    "type": "Practical",
+                    "loc": "F1303 + F1304"
+                  },
+                  {
+                    "mod": "OS",
+                    "code": "IE2050",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Practical",
+                    "loc": "B402 - Pclab"
+                  },
+                  {
+                    "mod": "PEPIM",
+                    "code": "IE2090",
+                    "start": "14:00",
+                    "end": "17:00",
+                    "type": "Lecture + Tute",
+                    "loc": "A303"
+                  },
+                  {
+                    "mod": "OS",
+                    "code": "IE2050",
+                    "start": "17:00",
+                    "end": "20:00",
+                    "type": "Lecture + Tute",
+                    "loc": "G602"
+                  }
+                ],
+                "sunday": [
+                  {
+                    "mod": "ES",
+                    "code": "IE2070",
+                    "start": "08:30",
+                    "end": "11:30",
+                    "type": "Lecture + Tute",
+                    "loc": "F1307"
+                  },
+                  {
+                    "mod": "ES",
+                    "code": "IE2070",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "Practical",
+                    "loc": "New-Emblab"
+                  },
+                  {
+                    "mod": "CSA",
+                    "code": "IE2060",
+                    "start": "14:00",
+                    "end": "17:00",
+                    "type": "Lecture + Tute",
+                    "loc": "G1105"
+                  },
+                  {
+                    "mod": "AI",
+                    "code": "IE2040",
+                    "start": "17:00",
+                    "end": "20:00",
+                    "type": "Lecture + Tute",
+                    "loc": "A505"
+                  }
+                ]
+
+              }
             }
           }
         }
