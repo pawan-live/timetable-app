@@ -118,6 +118,7 @@ function displayTable() {
     for (i = 0; i < num; i++) {
       let cardColorClass = "";
       let linkTag = "";
+      let lecHall = "";
 
       if (table[dayToday][i].link) {
         let link = table[dayToday][i].link;
@@ -125,6 +126,10 @@ function displayTable() {
           '<a class="link-btn" href="' +
           link +
           '" target="_blank"><i class="fa-solid fa-link"></i><span class="link-btn-text">Link</span></a>';
+      }
+
+      if (table[dayToday][i].loc) {
+        lecHall = `<span class="lec-hall"><i class="fa-solid fa-building"></i>${table[dayToday][i].loc}</span>`;
       }
 
       let startTime = table[dayToday][i].start;
@@ -169,9 +174,7 @@ function displayTable() {
         table[dayToday][i].start +
         " - " +
         table[dayToday][i].end +
-        '<span class="lec-hall"><i class="fa-solid fa-building"></i>' +
-        table[dayToday][i].loc +
-        "</span>" +
+        lecHall +
         "</p>" +
         linkTag +
         "</div>" +

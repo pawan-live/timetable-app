@@ -31,12 +31,23 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to bottom right, #74ebd5, #acb6e5);
+  background-color: #ffffff;
 }
 
 .splash .text {
-  font-size: 1.8rem;
-  color: #ffffff;
+  font-size: 1.2rem;
+  color: #1f2198
+}
+
+.splash .loading-img {
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+.splash .loading-footer-notice {
+  margin-top: 40px;
+  font-size: 0.7rem;
+  font-style: italic;
 }
 
 /* login section */
