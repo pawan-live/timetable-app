@@ -65,12 +65,30 @@ body {
   text-align: center;
 }
 
+.login .login-logo {
+  width: 100px;
+  align-self: center;
+  margin-bottom: px;
+}
+
 .login .logo-title {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.8em;
+  display: none;
+  /* font-family: "Poppins", sans-serif;
+  font-size: 2em; */
   /* font-weight: 900; */
-  letter-spacing: -2px;
-  margin-bottom: 12px;
+  /* letter-spacing: -2px;
+  margin-bottom: 12px; */
+}
+
+.login .subheading {
+  font-size: 1.1rem;
+  margin-left: 0px;
+  margin-top: 6px;
+  width: fit-content;
+  padding: 2px 10px 2px 10px;
+  background-color: #afb3ff61;
+  align-self: center;
+  margin-bottom: 20px;
 }
 
 .notif-area {
