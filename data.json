@@ -3351,15 +3351,15 @@
                     "mod": "ITP",
                     "code": "IT2080",
                     "start": "14:00",
-                    "end": "18:00",
+                    "end": "17:00",
                     "type": "Lecture + Tute",
                     "loc": "B502"
                   },
                   {
                     "mod": "ITP",
                     "code": "IT2080",
-                    "start": "18:00",
-                    "end": "20:00",
+                    "start": "17:00",
+                    "end": "19:00",
                     "type": "Evaluation",
                     "loc": "G1105"
                   }
@@ -3465,15 +3465,15 @@
                     "mod": "ITP",
                     "code": "IT2080",
                     "start": "14:00",
-                    "end": "18:00",
+                    "end": "17:00",
                     "type": "Lecture + Tute",
                     "loc": "B502"
                   },
                   {
                     "mod": "ITP",
                     "code": "IT2080",
-                    "start": "18:00",
-                    "end": "20:00",
+                    "start": "17:00",
+                    "end": "19:00",
                     "type": "Evaluation",
                     "loc": "G1105"
                   }
@@ -3570,7 +3570,7 @@
                     "mod": "ITP",
                     "code": "IT2080",
                     "start": "14:00",
-                    "end": "18:00",
+                    "end": "17:00",
                     "type": "Lecture + Tute",
                     "loc": "B502"
                   },
@@ -3682,7 +3682,7 @@
                     "mod": "ITP",
                     "code": "IT2080",
                     "start": "14:00",
-                    "end": "18:00",
+                    "end": "17:00",
                     "type": "Lecture + Tute",
                     "loc": "B502"
                   },
