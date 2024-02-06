@@ -14,6 +14,10 @@ module.exports = {
           "background-hover": "hsl(var(--btn-background-hover))",
         },
       },
+      fontSize: {
+        greetingCardDate: "20px",
+        greetingCardgreeting: "14px",
+      },
     },
   },
   plugins: [],
