@@ -18,6 +18,7 @@ module.exports = {
         greetingCardDate: "20px",
         greetingCardgreeting: "14px",
         location: "8px",
+        moduleType: "11px",
       },
       letterSpacing: {
         moduleType: "0.2em",

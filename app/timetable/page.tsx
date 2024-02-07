@@ -16,16 +16,23 @@ const TimeTable = () => {
     {
       moduleType: "Lecture",
       moduleName: "Case Studies in Software Engineering",
-      moduleCode: "SE2170",
+      moduleCode: "SE3170",
       timeDuration: "08:30 AM – 09:30 AM",
       locationName: "A-501",
     },
     {
       moduleType: "Tutorial",
       moduleName: "Data Structures and Algorithms",
-      moduleCode: "SE2190",
+      moduleCode: "SE3190",
       timeDuration: "09:30 AM – 10:30 AM",
       locationName: "B-508",
+    },
+    {
+      moduleType: "Lab",
+      moduleName: "Software Process Management",
+      moduleCode: "SE3170",
+      timeDuration: "10:30 AM – 12:30 AM",
+      locationName: "G-501",
     },
   ];
 
@@ -51,8 +58,6 @@ const TimeTable = () => {
             moduleCode={module.moduleCode}
             timeDuration={module.timeDuration}
             locationName={module.locationName}
-            moduleTypeColor='blue-500'
-            moduleTypeTextColor='blue-500'
           />
         ))}
       </div>

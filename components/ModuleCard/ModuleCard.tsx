@@ -1,3 +1,4 @@
+import getModuleColor from "@/utils/helpers/getModuleTypeColor";
 import React from "react";
 
 const ModuleCard = ({
@@ -6,21 +7,22 @@ const ModuleCard = ({
   moduleCode,
   timeDuration,
   locationName,
-  moduleTypeColor,
-  moduleTypeTextColor,
 }: {
   moduleType: string;
   moduleName: string;
   moduleCode: string;
   timeDuration: string;
   locationName: string;
-  moduleTypeColor: string;
-  moduleTypeTextColor: string;
 }) => {
   return (
     <div className='flex bg-white rounded-lg shadow-md w-96 h-28 mt-4 '>
-      <div className='flex flex-col bg-lime-300 rounded-s-lg  pt-8 w-6 '>
-        <div className='text-xs font-bold text-lime-500 transform -rotate-90 my-auto  uppercase tracking-moduleType'>
+      <div
+        className={`flex flex-col rounded-s-lg w-6 h-28 p-2 ${getModuleColor(
+          moduleType
+        )}`}>
+        <div
+          className='text-moduleType font-bold  transform rotate-180 uppercase tracking-moduleType '
+          style={{ writingMode: "vertical-rl", alignSelf: "center" }}>
           {moduleType}
         </div>
       </div>
