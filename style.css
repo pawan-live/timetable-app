@@ -36,7 +36,7 @@ body {
 
 .splash .text {
   font-size: 1.2rem;
-  color: #1f2198
+  color: #1f2198;
 }
 
 .splash .loading-img {
@@ -224,7 +224,6 @@ body {
   margin-right: 5px;
 }
 
-
 /* MAIN SECTION */
 
 #main-section {
@@ -237,7 +236,6 @@ body {
   text-decoration: underline;
   cursor: pointer;
 }
-
 
 #logout-btn .icon {
   margin-left: 5px;
@@ -289,13 +287,15 @@ body {
 /* greeting card top */
 .card.greeting {
   /* to add gradient overlay over the background image of the greeting card */
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       #a3d6ef,
       #7fccf3,
       #1ca7cea2,
       #3db6d8af,
       #3db6d8df,
-      #3db6d8df),
+      #3db6d8df
+    ),
     url("./images/greeting-backg.png");
   background-size: cover;
   color: #f1f12d;
@@ -361,8 +361,8 @@ body {
   border-radius: 150px;
   border: 3px solid white;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.318);
-  background-color: rgb(193, 168, 237);
-  padding: 5px;
+  background-color: white;
+  padding: 3px;
   cursor: pointer;
 }
 
@@ -407,7 +407,7 @@ body {
   background: linear-gradient(to bottom right, #afb3ff, #9297f6);
 }
 
-.timecard.ongoing>p {
+.timecard.ongoing > p {
   color: white;
 }
 
@@ -449,10 +449,9 @@ body {
   padding: 2px 7px 2px 7px;
   border-radius: 8px;
   text-transform: uppercase;
-
 }
 
-.lec-hall>i {
+.lec-hall > i {
   font-size: 15px;
   margin-right: 6px;
   color: #151515cf;
@@ -493,8 +492,6 @@ body {
   font-size: 1.3rem;
   color: #1f2198c2;
 }
-
-
 
 .card.now {
   background: linear-gradient(to right, #a38ed2, #f9c1eb);
@@ -541,8 +538,7 @@ body {
   color: white;
 }
 
-.footer-link:hover>i {
-
+.footer-link:hover > i {
   transition: 0.3s ease-in-out;
   color: white;
 }
@@ -591,7 +587,7 @@ body {
 }
 
 .alert-body {
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .alert-body .title {
@@ -600,10 +596,12 @@ body {
   color: #6e70cf;
 }
 
-.alert-body>img {
+.alert-body > img {
   border-radius: 8px;
-  margin-top: 15px;
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.232);
+  margin-bottom: -16px;
+  margin-top: 10px;
+  width: 100%;
+  /* box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.232); */
 }
 
 .alert-box .row {
