@@ -95,7 +95,7 @@ function displayUserData() {
   // display pfp
   document.querySelector(
     ".pfp"
-  ).innerHTML = `<img id="main-pfp" src="https://avatars.dicebear.com/api/bottts/${randomSeed}.svg" alt="" />`;
+  ).innerHTML = `<img id="main-pfp" src="https://api.dicebear.com/7.x/thumbs/svg?seed=${randomSeed} " alt="" />`;
 
   displayTable();
 }
