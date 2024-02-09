@@ -586,10 +586,6 @@ body {
   border-bottom: 1px solid black;
 }
 
-.alert-body {
-  /* margin-left: 10px; */
-}
-
 .alert-body .title {
   font-size: 1.2rem;
   margin-bottom: 5px;
@@ -601,12 +597,10 @@ body {
   margin-bottom: -16px;
   margin-top: 10px;
   width: 100%;
-  /* box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.232); */
 }
 
 .alert-box .row {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -638,8 +632,6 @@ body {
 .notice {
   display: flex;
   flex-direction: column;
-  /* border: solid rgb(255, 220, 81) 1.5px; */
-  /* background-color: rgb(255, 253, 235); */
   border: solid lightskyblue 2px;
   background-color: rgb(241, 251, 255);
   border-radius: 12px;
