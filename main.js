@@ -2,7 +2,7 @@
 
 // store last version number to display update alerts
 
-var thisVersion = "1.2.3"; // this must be updated only on a major change (not patches and bug fixes)
+var thisVersion = "1.2.4"; // this must be updated only on a major change (not patches and bug fixes)
 
 var username;
 var keys = [];
@@ -107,7 +107,6 @@ mainBackBtn.addEventListener("click", function () {
 // logout button
 logOutBtn.addEventListener("click", function () {
   logOut();
-  location.reload();
   // transition("main-section", "login-section");
 });
 
