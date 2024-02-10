@@ -102,109 +102,113 @@ function displayUserData() {
 
 /**display table */
 function displayTable() {
-  let table = keys.fac[faculty][year][semester][spec][sub].table;
+  try {
+    let table = keys.fac[faculty][year][semester][spec][sub].table;
 
-  let num = table[dayToday].length;
-  let html_content = "";
+    let num = table[dayToday].length;
+    let html_content = "";
 
-  // get now date time
-  var now = new Date();
+    // get now date time
+    var now = new Date();
 
-  var nowDateTime = now.toISOString();
-  var nowDate = nowDateTime.split("T")[0];
+    var nowDateTime = now.toISOString();
+    var nowDate = nowDateTime.split("T")[0];
 
-  if (num) {
-    document.getElementById("date-display").innerHTML = `${dayToday}`;
-    for (i = 0; i < num; i++) {
-      let cardColorClass = "";
-      let linkTag = "";
-      let lecHall = "";
+    if (num) {
+      document.getElementById("date-display").innerHTML = `${dayToday}`;
+      for (i = 0; i < num; i++) {
+        let cardColorClass = "";
+        let linkTag = "";
+        let lecHall = "";
 
-      if (table[dayToday][i].link) {
-        let link = table[dayToday][i].link;
-        linkTag =
-          '<a class="link-btn" href="' +
-          link +
-          '" target="_blank"><i class="fa-solid fa-link"></i><span class="link-btn-text">Link</span></a>';
+        if (table[dayToday][i].link) {
+          let link = table[dayToday][i].link;
+          linkTag =
+            '<a class="link-btn" href="' +
+            link +
+            '" target="_blank"><i class="fa-solid fa-link"></i><span class="link-btn-text">Link</span></a>';
+        }
+
+        if (table[dayToday][i].loc) {
+          lecHall = `<span class="lec-hall"><i class="fa-solid fa-building"></i>${table[dayToday][i].loc}</span>`;
+        }
+
+        let startTime = table[dayToday][i].start;
+        let endTime = table[dayToday][i].end;
+
+        if (startTime.length != 5) {
+          startTime = addLeadingZeros(startTime, 5);
+        }
+
+        if (endTime.length != 5) {
+          endTime = addLeadingZeros(endTime, 5);
+        }
+
+        var targetStart = new Date(nowDate + "T" + startTime + ":00");
+        var targetEnd = new Date(nowDate + "T" + endTime + ":00");
+
+        if (targetStart <= now && targetEnd > now) {
+          cardColorClass = "ongoing";
+        } else if (targetStart > now && targetEnd > now) {
+          // display default color
+          cardColorClass = "";
+        }
+
+        html_content +=
+          '<div class="card timecard ' +
+          cardColorClass +
+          '" id="card' +
+          (i + 1) +
+          '">' +
+          '<div class="row">' +
+          '<p class="title">' +
+          table[dayToday][i].mod +
+          " <span id='module-code'>" +
+          table[dayToday][i].code +
+          "</span></p>" +
+          '<p class="type">' +
+          table[dayToday][i].type +
+          "</p>" +
+          "</div>" +
+          '<div class="row">' +
+          '<p class="time">' +
+          table[dayToday][i].start +
+          " - " +
+          table[dayToday][i].end +
+          lecHall +
+          "</p>" +
+          linkTag +
+          "</div>" +
+          "</div>";
       }
-
-      if (table[dayToday][i].loc) {
-        lecHall = `<span class="lec-hall"><i class="fa-solid fa-building"></i>${table[dayToday][i].loc}</span>`;
-      }
-
-      let startTime = table[dayToday][i].start;
-      let endTime = table[dayToday][i].end;
-
-      if (startTime.length != 5) {
-        startTime = addLeadingZeros(startTime, 5);
-      }
-
-      if (endTime.length != 5) {
-        endTime = addLeadingZeros(endTime, 5);
-      }
-
-      var targetStart = new Date(nowDate + "T" + startTime + ":00");
-      var targetEnd = new Date(nowDate + "T" + endTime + ":00");
-
-      if (targetStart <= now && targetEnd > now) {
-        cardColorClass = "ongoing";
-      } else if (targetStart > now && targetEnd > now) {
-        // display default color
-        cardColorClass = "";
-      }
-
-      html_content +=
-        '<div class="card timecard ' +
-        cardColorClass +
-        '" id="card' +
-        (i + 1) +
-        '">' +
-        '<div class="row">' +
-        '<p class="title">' +
-        table[dayToday][i].mod +
-        " <span id='module-code'>" +
-        table[dayToday][i].code +
-        "</span></p>" +
-        '<p class="type">' +
-        table[dayToday][i].type +
-        "</p>" +
-        "</div>" +
-        '<div class="row">' +
-        '<p class="time">' +
-        table[dayToday][i].start +
-        " - " +
-        table[dayToday][i].end +
-        lecHall +
-        "</p>" +
-        linkTag +
-        "</div>" +
-        "</div>";
-    }
-  } else {
-    document.getElementById("date-display").innerHTML = `${dayToday}`;
-
-    let displayDay;
-
-    // set display message day
-    if (dayToday == realDay) {
-      displayDay = "today";
     } else {
-      displayDay = dayToday;
+      document.getElementById("date-display").innerHTML = `${dayToday}`;
+
+      let displayDay;
+
+      // set display message day
+      if (dayToday == realDay) {
+        displayDay = "today";
+      } else {
+        displayDay = dayToday;
+      }
+
+      html_content += `
+       <div class="no-lecs-msg">
+             <p>Nice! No lectures for <span> ${displayDay}</span>! 😃</p>
+             <img
+               id="no-lecs-img"
+               src="./images/no-lecs-svg.svg"
+               alt="playing cat"
+             />
+       </div>`;
     }
 
-    html_content += `
-      <div class="no-lecs-msg">
-            <p>Nice! No lectures for <span> ${displayDay}</span>! 😃</p>
-            <img
-              id="no-lecs-img"
-              src="./images/no-lecs-svg.svg"
-              alt="playing cat"
-            />
-      </div>`;
+    document.getElementById("cards-container").innerHTML = html_content;
+  } catch (error) {
+    console.error("Error occurred:", error);
+    logOut();
   }
-
-  document.getElementById("cards-container").innerHTML = html_content;
-
   if (thisVersion != getCookie("version")) {
     let versionData;
     fetch("./version-info.json")
@@ -252,6 +256,7 @@ function logOut() {
   delCookie("spec");
   delCookie("sub");
   delCookie("seed");
+  location.reload();
 }
 
 // set details to cookies

@@ -107,7 +107,6 @@ mainBackBtn.addEventListener("click", function () {
 // logout button
 logOutBtn.addEventListener("click", function () {
   logOut();
-  location.reload();
   // transition("main-section", "login-section");
 });
 
