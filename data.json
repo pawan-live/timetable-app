@@ -4,6 +4,85 @@
       "Y3": {
         "S2": {
           "SE": {
+            "WE 01.01": {
+              "key": "foc_y3_s2_se_01_01",
+              "table": {
+                "monday": [],
+                "tuesday": [],
+                "wednesday": [],
+                "thursday": [
+                  {
+                    "mod": "ESD Seminar",
+                    "code": "IT3050",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "LEC",
+                    "loc": "V1"
+                  }
+                ],
+                "friday": [],
+                "saturday": [
+                  {
+                    "mod": "DS",
+                    "code": "SE3020",
+                    "start": "08:30",
+                    "end": "11:30",
+                    "type": "LEC + TUT",
+                    "loc": "EA 1"
+                  },
+                  {
+                    "mod": "AF",
+                    "code": "SE3040",
+                    "start": "14:00",
+                    "end": "17:00",
+                    "type": "LEC + TUT",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "SEP&QM",
+                    "code": "SE3010",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "PRAC BYOD",
+                    "loc": "G605"
+                  }
+                ],
+                "sunday": [
+                  {
+                    "mod": "SEP&QM",
+                    "code": "SE3010",
+                    "start": "08:30",
+                    "end": "11:30",
+                    "type": "LEC + TUT",
+                    "loc": "B502"
+                  },
+                  {
+                    "mod": "SA",
+                    "code": "SE3030",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "PRAC BYOD",
+                    "loc": "G1102"
+                  },
+                  {
+                    "mod": "SA",
+                    "code": "SE3030",
+                    "start": "14:00",
+                    "end": "17:00",
+                    "type": "LEC + TUT",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "AF",
+                    "code": "SE3030",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "PRAC BYOD",
+                    "loc": "G1106"
+                  }
+                ]
+              }
+            },
             "WE 02.02": {
               "key": "foc_y3_s2_se_02_02",
               "table": {
@@ -12,7 +91,7 @@
                 "wednesday": [],
                 "thursday": [
                   {
-                    "mod": "ESD",
+                    "mod": "ESD Seminar",
                     "code": "IT3050",
                     "start": "18:00",
                     "end": "20:00",
