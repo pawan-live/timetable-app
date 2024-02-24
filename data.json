@@ -10,19 +10,23 @@
                 "monday": [],
                 "tuesday": [],
                 "wednesday": [],
-                "thursday": [
-                  {
-                    "mod": "ESD Seminar",
-                    "code": "IT3050",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "LEC",
-                    "loc": "V1"
-                  }
-                ],
-                "friday": [],
-                "saturday": [
-                  {
+                "thursday": [{
+                  "mod": "ESD Seminar",
+                  "code": "IT3050",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "LEC",
+                  "loc": "V1"
+                }],
+                "friday": [{
+                  "mod": "DS",
+                  "code": "IT3050",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "PRAC",
+                  "loc": "V5"
+                }],
+                "saturday": [{
                     "mod": "DS",
                     "code": "SE3020",
                     "start": "08:30",
@@ -47,8 +51,7 @@
                     "loc": "G605"
                   }
                 ],
-                "sunday": [
-                  {
+                "sunday": [{
                     "mod": "SEP&QM",
                     "code": "SE3010",
                     "start": "08:30",
@@ -61,8 +64,8 @@
                     "code": "SE3030",
                     "start": "11:30",
                     "end": "13:30",
-                    "type": "PRAC BYOD",
-                    "loc": "G1102"
+                    "type": "PRAC",
+                    "loc": "A405"
                   },
                   {
                     "mod": "SA",
@@ -83,25 +86,187 @@
                 ]
               }
             },
+            "WE 01.02": {
+              "key": "foc_y3_s2_se_01_02",
+              "table": {
+                "monday": [],
+                "tuesday": [],
+                "wednesday": [],
+                "thursday": [{
+                  "mod": "ESD Seminar",
+                  "code": "IT3050",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "LEC",
+                  "loc": "V1"
+                }],
+                "friday": [{
+                  "mod": "DS",
+                  "code": "IT3050",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "PRAC",
+                  "loc": "V3"
+                }],
+                "saturday": [{
+                    "mod": "DS",
+                    "code": "SE3020",
+                    "start": "08:30",
+                    "end": "11:30",
+                    "type": "LEC + TUT",
+                    "loc": "EA 1"
+                  },
+                  {
+                    "mod": "AF",
+                    "code": "SE3040",
+                    "start": "14:00",
+                    "end": "17:00",
+                    "type": "LEC + TUT",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "AF",
+                    "code": "SE3040",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "PRAC BYOD",
+                    "loc": "G606"
+                  }
+                ],
+                "sunday": [{
+                    "mod": "SEP&QM",
+                    "code": "SE3010",
+                    "start": "08:30",
+                    "end": "11:30",
+                    "type": "LEC + TUT",
+                    "loc": "B502"
+                  },
+                  {
+                    "mod": "SA",
+                    "code": "SE3030",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "PRAC",
+                    "loc": "A410/A411"
+                  },
+                  {
+                    "mod": "SA",
+                    "code": "SE3030",
+                    "start": "14:00",
+                    "end": "17:00",
+                    "type": "LEC + TUT",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "SEP&QM",
+                    "code": "SE3010",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "PRAC BYOD",
+                    "loc": "G604"
+                  }
+                ]
+              }
+            },
+            "WE 02.01": {
+              "key": "foc_y3_s2_se_02_01",
+              "table": {
+                "monday": [],
+                "tuesday": [],
+                "wednesday": [],
+                "thursday": [{
+                  "mod": "ESD Seminar",
+                  "code": "IT3050",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "LEC",
+                  "loc": "V1"
+                }],
+                "friday": [],
+                "saturday": [{
+                    "mod": "DS",
+                    "code": "SE3020",
+                    "start": "08:30",
+                    "end": "11:30",
+                    "type": "LEC + TUT",
+                    "loc": "EA 1"
+                  },
+                  {
+                    "mod": "AF",
+                    "code": "SE3010",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "PRAC BYOD",
+                    "loc": "G606"
+                  },
+                  {
+                    "mod": "AF",
+                    "code": "SE3040",
+                    "start": "14:00",
+                    "end": "17:00",
+                    "type": "LEC + TUT",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "SEP&QM",
+                    "code": "SE3010",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "PRAC BYOD",
+                    "loc": "G604"
+                  }
+                ],
+                "sunday": [{
+                    "mod": "SEP&QM",
+                    "code": "SE3010",
+                    "start": "08:30",
+                    "end": "11:30",
+                    "type": "LEC + TUT",
+                    "loc": "B502"
+                  },
+                  {
+                    "mod": "AF",
+                    "code": "SE3040",
+                    "start": "11:30",
+                    "end": "13:30",
+                    "type": "PRAC BYOD",
+                    "loc": "G1101"
+                  },
+                  {
+                    "mod": "SA",
+                    "code": "SE3030",
+                    "start": "14:00",
+                    "end": "17:00",
+                    "type": "LEC + TUT",
+                    "loc": "B501"
+                  },
+                  {
+                    "mod": "SA",
+                    "code": "SE3030",
+                    "start": "18:00",
+                    "end": "20:00",
+                    "type": "PRAC BYOD",
+                    "loc": "G1104"
+                  }
+                ]
+              }
+            },
             "WE 02.02": {
               "key": "foc_y3_s2_se_02_02",
               "table": {
                 "monday": [],
                 "tuesday": [],
                 "wednesday": [],
-                "thursday": [
-                  {
-                    "mod": "ESD Seminar",
-                    "code": "IT3050",
-                    "start": "18:00",
-                    "end": "20:00",
-                    "type": "LEC",
-                    "loc": "V1"
-                  }
-                ],
+                "thursday": [{
+                  "mod": "ESD Seminar",
+                  "code": "IT3050",
+                  "start": "18:00",
+                  "end": "20:00",
+                  "type": "LEC",
+                  "loc": "V1"
+                }],
                 "friday": [],
-                "saturday": [
-                  {
+                "saturday": [{
                     "mod": "DS",
                     "code": "SE3020",
                     "start": "08:30",
@@ -129,29 +294,12 @@
                     "mod": "DS",
                     "code": "SE3020",
                     "start": "17:00",
-                    "end": "18:00",
-                    "type": "PRAC BYOD",
-                    "loc": "G1103"
-                  },
-                  {
-                    "mod": "DS",
-                    "code": "SE3020",
-                    "start": "18:00",
                     "end": "19:00",
-                    "type": "PRAC BYOD",
-                    "loc": "G1103"
-                  },
-                  {
-                    "mod": "SEP&QM",
-                    "code": "SE3010",
-                    "start": "19:00",
-                    "end": "20:00",
-                    "type": "PRAC BYOD",
-                    "loc": "G604"
+                    "type": "PRAC",
+                    "loc": "A602/A603"
                   }
                 ],
-                "sunday": [
-                  {
+                "sunday": [{
                     "mod": "SEP&QM",
                     "code": "SE3010",
                     "start": "08:30",
